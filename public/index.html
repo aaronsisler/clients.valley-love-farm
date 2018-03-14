@@ -1,357 +1,449 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115632487-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-115632487-1');
-    </script>
-
-    <title>Valley Love Farm</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
-    <script src="js/responsiveslides.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-        rel='stylesheet' type='text/css'>
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script src="js/responsiveslides.min.js"></script>
-    <script>
-        $(function () {
-            $("#slider").responsiveSlides({
-                auto: true,
-                nav: true,
-                speed: 500,
-                namespace: "callbacks",
-                pager: true,
-            });
-        });
-    </script>
-    <!---- start-smoth-scrolling---->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
-            });
-        });
-    </script>
-    <!---End-smoth-scrolling---->
-    <link rel="stylesheet" href="css/swipebox.css">
-    <script src="js/jquery.swipebox.min.js"></script>
-    <script type="text/javascript">
-        jQuery(function ($) {
-            $(".swipebox").swipebox();
-        });
-    </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115632487-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-115632487-1');
+	</script>
+	<title>Valley Love Farm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/smoothbox.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/Open_Sans.css" rel="stylesheet">
+	<link href="css/Abel.css" rel="stylesheet">
+	<link href="css/Roboto.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="header" id="home">
-        <div class="container">
-            <div class="header-top">
-                <div class="logo">
-                    <a href="index.html">agronomy</a>
-                    <p>agriculture co.</p>
-                </div>
-                <div class='top-menu'>
-                    <label class="menu"> </label>
-                    <ul>
-                        <li>
-                            <a href='index.html' class="active">
-                                <span>Main Page</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='about.html'>
-                                <span>About</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='services.html'>
-                                <span>Services</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='news.html'>
-                                <span>News</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href='contact.html'>
-                                <span>Contact</span>
-                            </a>
-                        </li>
-                        <div class="clearfix"> </div>
-                    </ul>
-                    <!-- script for menu -->
+	<!-- Banner-->
+	<!-- navigation -->
+	<div class="banner" id="banner">
+		<div class="top-nav w3-agiletop">
+			<div class="container">
+				<div class="navbar-header w3llogo">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div class="w3menu navbar-left">
+						<ul class="nav navbar">
+							<li>
+								<a href="#banner" class="scroll">Home</a>
+							</li>
+							<li>
+								<a href="#about" class="scroll">About</a>
+							</li>
+							<li>
+								<a href="#gallery" class="scroll">Gallery</a>
+							</li>
+							<li>
+								<a href="#contact" class="scroll">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!-- //navigation -->
+		<div class="logo">
+			<h1>VALLEY LOVE FARM</h1>
+			<h3>Producing real food in an era where fast food reigns king</h3>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<!-- /Banner-->
 
-                    <script>
-                        $("label.menu").click(function () {
-                            $(".top-menu ul").slideToggle("slow", function () {
-                            });
-                        });
-                    </script>
+	<!-- About Us-->
+	<div class="about" id="about">
+		<div class="container">
+			<h3>ABOUT US</h3>
+			<div class="col-md-6 w3_abl">
+				<h4>What We Are</h4>
+				<h5>Agriculture is our wisest Persuit</h5>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+					dummy text ever since the 1500s</p>
+			</div>
+			<div class="col-md-6 w3_abl">
+				<h4>What We Do</h4>
+				<h5>Agriculture is our wisest Persuit</h5>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+					dummy text ever since the 1500s</p>
+			</div>
+			<div class="col-md-6 w3_abl">
+				<h4>Mission</h4>
+				<div class="col-md-6 w3l_abl">
+					<img src="images/abt1.jpg" class="img-responsive">
+				</div>
+				<div class="col-md=6 w3l_abtr">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+						dummy text ever since the 1500s</p>
+					<div class="wthree_rm">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 w3_abl">
+				<h4>Community</h4>
+				<div class="col-md-6 w3l_abl">
+					<img src="images/abt2.jpg" class="img-responsive">
+				</div>
+				<div class="col-md=6 w3l_abtr">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+						dummy text ever since the 1500s</p>
+					<div class="wthree_rm">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /About Us-->
 
-                    <!-- //script for menu -->
+	<!-- gallery -->
+	<div class="gallery" id="gallery">
+		<div class="container">
+			<div class="w3agile_gallery_grids">
+				<div class="col-md-3 w3agile_gallery_grid">
+					<div class="w3agile_gallery_image">
+						<a class="sb" title="Eggs" href="images/g11.jpg">
+							<figure>
+								<img src="images/g11.jpg" alt="" class="img-responsive" />
+								<figcaption>
+									<h4>Eggs</h4>
+									<p>
+										A generous bounty from our hens.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 w3agile_gallery_grid">
+					<div class="w3agile_gallery_image">
+						<a class="sb" title="Mufasa" href="images/g12.jpg">
+							<figure>
+								<img src="images/g12.jpg" alt="" class="img-responsive" />
+								<figcaption>
+									<h4>Mufasa</h4>
+									<p>
+										Our guard dog hard at work protecting his flock.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 w3agile_gallery_grid">
+					<div class="w3agile_gallery_image">
+						<a class="sb" title="Mobile Coop" href="images/g13.jpg">
+							<figure>
+								<img src="images/g13.jpg" alt="" class="img-responsive" />
+								<figcaption>
+									<h4>Mobile Coop</h4>
+									<p>
+										One of a kind coop allows for new pecking grounds to explore.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 w3agile_gallery_grid">
+					<div class="w3agile_gallery_image">
+						<a class="sb" title="Chickens" href="images/g14.jpg">
+							<figure>
+								<img src="images/g14.jpg" alt="" class="img-responsive" />
+								<figcaption>
+									<h4>Chickens</h4>
+									<p>
+										Roaming the fields eating the insects and plants they would naturally eat.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<!-- <div class="col-md-3 w3agile_gallery_grid">
+					<div class="w3agile_gallery_image">
+						<a class="sb" title="Agriculture" href="images/g15.jpg">
+							<figure>
+								<img src="images/g15.jpg" alt="" class="img-responsive" />
+								<figcaption>
+									<h4>Sowing</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 w3agile_gallery_grid">
+					<div class="w3agile_gallery_image">
+						<a class="sb" title="Agriculture" href="images/g16.jpg">
+							<figure>
+								<img src="images/g16.jpg" alt="" class="img-responsive" />
+								<figcaption>
+									<h4>Sowing</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 w3agile_gallery_grid">
+					<div class="w3agile_gallery_image">
+						<a class="sb" title="Agriculture" href="images/g17.jpg">
+							<figure>
+								<img src="images/g17.jpg" alt="" class="img-responsive" />
+								<figcaption>
+									<h4>Sowing</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 w3agile_gallery_grid">
+					<div class="w3agile_gallery_image">
+						<a class="sb" title="Agriculture" href="images/g18.jpg">
+							<figure>
+								<img src="images/g18.jpg" alt="" class="img-responsive" />
+								<figcaption>
+									<h4>Sowing</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+									</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div> -->
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //gallery -->
 
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-slider">
-        <div class="slider">
-            <div class="callbacks_container">
-                <ul class="rslides" id="slider">
-                    <li>
-                        <img src="images/1.jpg" alt="">
-                        <div class="caption">
-                            <h3>Make your garden look like paradise!</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/2.jpg" alt="">
-                        <div class="caption">
-                            <h3>Steady growth for your farm!</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="images/3.jpg" alt="">
-                        <div class="caption">
-                            <h3>Make your garden look like paradise!</h3>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="content">
-        <div class="welcome">
-            <div class="container">
-                <div class="wel-grids">
-                    <div class="col-md-4 wel-grid">
-                        <img src="images/img2.jpg" class="img-responsive" alt="" />
-                    </div>
-                    <div class="col-md-8 wel-grid1">
-                        <h3>welcome</h3>
-                        <h6>Sed usto dolor, lobortis quis, lobortis dignissim, pulvinar ac, loremIn pede mi, aliquet sit amet,
-                            eu ismod in,auctor ut, ligula</h6>
-                        <h5>PRAESENT JUSTO DOLOR, LOBORTIS QUIS, LOBOR</h5>
-                        <p>Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque
-                            sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam. Sed in lacus ut enim
-                            adipiscing aliquet. Nulla venenatis.
-                        </p>
-                        <a href="#" class="button">read more</a>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </div>
-        </div>
-        <div class="service-section">
-            <div class="container">
-                <h3>our services</h3>
-                <div class="service-grids">
-                    <div class="col-md-4 service-grid">
-                        <h4>cereals</h4>
-                        <img src="images/img3.jpg" class="img-responsive" alt="" />
-                        <h5>agricultural seeds</h5>
-                        <p>Pellentesque enim justo, lacinia egestas semper ut, gravida vitae enim. Sed maximus est eget.</p>
-                        <a href="#" class="button1"> more read</a>
-                    </div>
-                    <div class="col-md-4 service-grid">
-                        <h4>fruits</h4>
-                        <img src="images/img4.jpg" class="img-responsive" alt="" />
-                        <h5>PREMIUM PRODUCTS</h5>
-                        <p>Pellentesque enim justo, lacinia egestas semper ut, gravida vitae enim. Sed maximus est eget.</p>
-                        <a href="#" class="button1"> more read</a>
-                    </div>
-                    <div class="col-md-4 service-grid">
-                        <h4>vegetables</h4>
-                        <img src="images/img5.jpg" class="img-responsive" alt="" />
-                        <h5>ADVANCED TRAITS</h5>
-                        <p>Pellentesque enim justo, lacinia egestas semper ut, gravida vitae enim. Sed maximus est eget.</p>
-                        <a href="#" class="button1"> more read</a>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </div>
-        </div>
-        <div class="what">
-            <div class="container">
-                <div class="what-header">
-                    <h3>what we offer</h3>
-                    <p>Pellentesque enim justo, lacinia egestas semper ut, gravida vitae enim. Sed maximus est eget.</p>
-                </div>
-                <div class="what-grids">
-                    <div class="col-md-3 what-grid">
-                        <h4>AGRICULTURAL SEEDS</h4>
-                        <ul class="list">
-                            <li>
-                                <a href="#">Alfalfa</a>
-                                <li>
-                                    <a href="#">Canola</a>
-                                    <li>
-                                        <a href="#">Corn</a>
-                                        <li>
-                                            <a href="#">Cotton</a>
-                        </ul>
-                        <a href="#" class="button2"> see all</a>
-                    </div>
-                    <div class="col-md-3 what-grid">
-                        <h4>TECHNOLOGIESs</h4>
-                        <ul class="list">
-                            <li>
-                                <a href="#">Acceleron Seed Treatment</a>
-                                <li>
-                                    <a href="#">Agricultural Herbicides</a>
-                                    <li>
-                                        <a href="#">Genuity Traits</a>
-                                        <li>
-                                            <a href="#">Prescriptive Ag Services</a>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 what-grid">
-                        <h4>WEED CONTROL</h4>
-                        <ul class="list">
-                            <li>
-                                <a href="#">Agricultural Herbicides</a>
-                                <li>
-                                    <a href="#">Bullet</a>
-                                    <li>
-                                        <a href="#">Degree XTRA</a>
-                                        <li>
-                                            <a href="#">Harness</a>
-                        </ul>
-                        <a href="#" class="button2"> see all</a>
-                    </div>
-                    <div class="col-md-3 what-grid">
-                        <h4>RESEARCH</h4>
-                        <ul class="list">
-                            <li>
-                                <a href="#">Collaborations</a>
-                                <li>
-                                    <a href="#">Corn Pipeline</a>
-                                    <li>
-                                        <a href="#">Cotton Pipeline</a>
-                                        <li>
-                                            <a href="#">Soybean Pipeline</a>
-                        </ul>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </div>
-        </div>
-        <div class="news-section">
-            <div class="container">
-                <div class="news-header">
-                    <h3>News & articles</h3>
-                    <p>Pellentesque enim justo, lacinia egestas semper ut, gravida vitae enim. Sed maximus est eget.</p>
-                </div>
-            </div>
-            <div class="news-grids">
-                <div class="col-md-6 news-grid">
-                    <a href="images/img6.jpg" class="swipebox">
-                        <img src="images/img6.jpg" />
-                    </a>
-                    <div class="news-info">
-                        <h4>Steady growth for your farm!</h4>
-                        <p>09/01/2015</p>
-                        <a href="#" class="button1"> read the news</a>
-                    </div>
-                </div>
-                <div class="col-md-6 news-grid1">
-                    <div class="news-grid2">
-                        <a href="images/img7.jpg" class="swipebox">
-                            <img src="images/img7.jpg" />
-                        </a>
-                        <div class="news-info1">
-                            <h4>The best apples!</h4>
-                            <p>19/04/2015</p>
-                            <a href="#" class="button1"> read the news</a>
-                        </div>
-                    </div>
-                    <div class="news-grid3">
-                        <a href="images/img8.jpg" class="swipebox">
-                            <img src="images/img8.jpg" />
-                        </a>
-                        <div class="news-info1">
-                            <h4>It’s a hard work!</h4>
-                            <p>29/02/2015</p>
-                            <a href="#" class="button1"> read the news</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-        <div class="google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3105.6247032762103!2d-77.030374!3d38.8868275!3m2!1i1024!2i768!4f13.1!2m1!1susda+agriculture!5e0!3m2!1sen!2sin!4v1430823037391">
-            </iframe>
-        </div>
-        <div class="contact-section">
-            <div class="container">
-                <h3> LEAVE US A MESSAGE</h3>
-                <div class="contact-grid">
-                    <div class="col-md-4 contactgrid">
-                        <input type="text" class="text" value=" name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
-                    </div>
-                    <div class="col-md-4 contactgrid">
-                        <input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
-                    </div>
-                    <div class="col-md-4 contactgrid">
-                        <input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
-                    </div>
-                    <div class="clearfix"> </div>
-                    <div class="col-md-12 contactgrid1">
-                        <textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';">Your Message</textarea>
-                    </div>
-                    <div class="contactgrid2">
-                        <input type="button" value="send message">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-section">
-            <div class="container">
-                <div class="footer-top">
-                    <div class="social-icons">
-                        <a href="#">
-                            <i class="icon1"></i>
-                        </a>
-                        <a href="#">
-                            <i class="icon2"></i>
-                        </a>
-                        <a href="#">
-                            <i class="icon3"></i>
-                        </a>
-                    </div>
-                </div>
+	<!-- Clients-->
+	<!-- <div class="testimonials" id="testimonials">
+		<div class="container">
+			<h3 class="heading-agileinfo">Happy Clients</h3>
+			<div class="flex-slider">
+				<ul id="flexiselDemo1">
+					<li>
+						<div class="laptop">
+							<div class="col-md-8 col-sm-8 team-right">
+								<p>It is always a pleasure trying the new flavors of sausage that are available.</p>
+								<div class="name-w3ls">
+									<h5>Thomas</h5>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					<li>
+						<div class="laptop">
+							<div class="col-md-8 col-sm-8 team-right">
+								<p>We love seeing Jonathon at the Holly Spring's Farmer's Market each weekend.</p>
+								<div class="name-w3ls">
+									<h5>Melissa</h5>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					<li>
+						<div class="laptop">
+							<div class="col-md-8 col-sm-8 team-right">
+								<p>Our kids loved visiting the farm and petting the chickens.</p>
+								<div class="name-w3ls">
+									<h5>Jessica</h5>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div> -->
+	<!--//Clients-->
 
-                <div class="footer-bottom">
-                    <p>
-                        Copyright &copy;2018 All rights Reserved
-                    </p>
-                </div>
-                <script type="text/javascript">
-                    $(document).ready(function () {
-                        $().UItoTop({ easingType: 'easeOutQuart' });
-                    });
-                </script>
-                <a class="scroll" href="#home" id="toTop" style="display: block;">
-                    <span id="toTopHover" style="opacity: 1;"> </span>
-                </a>
-            </div>
-        </div>
+	<!-- contact-->
+	<div class="contactfull">
+		<div class="contact" id="contact">
+			<div class="container">
+				<h3>CONTACT US</h3>
+				<!-- <div class="footer-grids">
+					<div class="col-md-3 col-sm-6 iteams">
+						<h4>Contact Info</h4>
+						<ul class="agile_footer_grid_list">
+							<li>
+								<span class="fa fa-phone"></span>(919) 886-9101</li>
+							<li>
+								<span class="fa fa-envelope-o"></span>
+								<a href="mailto:info@example.com">valleylovehs@gmail.com</a>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div> -->
+			</div>
+		</div>
+
+		<!-- /Contact-->
+		<!-- footer -->
+		<!-- <div class="footer" id="footer">
+			<div class="f-bg-w3l">
+				<div class="container">
+					<div class="col-md-12 w3layouts_footer_grid">
+						<div class="col-md-5 w3layouts_footer_grid1">
+							<h3>Follow Us On</h3>
+						</div>
+						<div class="col-md-7 w3layouts_footer_grid2">
+							<ul class="social_agileinfo">
+								<li>
+									<a href="https://www.facebook.com/ValleyLoveOrganic/" class="w3_facebook">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-7 w3layouts_footer_grid">
+						<div class="col-md-6 w3layouts_footer_grid1">
+							<h3>2601 Broad Street</h3>
+							<h3>Holly Springs, NC 27540</h3>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div> -->
+	</div>
+	<!-- //footer -->
+	<div class="copyright">
+		<p>&copy; Valley Love Farm 2018. All Rights Reserved</p>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+
+	<!-- Slider script-->
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider3").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider4").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+		});
+	</script>
+	<!-- /Slider script-->
+	<!-- Number Scroler-->
+	<script src="js/numscroller-1.0.js"></script>
+	<!-- /Number Scroler-->
+	<!--flexiselDemo1 -->
+	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+	<script type="text/javascript">
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 2,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 5000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 1
+					},
+					tablet: {
+						changePoint: 991,
+						visibleItems: 1
+					}
+				}
+			});
+		});
+	</script>
+
+	<!--//flexiselDemo1 -->
+	<script type="text/javascript" src="js/smoothbox.jquery2.js"></script>
+
+	<!-- start-smoth-scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<!-- scrolling script -->
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!-- //scrolling script -->
+	<!--//start-smoth-scrolling -->
+
 </body>
 
 </html>
