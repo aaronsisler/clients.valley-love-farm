@@ -37,8 +37,7 @@ body{
 	font-family: 'Open Sans', sans-serif;
 }
 .header {
-  /* background: url("../images/banner.jpg")no-repeat 0px 0px; */
-  background: url("../valley_images/banner_mod.jpg")no-repeat 0px 0px;
+  background: url("../images/banner.jpg")no-repeat 0px 0px;
   background-size:cover;
   min-height: 790px;
   text-align: center;
