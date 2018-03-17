@@ -109,7 +109,7 @@ header .intro-text {
 
 #about {
     padding: 4em 0 4em;
-    background: #ffffff;
+    background: #f5f4eb;
 }
 
 #about img {
@@ -133,7 +133,7 @@ header .intro-text {
 #about p {
     font-size: 1.1em;
     padding: 1em 3em 1em 1em;
-    color: #555555;
+    color: #333;
     line-height: 1.8em;
 }
 
@@ -141,10 +141,70 @@ header .intro-text {
 /* end about */
 
 
+/* services */
+
+#services {
+    padding: 4em 2em;
+}
+
+#services .row {
+    margin-top: 3em;
+}
+
+#services h3 {
+    font-size: 2.5em;
+    color: #000000;
+    margin: 0 0.5em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.service {
+    text-align: center;
+}
+
+.service img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#services h4 {
+    font-size: 1.6em;
+    color: #000000;
+    padding: 0.5em 0;
+    display: block;
+    font-weight: 600;
+}
+
+#services p {
+    font-size: 1.2em;
+    margin-bottom: 0.25em;
+    color: #333;
+    line-height: 1.8em;
+}
+
+#services a {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    margin: 1.5em 0em 1.5em;
+    background-color: #16A667;
+    color: #ffffff;
+}
+
+#services a:hover {
+    background-color: darkgreen;
+}
+
+
+/* end services */
+
+
 /* footer */
 
 footer {
-    padding: 4em 0;
+    padding: 2em 0;
     text-align: center;
     background: #eeeeee;
 }
@@ -153,18 +213,8 @@ footer i {
     display: inline-block;
 }
 
-footer ul li {
-    display: inline-block;
-    margin: 1.5em 3em 1em 0em;
-}
-
-footer ul li a {
-    font-size: 1.1em;
-    color: #000000;
-    text-decoration: none;
-}
-
 footer p {
+    padding: 1em;
     font-size: 16px;
     color: #000000;
     font-weight: 400;
@@ -212,9 +262,6 @@ footer p {
     }
     /* end header */
     /* widgets */
-    #widgets .container {
-        /* width: 85%; */
-    }
     .widget {
         height: 22em;
         margin: 1em 1em 1em 1em;
@@ -226,7 +273,7 @@ footer p {
     .widget img {
         margin: 0 auto;
         border-radius: 73px;
-        border: 9px solid #eee;
+        border: 9px solid #eeeeee;
         padding: 1em 1em;
     }
     .widget img:hover {
@@ -240,19 +287,20 @@ footer p {
     .widget h4 {
         font-size: 1.4em;
         padding: 0.5em 0 0;
-        color: #fff;
+        color: #ffffff;
         font-weight: 600;
     }
     .widget p {
         font-size: 1em;
         padding: 0.5em 0;
-        color: #fff;
+        color: #ffffff;
         line-height: 1.8em;
     }
     /* end widgets */
     /* about */
     #about {
         padding: 4em 0 4em;
+        background: #f5f4eb;
     }
     #about img {
         width: 100%;
@@ -270,6 +318,7 @@ footer p {
         font-size: 1.1em;
         padding: 1em 3em 1em 1em;
         line-height: 1.8em;
+        color: #333;
     }
     /* end about */
     /* services */
@@ -281,52 +330,34 @@ footer p {
     }
     #services h3 {
         font-size: 2.5em;
-        text-transform: capitalize;
-        color: #000;
         margin: 0 17px;
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 600;
     }
-    #services h4 {
-        font-size: 1.2em;
-        text-decoration: none;
-        color: #000;
+    .service img {
+        width: 100%;
+    }
+    .service h4 {
+        font-size: 1.6em;
         padding: 0.5em 0;
         display: block;
         font-weight: 600;
     }
-    #services p {
-        font-size: 1em;
-        margin-bottom: 1em;
-        color: #999;
+    .services p {
+        font-size: 1.2em;
+        margin-bottom: 0.25em;
         line-height: 1.8em;
     }
-    #services a.button {
+    .services a {
         font-size: 1.2em;
         padding: 0.5em 1em;
-        background: #f2af00;
-        width: 35%;
         margin-top: 1.5em;
-        display: block;
-        color: #fff;
-        text-decoration: none;
-        text-transform: capitalize;
     }
     /* end services */
     /* footer */
     footer {
-        padding: 4em 0;
-    }
-    footer ul li {
-        margin: 1.5em 3em 1em 0em;
-    }
-    footer ul li a {
-        font-size: 1.1em;
-        color: #000000;
+        padding: 2em 0;
     }
     footer p {
         font-size: 16px;
-        color: #000000;
         font-weight: 400;
     }
     /* end footer */
