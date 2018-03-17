@@ -3,163 +3,125 @@
 
 <head>
 	<title>Valley Love Farm</title>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115632487-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-115632487-1', {
+			'linker': {
+				'domains': ['valleylovefarm.com']
+			}
+		});
+	</script>
+
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
 	 rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic'
 	 rel='stylesheet' type='text/css'>
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<!---- start-smoth-scrolling---->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
-			});
-		});
-	</script>
-	<!---End-smoth-scrolling---->
-	<link rel="stylesheet" href="css/swipebox.css">
-	<script src="js/jquery.swipebox.min.js"></script>
-	<script type="text/javascript">
-		jQuery(function ($) {
-			$(".swipebox").swipebox();
-		});
-	</script>
-	<!--Animation-->
-	<script src="js/wow.min.js"></script>
-	<link href="css/animate.css" rel='stylesheet' type='text/css' />
-	<script>
-		new WOW().init();
-	</script>
-	<!---/End-Animation---->
 </head>
 
-<body>
-	<div class="header" id="home">
+<body id="page-top">
+	<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
 		<div class="container">
-			<div class="header-top">
-				<div class="top-menu">
-					<span class="menu">
-						<img src="images/nav.png" alt="" /> </span>
-					<ul>
-						<li>
-							<a href="index.html" class="active">home</a>
-						</li>
-						<span>/</span>
-						<li>
-							<a href="#about">About</a>
-						</li>
-					</ul>
-					<!-- script for menu -->
-
-					<script>
-						$("span.menu").click(function () {
-							$(".top-menu ul").slideToggle("slow", function () {
-							});
-						});
-					</script>
-					<!-- //script for menu -->
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> Menu
+					<i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand page-scroll" href="#page-top">Valley Love Farm</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#about">About</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->`
+		</div>
+		<!-- /.container -->
+	</nav>
+	<header>
+		<div class="container">
+			<div class="intro-text">Valley Love Farm</div>
+		</div>
+	</header>
+	<!-- <section id="widgets">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 widget">
+					<img src="images/icon4.png" alt="">
+					<h4>Sustainable</h4>
+					<p>Free range animals not only benefits the environment, it benefits you too!</p>
 				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="logo wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-				<a href="index.html">Valley Love</a>
-			</div>
-			<div class="header-bottom">
-				<div class="header-grids">
-					<div class="col-md-3 header-grid">
-						<div class="header-img1 wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-							<img src="images/icon4.png" class="img-responsive " alt="">
-							<h4>Dolor nunc vule </h4>
-							<p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.</p>
-						</div>
-					</div>
-					<div class="col-md-3 header-grid ">
-						<div class="header-img2 wow fadeInDownBig animated animated " data-wow-delay="0.4s ">
-							<img src="images/icon5.png" class="img-responsive" alt="">
-							<h4>vule Dolor nunc</h4>
-							<p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.</p>
-						</div>
-					</div>
-
-					<div class="col-md-3 header-grid">
-						<div class="header-img3 wow fadeInUpBig animated animated" data-wow-delay="0.4s">
-							<img src="images/icon6.png" class="img-responsive " alt="">
-							<h4>nunc vule put </h4>
-							<p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.</p>
-						</div>
-					</div>
-					<div class="col-md-3 header-grid ">
-						<div class="header-img4 wow bounceInRight animated " data-wow-delay="0.4s " style="visibility: visible; -webkit-animation-delay:
-							 0.4s; ">
-							<img src="images/icon7.png" class="img-responsive" alt="">
-							<h4>Cras consequat </h4>
-							<p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus.</p>
-						</div>
-					</div>
-					<div class="clearfix"></div>
+				<div class="col-md-3 widget">
+					<img src="images/icon5.png" alt="">
+					<h4>Healthy</h4>
+					<p>No added antibiotics, chemicals, or hormones means a healthier you</p>
+				</div>
+				<div class="col-md-3 widget">
+					<img src="images/icon6.png" alt="">
+					<h4>Responsible</h4>
+					<p>Pasture farming reduces the damages done compared to industrial farming</p>
+				</div>
+				<div class="col-md-3 widget">
+					<img src="images/icon7.png" alt="">
+					<h4>Community</h4>
+					<p>Ally with a local farmer and get the best foods they have to offer</p>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="content">
-		<div class="about-section" id="about">
-			<div class="container">
-				<h3>about us</h3>
-				<div class="about-grids">
-					<div class="col-md-5 about-img wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-						<img src="images/img1.jpg" class="img-responsive" alt="/">
-					</div>
-					<div class="col-md-7 about-grid wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-						<p>Cras consequat iaculis lorem, id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus pretium
-							sit amet. Praesent lectus tortor, tincidu nt in consectetur vestibulum, ultrices nec neque. Praesent nec sagittis
-							mauris. Fusce convallis nunc neque. Integer egestas aliquam interdum. Nulla ante diam, interdum nec tempus eu, feugiat
-							vel erat.Cras consequat iaculis lorem, id vehicula erat mattis quis.Cras consequat iaculis lorem, id vehicula erat
-							mattis. Integer egestas aliquam interdum. Nulla ante diam,</p>
-						<p>lorem,Cras consequat iaculis id vehicula erat mattis quis. Vivamus laoreet velit justo, in ven e natis purus pretium
-							sit amet. Praesent lectus tortor, tincidu nt in consectetur vestibulum, ultrices nec neque. Praesent nec sagittis
-							mauris. Fusce convallis nunc neque. Integer egestas aliquam interdum. Nulla ante diam, interdum nec tempus eu, feugiat
-							vel erat.Cras consequat iaculis lorem, id vehicula erat mattis quis.Cras consequat iaculis lorem, id vehicula erat
-							mattis.
-						</p>
-
-					</div>
-					<div class="clearfix"></div>
+	</section> -->
+	<section id="about">
+		<div class="container">
+			<h3>About us</h3>
+			<div class="row">
+				<div class="col-md-5">
+					<img src="images/abt.jpg" alt="/">
+				</div>
+				<div class="col-md-7">
+					<p>
+						<strong>Valley Love Farm</strong> was started to bring high quality produce to local customers. We work hard to maintain sustainable
+						and environmentally friendly practices by allowing our chickens to range free. This provides benefits to the environment
+						and produces a healthier chicken, which in turn provides a healtiher you!
+					</p>
+					<p>
+						<strong>Community Supported Agriculture (CSA)</strong> is the perfect way for a customer, who cares about local food, to ally
+						with a farmer and get the best they have to offer.
+					</p>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="footer-section">
+	</section>
+	<footer>
 		<div class="container">
-			<div class="footer-top">
-				<div class="social-icons wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-					<a href="#">
-						<i class="icon1"></i>
-					</a>
-					<a href="#">
-						<i class="icon2"></i>
-					</a>
-					<a href="#">
-						<i class="icon3"></i>
-					</a>
-					<a href="#">
-						<i class="icon4"></i>
+			<div class="row" id="social_icons">
+				<div class="col-md-12">
+					<a href="https://www.facebook.com/ValleyLoveOrganic/">
+						<i class="fab fa-facebook fa-3x"></i>
 					</a>
 				</div>
 			</div>
-			<div class="footer-middle wow fadeInDown Big animated animated" data-wow-delay="0.4s">
-				<div class="bottom-menu">
+			<div class="row" id="footer_links">
+				<div class="col-md-12">
 					<ul>
 						<li>
-							<a href="index.html">home</a>
+							<a href="#page-top">Home</a>
 						</li>
 						<li>
 							<a href="#about">About</a>
@@ -167,22 +129,27 @@
 					</ul>
 				</div>
 			</div>
-			<div class="footer-bottom wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-				<p>
-					Copyright &copy;2018 All rights Reserved
-				</p>
+			<div class="row" id="footer_copyright">
+				<div class="col-md-12">
+					<p>
+						Valley Love Farm &copy;
+						<span id="currentYear">1234</span> All rights Reserved
+					</p>
+				</div>
 			</div>
-			<script type="text/javascript">
-				$(document).ready(function () {
-					$().UItoTop({ easingType: 'easeOutQuart' });
-				});
-			</script>
-			<a href="#" id="toTop" style="display: block;">
-				<span id="toTopHover" style="opacity: 1;"> </span>
-			</a>
 		</div>
-	</div>
+	</footer>
 
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/agency.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#currentYear').text(new Date().getFullYear());
+		});
+	</script>
 </body>
 
 </html>
