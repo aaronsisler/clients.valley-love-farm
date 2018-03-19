@@ -17,8 +17,9 @@ body {
 h3 {
     text-align: center;
 }
-p{
-    text-align: center; 
+
+p {
+    text-align: center;
 }
 
 
@@ -220,6 +221,91 @@ header .intro-text {
 /* end services */
 
 
+/* contact */
+
+#contact {
+    padding: 4em 0em;
+    text-align: center;
+    background-color: #333333;
+}
+
+#contact h3 {
+    color: white;
+    font-size: 2.5em;
+    margin: 0em 0.5em;
+    font-weight: 600;
+}
+
+#contact .row {
+    margin-top: 3em;
+}
+
+#contact .text-danger {
+    color: #e74c3c;
+}
+
+#contact label {
+    background-color: white;
+    color: #e74c3c;
+    font-size: 1.2em;
+    padding: 1em 1em;
+}
+
+#contactUsForm .form-control {
+    background: white;
+    border-color: black;
+    color: black;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 22px;
+    padding: 10px;
+    height: auto;
+    font-size: 1.4em;
+}
+
+#contactUsForm .form-control::placeholder {
+    color: #333333;
+    font-weight: 500;
+}
+
+#contactUsForm .form-control-btn {
+    color: white;
+    background-color: #16A667;
+    border-color: #16A667;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding: 8px;
+    box-shadow: none;
+}
+
+#contactUsForm .form-control-btn:hover,
+#contactUsForm .form-control-btn:focus,
+#contactUsForm .form-control-btn:active,
+#contactUsForm .form-control-btn:active {
+    color: white;
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+
+div#contactUsSuccess,
+div#contactUsError {
+    display: none;
+}
+
+span.fancy-text {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* end contact */
+
+
 /* footer */
 
 footer {
@@ -286,55 +372,19 @@ footer p {
         margin-bottom: 125px;
     }
     /* end header */
-    /* widgets */
-    .widget {
-        height: 22em;
-        margin: 1em 1em 1em 1em;
-    }
-    .widget {
-        background: #16A667;
-        padding: 1.5em 2em;
-    }
-    .widget img {
-        margin: 0 auto;
-        border-radius: 73px;
-        border: 9px solid #eeeeee;
-        padding: 1em 1em;
-    }
-    .widget img:hover {
-        transform: rotateY(360deg);
-        transition: 2.5s all;
-        -webkit-transition: 2.5s all;
-        -moz-transition: 2.5s all;
-        -o-transition: 2.5s all;
-        -ms-transition: 2.5s all;
-    }
-    .widget h4 {
-        font-size: 1.4em;
-        padding: 0.5em 0 0;
-        color: #ffffff;
-        font-weight: 600;
-    }
-    .widget p {
-        font-size: 1em;
-        padding: 0.5em 0;
-        color: #ffffff;
-        line-height: 1.8em;
-    }
-    /* end widgets */
     /* about */
     #about {
         padding: 4em 0 4em;
         background: #f5f4eb;
     }
+    #about h3 {
+        font-size: 2.5em;
+        margin: 0 0.5em;
+        font-weight: 600;
+    }
     #about img {
         width: 100%;
         padding: 0em 0em 0em 1em;
-    }
-    #about h3 {
-        font-size: 2.5em;
-        margin: 0 17px;
-        font-weight: 600;
     }
     #about .row {
         margin-top: 3em;
@@ -357,7 +407,7 @@ footer p {
     }
     #services h3 {
         font-size: 2.5em;
-        margin: 0 17px;
+        margin: 0 0.5em;
     }
     .service img {
         width: 100%;
@@ -379,6 +429,11 @@ footer p {
         margin-top: 1.5em;
     }
     /* end services */
+    /* contact */
+    #contact h3 {
+        text-align: left;
+    }
+    /* end contact */
     /* footer */
     footer {
         padding: 2em 0;
