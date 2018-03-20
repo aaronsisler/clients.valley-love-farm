@@ -1,0 +1,165 @@
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Josefin Slab', serif;
+font-family: 'Farsan', cursive;
+font-family: 'Arima Madurai', cursive;
+ */
+
+
+/* page level */
+
+body {
+    font-family: 'Arima Madurai', sans-serif;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+
+/* end page level */
+
+
+/* navbar */
+
+.navbar-custom {
+    background-color: #222222;
+    border-color: transparent;
+}
+
+.navbar-custom .navbar-brand {
+    color: #ffffff;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+    color: #16A667;
+}
+
+.navbar-custom .navbar-collapse {
+    border-color: rgba(255, 255, 255, 0.02);
+}
+
+.navbar-custom .navbar-toggle {
+    background-color: #16A667;
+    border-color: #16A667;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+    background-color: #16A667;
+}
+
+.navbar-custom .nav li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+    color: #16A667;
+    outline: none;
+}
+
+.navbar-custom .navbar-nav>.active>a {
+    border-radius: 0;
+    color: white;
+    background-color: #16A667;
+}
+
+.navbar-custom .navbar-nav>.active>a:hover,
+.navbar-custom .navbar-nav>.active>a:focus {
+    color: white;
+    background-color: #16A667;
+}
+
+.navbar-custom.affix,
+.navbar-custom.affix-top {
+    background-color: #222222;
+    padding: 0.5em 0 0 0.5em;
+}
+
+
+/* end navbar */
+
+
+/* footer */
+
+footer {
+    padding: 2em 0;
+    text-align: center;
+    background: #eeeeee;
+}
+
+footer i {
+    display: inline-block;
+}
+
+footer p {
+    padding: 1em;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+/* end footer */
+
+@media (min-width: 768px) {
+    /* page level */
+    h3 {
+        text-align: inherit;
+    }
+    /* end page level */
+    /* navbar */
+    .navbar-custom {
+        background-color: rgba(10, 40, 11, 0.3);
+        padding: 0.75em 0em 0em 0em;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+    }
+    .navbar-custom .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .navbar-custom .navbar-nav>.active>a {
+        border-radius: 3px;
+    }
+    .navbar-custom.affix,
+    .navbar-custom.affix-top {
+        background-color: #222222;
+        padding: 0.75em 0 0 0;
+    }
+    .navbar-custom.affix .navbar-brand {
+        font-size: 2.5em;
+    }
+    /* end navbar */
+    /* footer */
+    footer {
+        padding: 2em 0;
+    }
+    footer p {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    /* end footer */
+}

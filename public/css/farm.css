@@ -1,0 +1,103 @@
+/* header */
+
+header .intro-text {
+    padding: 3em 1em 1em 1em;
+    font-size: 3em;
+    text-align: center;
+}
+
+header p {
+    margin: 0em 2em 0em 2em;
+    font-size: 1.5em;
+    font-weight: 595;
+}
+
+
+/* end header */
+
+
+/* choices */
+
+#choices {
+    padding: 1em 2em;
+}
+
+#choices .row {
+    margin-top: 3em;
+}
+
+.choice {
+    text-align: center;
+}
+
+.choice img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#choices h4 {
+    font-size: 1.6em;
+    color: #000000;
+    padding: 0.5em 0 0em 0em;
+    display: block;
+    font-weight: 600;
+}
+
+#choices p {
+    font-size: 1.2em;
+    margin-bottom: 0.25em;
+    color: #333;
+    line-height: 1.8em;
+}
+
+#choices a {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    margin: 1em 0em 1.5em;
+    background-color: #16A667;
+    color: #ffffff;
+}
+
+#choices a:hover {
+    background-color: darkgreen;
+}
+
+
+/* end choices */
+
+@media (min-width: 768px) {
+    /* header */
+    header p {
+        margin: 0em 10em 1em 10em;
+    }
+    /* end header */
+    /* choices */
+    #choices {
+        padding: 1em 0em;
+    }
+    #choices .row {
+        margin: 3em 0em 3em 0em;
+    }
+    .choice img {
+        width: 75%;
+    }
+    .choice h4 {
+        font-size: 1.6em;
+        padding: 0.5em 0;
+        display: block;
+        font-weight: 600;
+    }
+    #choices p {
+        font-size: 1.2em;
+        margin: 0em 2em 0em 2em;
+        line-height: 1.8em;
+    }
+    #choices a {
+        font-size: 1.2em;
+        padding: 0.5em 1em;
+        margin-top: 1.5em;
+    }
+    /* end choices */
+}

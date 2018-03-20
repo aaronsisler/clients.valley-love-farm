@@ -1,103 +1,3 @@
-/* 
-font-family: 'Lato', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Poiret One', cursive;
-font-family: 'Josefin Slab', serif;
-font-family: 'Farsan', cursive;
-font-family: 'Arima Madurai', cursive;
- */
-
-
-/* page level */
-
-body {
-    font-family: 'Arima Madurai', sans-serif;
-}
-
-h3 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-
-/* end page level */
-
-
-/* navbar */
-
-.navbar-custom {
-    background-color: #222222;
-    border-color: transparent;
-}
-
-.navbar-custom .navbar-brand {
-    color: #ffffff;
-    font-family: 'Lobster', cursive;
-    font-size: 2.5em;
-}
-
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
-    color: #16A667;
-}
-
-.navbar-custom .navbar-collapse {
-    border-color: rgba(255, 255, 255, 0.02);
-}
-
-.navbar-custom .navbar-toggle {
-    background-color: #16A667;
-    border-color: #16A667;
-    text-transform: uppercase;
-    color: white;
-}
-
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
-    background-color: #16A667;
-}
-
-.navbar-custom .nav li a {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: white;
-}
-
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus {
-    color: #16A667;
-    outline: none;
-}
-
-.navbar-custom .navbar-nav>.active>a {
-    border-radius: 0;
-    color: white;
-    background-color: #16A667;
-}
-
-.navbar-custom .navbar-nav>.active>a:hover,
-.navbar-custom .navbar-nav>.active>a:focus {
-    color: white;
-    background-color: #16A667;
-}
-
-.navbar-custom.affix,
-.navbar-custom.affix-top {
-    background-color: #222222;
-    padding: 0.5em 0 0 0.5em;
-}
-
-
-/* end navbar */
-
-
 /* header */
 
 header {
@@ -114,11 +14,7 @@ header {
 }
 
 header .intro-text {
-    padding-top: 350px;
-    padding-bottom: 150px;
-}
-
-header .intro-text {
+    padding: 3em 0em 1em 0em;
     font-family: 'Lobster', cursive;
     font-size: 5em;
 }
@@ -130,13 +26,15 @@ header .intro-text {
 /* about */
 
 #about {
-    padding: 4em 0 2em;
+    padding: 4em 0em 2em;
     background: #f5f4eb;
 }
 
 #about img {
-    width: 100%;
-    padding: 0em 0em 0em 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 #about h3 {
@@ -305,62 +203,7 @@ span.fancy-text {
 
 /* end contact */
 
-
-/* footer */
-
-footer {
-    padding: 2em 0;
-    text-align: center;
-    background: #eeeeee;
-}
-
-footer i {
-    display: inline-block;
-}
-
-footer p {
-    padding: 1em;
-    font-size: 16px;
-    color: #000000;
-    font-weight: 400;
-}
-
-
-/* end footer */
-
 @media (min-width: 768px) {
-    /* page level */
-    h3 {
-        text-align: inherit;
-    }
-    /* end page level */
-    /* navbar */
-    .navbar-custom {
-        background-color: rgba(10, 40, 11, 0.3);
-        padding: 0.75em 0em 0em 0em;
-        -webkit-transition: padding 0.3s;
-        -moz-transition: padding 0.3s;
-        transition: padding 0.3s;
-        border: none;
-    }
-    .navbar-custom .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-    }
-    .navbar-custom .navbar-nav>.active>a {
-        border-radius: 3px;
-    }
-    .navbar-custom.affix,
-    .navbar-custom.affix-top {
-        background-color: #222222;
-        padding: 0.75em 0 0 0;
-    }
-    .navbar-custom.affix .navbar-brand {
-        font-size: 2.5em;
-    }
-    /* end navbar */
     /* header */
     header .intro-text {
         padding-top: 300px;
@@ -410,7 +253,7 @@ footer p {
         margin: 0 0.5em;
     }
     .service img {
-        width: 100%;
+        width: 75%;
     }
     .service h4 {
         font-size: 1.6em;
@@ -418,12 +261,12 @@ footer p {
         display: block;
         font-weight: 600;
     }
-    .services p {
+    #services p {
         font-size: 1.2em;
         margin-bottom: 0.25em;
         line-height: 1.8em;
     }
-    .services a {
+    #services a {
         font-size: 1.2em;
         padding: 0.5em 1em;
         margin-top: 1.5em;
@@ -434,13 +277,4 @@ footer p {
         text-align: left;
     }
     /* end contact */
-    /* footer */
-    footer {
-        padding: 2em 0;
-    }
-    footer p {
-        font-size: 16px;
-        font-weight: 400;
-    }
-    /* end footer */
 }

@@ -1,4 +1,6 @@
-// Agency Theme JavaScript
+$(document).ready(function () {
+    $('#currentYear').text(new Date().getFullYear());
+});
 
 (function($) {
     "use strict"; // Start of use strict
