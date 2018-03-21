@@ -1,4 +1,4 @@
-DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -43,6 +43,9 @@ DOCTYPE HTML>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="farm.html">Farm</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="contact.html">Contact</a>
@@ -117,100 +120,7 @@ DOCTYPE HTML>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="js/shared.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#chicken').show();
-            displayChicken();
-            displayEggs();
-            displayChickenSausage();
-        });
-
-        function switchTab(tabId) {
-            switch (tabId) {
-                case "chicken":
-                    $('#eggs').hide();
-                    $('#chickensausage').hide();
-                    $('#chicken').show();
-                    resetActiveListItem();
-                    break;
-                case "eggs":
-                    $('#chicken').hide();
-                    $('#chickensausage').hide();
-                    $('#eggs').show();
-                    resetActiveListItem();
-                    break;
-                case "chickensausage":
-                    $('#chicken').hide();
-                    $('#eggs').hide();
-                    $('#chickensausage').show();
-                    resetActiveListItem();
-                    break;
-                default:
-                    $('#chicken').hide();
-                    $('#eggs').hide();
-            }
-        };
-
-        function resetActiveListItem() {
-            $('.tab li').click(function () {
-                $(this).addClass('active').siblings().removeClass('active')
-            });
-        }
-
-        function displayChicken() {
-            const chickenProducts = [
-                { title: "Whole", price: "$7" },
-                { title: "Cut-Up", price: "$9" },
-                { title: "Leg Quarters", price: "$10" },
-                { title: "Boneless Breasts", price: "$13" },
-                { title: "Drumsticks", price: "$9" },
-                { title: "Boneless Thighs", price: "$11" },
-                { title: "Hearts and Livers", price: "$6" },
-                { title: "Parts", price: "$6" },
-            ]
-
-            chickenProducts.forEach(item => {
-                document.getElementById('chicken').getElementsByTagName('ul')[0].appendChild(appendLi(item));
-            });
-        }
-
-        function displayEggs() {
-            const eggProducts = [
-                { title: "Dozen", price: "$6" },
-                { title: "Flat (2.5 Dozen)", price: "$15" },
-            ]
-
-            eggProducts.forEach(item => {
-                document.getElementById('eggs').getElementsByTagName('ul')[0].appendChild(appendLi(item));
-            });
-        }
-
-        function displayChickenSausage() {
-            const eggProducts = [
-                { title: "Maple Breakfast Links", price: "$15" },
-                { title: "Tomato and Basil", price: "$15" },
-                { title: "Garlic and Spinach", price: "$15" },
-                { title: "Andouille (Cajun)", price: "$15" },
-            ]
-
-            eggProducts.forEach(item => {
-                document.getElementById('chickensausage').getElementsByTagName('ul')[0].appendChild(appendLi(item));
-            });
-        }
-
-        function appendLi(item) {
-            let h4 = document.createElement('h4');
-            h4.innerHTML = item.title;
-            let h5 = document.createElement('h5');
-            h5.innerHTML = item.price;
-            let li = document.createElement('li');
-            li.setAttribute('class', 'item');
-            li.appendChild(h4);
-            li.appendChild(h5);
-            return li;
-        }
-
-    </script>
+    <script type="text/javascript" src="js/poultry.js"></script>
 </body>
 
 </html>
