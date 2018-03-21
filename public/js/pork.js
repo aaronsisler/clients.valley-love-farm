@@ -40,10 +40,16 @@ function displayPork() {
 
 function displayPorkSausage() {
     const porkSausageProducts = [
-        { title: "Maple Breakfast Links", price: "$15" },
-        { title: "Tomato and Basil", price: "$15" },
-        { title: "Garlic and Spinach", price: "$15" },
-        { title: "Andouille (Cajun)", price: "$15" },
+        { title: "Chorizo", price: "$10/lb" },
+        { title: "Smoked Bell Peppers and Onion", price: "$11/lb" },
+        { title: "Smoked Polish", price: "$11/lb" },
+        { title: "Maple Breakfast Links", price: "$11/lb" },
+        { title: "Mild Breakfast Links", price: "$11/lb" },
+        { title: "Country Mild", price: "$10/lb" },
+        { title: "Mild Italian", price: "$10/lb" },
+        { title: "Hot Italian", price: "$10/lb" },
+        { title: "Sweet Italian", price: "$10/lb" },
+        { title: "Bratwurst", price: "$10/lb" },
     ]
 
     porkSausageProducts.forEach(item => {
