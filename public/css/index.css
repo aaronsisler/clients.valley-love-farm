@@ -203,6 +203,24 @@ span.fancy-text {
 
 /* end contact */
 
+
+/* gallery */
+
+#gallery {
+    padding: 5em 0em;
+}
+
+#gallery .col-md-3 {
+    padding: 1em 0.5em;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* end gallery */
+
 @media (min-width: 768px) {
     /* header */
     header .intro-text {
@@ -277,4 +295,10 @@ span.fancy-text {
         text-align: left;
     }
     /* end contact */
+    /* gallery */
+    #gallery .col-md-3 {
+        padding: 0em 0em;
+        width: 25%;
+    }
+    /* end gallery */
 }
