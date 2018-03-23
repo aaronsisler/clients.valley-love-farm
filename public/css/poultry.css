@@ -11,7 +11,7 @@ header .intro-text {
 }
 
 header p {
-    margin: 0em 2em 2em 2em;
+    margin: 0em 1em 2em 1em;
     font-size: 1.5em;
     font-weight: 595;
 }
@@ -68,7 +68,6 @@ header p {
 
 .tabcontent {
     display: none;
-    padding: 2em 10em 5em 10em;
 }
 
 .tabcontent ul {
@@ -80,10 +79,10 @@ header p {
 ul li.item {
     list-style-type: none;
     text-align: center;
-    padding: 5em 2em 5em 2em;
+    padding: 3em 2em 2em 2em;
     vertical-align: middle;
-    height: 15em;
-    width: 15em;
+    height: 12em;
+    width: 12em;
     border: solid 1px black;
     display: inline-block;
     box-shadow: 0;
@@ -115,4 +114,28 @@ ul li.item h5 {
         margin: 0em 10em 2em 10em;
     }
     /* end header */
+    /* choices */
+    .tabcontent {
+        display: none;
+        padding: 2em 10em 5em 10em;
+    }
+    .tabcontent ul {
+        list-style-type: none;
+        padding: 0em 0em 0em 0em;
+        text-align: center;
+    }
+    ul li.item {
+        list-style-type: none;
+        text-align: center;
+        padding: 5em 2em 5em 2em;
+        vertical-align: middle;
+        height: 15em;
+        width: 15em;
+        border: solid 1px black;
+        display: inline-block;
+        box-shadow: 0;
+        transition: box-shadow 1s;
+        border: 1px solid #eee;
+    }
+    /* end choices */
 }
