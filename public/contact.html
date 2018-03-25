@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115632487-1"></script> -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115632487-1', {
+            'linker': {
+                'domains': ['valleylovefarm.com']
+            }
+        });
+    </script>
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/shared.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/contact.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='css/lobster.css' rel='stylesheet' type='text/css' media="all" />
+    <link href="css/arima_madurai.css" rel="stylesheet" type="text/css" media="all" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Valley Love Farm</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="farm.html">Farm</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="lawn.html">Lawn</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <header>
+        <div class="container">
+            <div class="intro-text">Give us a call</div>
+            <p>(919) 886-9101</p>
+        </div>
+    </header>
+    <section id="map"></section>
+    <section id="contact">
+        <div class="container">
+            <h3>Send us a message</h3>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <!-- Contact form section -->
+                <div id="contactUsDiv" class="col-md-8">
+                    <form id="contactUsForm">
+                        <div class="col-md-12 col-sm-12">
+                            <label id="contactName-error" style="display:none;" class="error" for="contactName"></label>
+                            <input type="text" class="form-control" name="name" placeholder="Name" id="contactName">
+                            <label id="contactEmail-error" style="display:none;" class="error" for="contactEmail"></label>
+                            <input type="email" class="form-control" name="email" placeholder="Email" id="contactEmail">
+                            <label id="contactPhone-error" style="display:none;" class="error" for="contactPhone"></label>
+                            <input type="tel" class="form-control" name="phoneNumber" placeholder="Phone (Digits only, no dashes, etc.)" id="contactPhone">
+                            <textarea name="message" rows="8" class="form-control" id="contactComment" placeholder="What's on your mind?" message="comment"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" class="btn form-control-btn" value="Send It">&nbsp;
+                            <input type="button" class="btn form-control-btn" value="Reset It" onclick="resetContactInfo();">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row" id="contactUsSuccess">
+                <div class="col-md-12 contact-us">
+                    <span class="fancy-text">Thank you for reaching out. We are excited to get back in touch with you.</span>
+                </div>
+            </div>
+            <div class="row" id="contactUsError">
+                <div class="col-md-12 contact-us">
+                    <span class="fancy-text">Something went wrong unfortunately. Please try reloading the page.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row" id="social_icons">
+                <div class="col-md-12">
+                    <a href="https://www.facebook.com/ValleyLoveFarm/">
+                        <i class="fab fa-facebook fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row" id="footer_copyright">
+                <div class="col-md-12">
+                    <p>
+                        Valley Love Farm &copy;
+                        <span id="currentYear">1234</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/shared.js"></script>
+    <script>
+        function initMap() {
+            var uluru = { lat: 35.624339, lng: -78.820545 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsstapXrQIrkLGszsvox_TOgAenmUSP0A&callback=initMap">
+    </script>
+</body>
+
+</html>
