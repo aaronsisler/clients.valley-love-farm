@@ -130,6 +130,44 @@ header a.btn:hover {
 
 /* end gallery */
 
+
+/* additional */
+
+#additional {
+    padding: 1em 0em;
+}
+
+#additional h3 {
+    font-size: 2.5em;
+    color: #000000;
+    margin: 0 0.5em;
+    font-weight: 600;
+}
+
+#additional p {
+    font-size: 1.5em;
+    padding: 1em 1em 1em 1em;
+    color: #333;
+    line-height: 1.8em;
+}
+
+
+/* end additional */
+
+
+/* additional plans */
+
+#additional_plans .col-md-4 {
+    padding: 1em 0.5em;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* end additional plans */
+
 @media (min-width: 768px) {
     /* header */
     header {
@@ -158,4 +196,12 @@ header a.btn:hover {
         width: 25%;
     }
     /* end gallery */
+    /* additional */
+    /* end additional */
+    /* additional plans */
+    #additional_plans .col-md-4 {
+        width: 33.3%;
+        padding: 1em 1em;
+    }
+    /* end additional plans */
 }
