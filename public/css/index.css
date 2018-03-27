@@ -137,20 +137,16 @@ header .intro-text {
     margin-top: 3em;
 }
 
-#contact .text-danger {
-    color: #e74c3c;
-}
-
 #contact label {
     background-color: white;
     color: #e74c3c;
     font-size: 1.2em;
-    padding: 1em 1em;
+    padding: 1em 1em 1em 1em;
+    margin: 0em 0em 0em 0em;
 }
 
 #contactUsForm .form-control {
     background: white;
-    border-color: black;
     color: black;
     border-radius: 0px;
     box-shadow: none;
