@@ -23,11 +23,58 @@ header .intro-text {
 /* end header */
 
 
+/* widgets */
+
+#widgets {
+    text-align: center;
+    background: transparent;
+    padding: 0em 0em 2em 0em;
+}
+
+#widgets .container-fluid {
+    width: 65%;
+}
+
+#widgets .col-md-3 {
+    width: 100%;
+    height: auto;
+    background: #16A667;
+    padding: 2em 1.5em 1em 1.5em;
+    display: block;
+    margin: 1em 0em;
+}
+
+.widget img {
+    margin: 0 auto;
+    border-radius: 6em;
+    border: 9px solid #eeeeee;
+    padding: 1em 1em;
+}
+
+.widget h4 {
+    font-size: 1.7em;
+    padding: 0.5em 0em 0em 0em;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.widget p {
+    font-size: 1.4em;
+    padding: 0.5em 0;
+    color: #ffffff;
+    line-height: 1.8em;
+}
+
+
+/* end widgets */
+
+
 /* about */
 
 #about {
-    padding: 4em 0em 2em;
+    padding: 2em 0em 2em;
     background: #f5f4eb;
+    z-index: 1;
 }
 
 #about img {
@@ -228,10 +275,53 @@ span.fancy-text {
         margin-bottom: 125px;
     }
     /* end header */
+    /* widgets */
+    #widgets {
+        text-align: center;
+        background: transparent;
+        position: absolute;
+        top: 35em;
+        z-index: 2;
+    }
+    #widgets .container-fluid {
+        width: 75%;
+    }
+    #widgets .col-md-3 {
+        width: 22.5%;
+        height: 28em;
+        padding: 1.5em 1.5em 1em 1.5em;
+        display: block;
+        margin: 0em 1em;
+    }
+    .widget img {
+        margin: 0 auto;
+        border-radius: 6em;
+        padding: 1em 1em;
+    }
+    .widget img:hover {
+        transform: rotateY(360deg);
+        transition: 2.5s all;
+        -webkit-transition: 2.5s all;
+        -moz-transition: 2.5s all;
+        -o-transition: 2.5s all;
+        -ms-transition: 2.5s all;
+    }
+    .widget h4 {
+        font-size: 1.7em;
+        padding: 0.5em 0em 0em 0em;
+        font-weight: 600;
+    }
+    .widget p {
+        font-size: 1.4em;
+        padding: 0.5em 0;
+        line-height: 1.8em;
+    }
+    /* end widgets */
     /* about */
     #about {
-        padding: 4em 0 4em;
+        padding: 17.5em 0 4em;
         background: #f5f4eb;
+        z-index: 1;
     }
     #about h3 {
         font-size: 2.5em;
