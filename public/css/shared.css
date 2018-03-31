@@ -47,8 +47,8 @@
     .navbar-custom .nav li a {
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 16px;
-        letter-spacing: 1px;
+        font-size: 1em;
+        letter-spacing: 0.1em;
         color: white;
     }
     .navbar-custom .nav li a:hover,
@@ -83,7 +83,7 @@
     }
     footer p {
         padding: 1em;
-        font-size: 16px;
+        font-size: 1em;
         color: #000000;
         font-weight: 400;
     }
@@ -124,7 +124,7 @@
         transition: all 0.3s;
     }
     .navbar-custom .navbar-nav>.active>a {
-        border-radius: 3px;
+        border-radius: 0.3em;
     }
     .navbar-custom.affix,
     .navbar-custom.affix-top {

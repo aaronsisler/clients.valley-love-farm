@@ -1,16 +1,42 @@
 /*
-    XXLarge screens
-    min-width 1921px, xlarge screens
+    Small screens - MOBILE
+    max-width 641px, small screens
 */
 
-@media only screen and (min-width: 120.063em) {}
+@media only screen {
+    /* header */
+    header {
+        background-image: url('../images/banner.jpg');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        text-align: center;
+        color: white;
+    }
+    header .intro-text {
+        padding: 4em 0em 2em 0em;
+        font-family: 'Lobster', cursive;
+        font-size: 5em;
+    }
+    /* end header */
+}
 
 /* 
-    XLarge screens
-    min-width 1441px, xlarge screens
+    Medium screens - TABLET
+    min-width 641px, medium screens
 */
 
-@media only screen and (min-width: 90.063em) {}
+@media only screen and (min-width: 40.063em) {
+    /* header */
+    header .intro-text {
+        padding: 5em 0em 2em 0em;
+    }
+    /* end header */
+}
 
 /* 
     Large screens - DESKTOP
@@ -20,12 +46,14 @@
 @media only screen and (min-width: 64.063em) {}
 
 /* 
-    Medium screens - TABLET
-    min-width 641px, medium screens
+    XLarge screens
+    min-width 1441px, xlarge screens
 */
 
-@media only screen and (min-width: 40.063em) {}
-
-/* Small screens - MOBILE */
-
-@media only screen {}
+@media only screen and (min-width: 90.063em) {
+    /* header */
+    header .intro-text {
+        padding: 6em 0em 2em 0em;
+    }
+    /* end header */
+}
