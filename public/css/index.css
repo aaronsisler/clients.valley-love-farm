@@ -23,6 +23,35 @@
         font-size: 5em;
     }
     /* end header */
+    /* about */
+    #about {
+        padding: 2em 0 2em;
+        background: #f5f4eb;
+    }
+    #about h3 {
+        font-size: 2.5em;
+        margin: 0 0.5em;
+        font-weight: 600;
+    }
+    #about img {
+        width: 75%;
+        display: block;
+        margin: auto;
+        padding: 0em 0em 2em 0em;
+    }
+    #about .row {
+        margin-top: 3em;
+        text-align: center;
+    }
+    #about p {
+        font-size: 1.2em;
+        font-weight: 500;
+        padding: 0em 3em 1em 3em;
+        line-height: 1.8em;
+        color: #333;
+        text-align: inherit;
+    }
+    /* end about */
 }
 
 /* 
@@ -43,7 +72,11 @@
     min-width 1025px, large screens
 */
 
-@media only screen and (min-width: 64.063em) {}
+@media only screen and (min-width: 64.063em) {
+    #about img {
+        width: 100%;
+    }
+}
 
 /* 
     XLarge screens
