@@ -1,207 +1,215 @@
-/* header */
+/*
+    Small screens - MOBILE
+    max-width 641px, small screens
+*/
 
-header {
-    text-align: center;
-    padding: 0em 0em 2em 0em;
-}
-
-header .intro-text {
-    padding: 2em 1em 1em 1em;
-    font-size: 3em;
-    text-align: center;
-}
-
-header p {
-    margin: 0em 2em 0em 2em;
-    padding: 0em 0em 1em 0em;
-    font-size: 1.5em;
-    font-weight: 595;
-}
-
-header a.btn {
-    font-size: 1.25em;
-    padding: 0.5em 0.5em;
-    background-color: #16A667;
-    color: #ffffff;
-}
-
-header a.btn:hover {
-    background-color: darkgreen;
-    color: white;
-}
-
-
-/* end header */
-
-
-/* plans */
-
-#plans {
-    padding: 1em 0em;
-}
-
-#plans .col-md-3 {
-    padding: 1em 0.5em;
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.plan {
-    box-sizing: border-box;
-    box-shadow: 2;
-    box-shadow: 0 0.5rem 1rem 0 rgba(189, 195, 199, 0.6);
-    border: 1px solid #bbb;
-}
-
-.plan_header,
-.plan_pricing {
-    text-align: center;
-}
-
-.plan_header,
-.plan_content {
-    background: linear-gradient(45deg, rgb(80, 156, 103) 45%, #16A667 100%);
-    color: white;
-}
-
-.plan_header {
-    padding: 0.5em 0em;
-}
-
-.plan h3 {
-    font-weight: 600;
-}
-
-.plan span {
-    font-weight: 600;
-}
-
-.plan li {
-    font-size: 1.25em;
-}
-
-.plan h5 {
-    font-weight: 600;
-    font-size: 1.25em;
-}
-
-.plan h2 {
-    font-weight: 800;
-    font-size: 4em;
-}
-
-.plan_pricing {
-    padding: 1em 0em;
-}
-
-.plan_content {
-    padding: 2em 1.5em 2em 0em;
-}
-
-.plan_content li {
-    padding: 0em 0em 1em 0em;
-}
-
-#plans .col-md-12 {
-    text-align: center;
-    padding: 2em 0em 1em 0em;
-}
-
-
-/* end plans */
-
-
-/* gallery */
-
-#gallery {
-    padding: 2em 0em 4em 0em;
-}
-
-#gallery .col-md-3 {
-    padding: 1em 0.5em;
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/* end gallery */
-
-
-/* additional */
-
-#additional {
-    padding: 1em 0em;
-}
-
-#additional h3 {
-    font-size: 2.5em;
-    color: #000000;
-    margin: 0 0.5em;
-    font-weight: 600;
-}
-
-#additional p {
-    font-size: 1.5em;
-    padding: 1em 1em 1em 1em;
-    color: #333;
-    line-height: 1.8em;
-}
-
-
-/* end additional */
-
-
-/* additional plans */
-
-#additional_plans .col-md-4 {
-    padding: 1em 0.5em;
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/* end additional plans */
-
-@media (min-width: 768px) {
+@media only screen {
     /* header */
     header {
         text-align: center;
-        padding: 0em 0em 3em 0em;
+        padding: 0em 0em 2em 0em;
+    }
+    header .intro-text {
+        padding: 2em 1em 1em 1em;
+        font-size: 3em;
+        text-align: center;
     }
     header p {
-        margin: 0em 10em 1em 10em;
+        margin: 0em 3em 2em 3em;
+        font-size: 1.5em;
+        font-weight: 595;
     }
     header a.btn {
+        font-size: 1.25em;
+        padding: 0.5em 0.5em;
+        background-color: #16A667;
+        color: #ffffff;
+    }
+    header a.btn:hover {
+        background-color: darkgreen;
+        color: white;
+    }
+    /* end header */
+    /* plans */
+    #plans {
+        padding: 1em 0em;
+    }
+    #plans .col-md-3 {
+        padding: 1em 0.5em;
+        width: 65%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .plan {
+        box-sizing: border-box;
+        box-shadow: 2;
+        box-shadow: 0 0.5rem 1rem 0 rgba(189, 195, 199, 0.6);
+        border: 1px solid #bbb;
+    }
+    .plan_header,
+    .plan_pricing {
+        text-align: center;
+    }
+    .plan_header,
+    .plan_content {
+        background: linear-gradient(45deg, rgb(80, 156, 103) 45%, #16A667 100%);
+        color: white;
+    }
+    .plan_header {
+        padding: 0.5em 0em;
+    }
+    .plan h3 {
+        font-weight: 600;
+    }
+    .plan span {
+        font-weight: 600;
+    }
+    .plan li {
+        font-size: 1.25em;
+    }
+    .plan h5 {
+        font-weight: 600;
+        font-size: 1.25em;
+    }
+    .plan h2 {
+        font-weight: 800;
+        font-size: 4em;
+    }
+    .plan_pricing {
+        padding: 1em 0em;
+    }
+    .plan_content {
+        padding: 2em 1.5em 2em 0em;
+    }
+    .plan_content li {
+        padding: 0em 0em 1em 0em;
+    }
+    #plans .col-md-12 {
+        text-align: center;
+        padding: 2em 0em 1em 0em;
+    }
+    /* end plans */
+    /* gallery */
+    #gallery {
+        padding: 1em 0em 2em 0em;
+    }
+    #gallery .col-md-3 {
+        padding: 1em 0.5em;
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* end gallery */
+    /* additional */
+    #additional {
+        padding: 1em 0em;
+    }
+    #additional h3 {
+        font-size: 2.5em;
+        color: #000000;
+        margin: 0 0.5em;
+        font-weight: 600;
+    }
+    #additional p {
         font-size: 1.5em;
-        padding: 0.5em 1em;
+        padding: 1em 2em;
+        color: #333;
+        line-height: 1.8em;
+    }
+    /* end additional */
+    /* additional plans */
+    #additional_plans {
+        padding: 0em 0em 2em 0em;
+    }
+    #additional_plans .col-md-4 {
+        padding: 1em 0.5em;
+        width: 55%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* end additional plans */
+}
+
+/* 
+    Medium screens - TABLET
+    min-width 641px, medium screens
+*/
+
+@media only screen and (min-width: 40.063em) {
+    /* plans */
+    #plans .col-md-3 {
+        float: none;
+        padding: 1em 0.5em;
+        width: 65%;
+    }
+    .plan_content {
+        padding: 2em 1.5em 2em 2em;
+    }
+    .plan_content li {
+        padding: 0em 0em 1em 0em;
+    }
+    /* end plans */
+    /* additional plans */
+    #additional_plans .col-md-4 {
+        float: none;
+        padding: 1em 0.5em;
+        width: 60%;
+    }
+    #additional_plans .plan_content {
+        padding: 2em 2em 2em 1em;
+    }
+    /* end additional plans */
+}
+
+/* 
+    Large screens - DESKTOP
+    min-width 1025px, large screens
+*/
+
+@media only screen and (min-width: 64.063em) {
+    /* header */
+    header p {
+        margin: 0em 5em 1em 5em;
     }
     /* end header */
     /* plans */
     #plans .col-md-3 {
+        float: left;
+        padding: 1em 0.5em;
         width: 25%;
     }
     .plan_content {
-        padding: 2em 0em 2em 1em;
+        padding: 2em 1.5em 2em 0em;
+    }
+    .plan_content li {
+        padding: 0em 0em 1em 0em;
     }
     /* end plans */
     /* gallery */
     #gallery .col-md-3 {
-        padding: 0em 0em;
+        padding: 0.25em 0.25em;
         width: 25%;
     }
     /* end gallery */
-    /* additional */
-    /* end additional */
     /* additional plans */
+    /* plans */
     #additional_plans .col-md-4 {
+        float: left;
+        padding: 1em 0.5em;
         width: 33.3%;
-        padding: 1em 1em;
+    }
+    #additional_plans .plan_content {
+        padding: 2em 1.5em 2em 1em;
     }
     /* end additional plans */
 }
+
+/* 
+    XLarge screens
+    min-width 1441px, xlarge screens
+*/
+
+@media only screen and (min-width: 90.063em) {}
