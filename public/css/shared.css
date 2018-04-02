@@ -1,125 +1,108 @@
+/*
+    Small screens - MOBILE
+    max-width 640px, small screens
+*/
+
+@media only screen {
+    /* page level */
+    body {
+        font-family: 'Arima Madurai', sans-serif;
+    }
+    h3 {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    /* end page level */
+    /* navbar */
+    .navbar-custom {
+        background-color: #222222;
+        border-color: transparent;
+    }
+    .navbar-custom .navbar-brand {
+        color: #ffffff;
+        font-family: 'Lobster', cursive;
+        font-size: 2.5em;
+    }
+    .navbar-custom .navbar-brand:hover,
+    .navbar-custom .navbar-brand:focus,
+    .navbar-custom .navbar-brand:active,
+    .navbar-custom .navbar-brand.active {
+        color: #16A667;
+    }
+    .navbar-custom .navbar-collapse {
+        border-color: rgba(255, 255, 255, 0.02);
+    }
+    .navbar-custom .navbar-toggle {
+        background-color: #16A667;
+        border-color: #16A667;
+        text-transform: uppercase;
+        color: white;
+    }
+    .navbar-custom .navbar-toggle:hover,
+    .navbar-custom .navbar-toggle:focus {
+        background-color: #16A667;
+    }
+    .navbar-custom .nav li a {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        color: white;
+    }
+    .navbar-custom .nav li a:hover,
+    .navbar-custom .nav li a:focus {
+        color: #16A667;
+        outline: none;
+    }
+    .navbar-custom .navbar-nav>.active>a {
+        border-radius: 0;
+        color: white;
+        background-color: #16A667;
+    }
+    .navbar-custom .navbar-nav>.active>a:hover,
+    .navbar-custom .navbar-nav>.active>a:focus {
+        color: white;
+        background-color: #16A667;
+    }
+    .navbar-custom.affix,
+    .navbar-custom.affix-top {
+        background-color: #222222;
+        padding: 0.5em 0 0 0.5em;
+    }
+    /* end navbar */
+    /* footer */
+    footer {
+        padding: 2em 0;
+        text-align: center;
+        background: #eeeeee;
+    }
+    footer i {
+        display: inline-block;
+    }
+    footer p {
+        padding: 1em;
+        font-size: 1em;
+        color: #000000;
+        font-weight: 400;
+    }
+    /* end footer */
+}
+
 /* 
-font-family: 'Lato', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Poiret One', cursive;
-font-family: 'Farsan', cursive;
-font-family: 'Arima Madurai', cursive;
- */
+    Medium screens - TABLET
+    min-width 641px, medium screens
+*/
 
+@media only screen and (min-width: 40.063em) {}
 
-/* page level */
+/* 
+    Large screens - DESKTOP
+    min-width 1025px, large screens
+*/
 
-body {
-    font-family: 'Arima Madurai', sans-serif;
-}
-
-h3 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-
-/* end page level */
-
-
-/* navbar */
-
-.navbar-custom {
-    background-color: #222222;
-    border-color: transparent;
-}
-
-.navbar-custom .navbar-brand {
-    color: #ffffff;
-    font-family: 'Lobster', cursive;
-    font-size: 2.5em;
-}
-
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
-    color: #16A667;
-}
-
-.navbar-custom .navbar-collapse {
-    border-color: rgba(255, 255, 255, 0.02);
-}
-
-.navbar-custom .navbar-toggle {
-    background-color: #16A667;
-    border-color: #16A667;
-    text-transform: uppercase;
-    color: white;
-}
-
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus {
-    background-color: #16A667;
-}
-
-.navbar-custom .nav li a {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: white;
-}
-
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus {
-    color: #16A667;
-    outline: none;
-}
-
-.navbar-custom .navbar-nav>.active>a {
-    border-radius: 0;
-    color: white;
-    background-color: #16A667;
-}
-
-.navbar-custom .navbar-nav>.active>a:hover,
-.navbar-custom .navbar-nav>.active>a:focus {
-    color: white;
-    background-color: #16A667;
-}
-
-.navbar-custom.affix,
-.navbar-custom.affix-top {
-    background-color: #222222;
-    padding: 0.5em 0 0 0.5em;
-}
-
-
-/* end navbar */
-
-
-/* footer */
-
-footer {
-    padding: 2em 0;
-    text-align: center;
-    background: #eeeeee;
-}
-
-footer i {
-    display: inline-block;
-}
-
-footer p {
-    padding: 1em;
-    font-size: 16px;
-    color: #000000;
-    font-weight: 400;
-}
-
-
-/* end footer */
-
-@media (min-width: 768px) {
+@media only screen and (min-width: 64.063em) {
     /* page level */
     h3 {
         text-align: inherit;
@@ -141,7 +124,7 @@ footer p {
         transition: all 0.3s;
     }
     .navbar-custom .navbar-nav>.active>a {
-        border-radius: 3px;
+        border-radius: 0.3em;
     }
     .navbar-custom.affix,
     .navbar-custom.affix-top {
@@ -152,13 +135,18 @@ footer p {
         font-size: 2.5em;
     }
     /* end navbar */
-    /* footer */
-    footer {
-        padding: 2em 0;
-    }
-    footer p {
-        font-size: 16px;
-        font-weight: 400;
-    }
-    /* end footer */
 }
+
+/* 
+    XLarge screens
+    min-width 1441px, xlarge screens
+*/
+
+@media only screen and (min-width: 90.063em) {}
+
+/*
+    XXLarge screens
+    min-width 1921px, xlarge screens
+*/
+
+@media only screen and (min-width: 120.063em) {}
