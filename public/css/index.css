@@ -52,6 +52,53 @@
         text-align: inherit;
     }
     /* end about */
+    /* services */
+    #services {
+        padding: 4em 2em;
+    }
+    #services .row {
+        margin-top: 3em;
+    }
+    #services h3 {
+        font-size: 2.5em;
+        color: #000000;
+        margin: 0 0.5em;
+        font-weight: 600;
+    }
+    .service {
+        text-align: center;
+    }
+    .service img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+    #services h4 {
+        font-size: 1.6em;
+        color: #000000;
+        padding: 0.5em 0;
+        display: block;
+        font-weight: 600;
+    }
+    #services p {
+        font-size: 1.2em;
+        margin-bottom: 0.25em;
+        color: #333;
+        line-height: 1.8em;
+        padding: 0em 2em;
+    }
+    #services a {
+        font-size: 1.2em;
+        padding: 0.5em 1em;
+        margin: 1.5em 0em 1.5em;
+        background-color: #16A667;
+        color: #ffffff;
+    }
+    #services a:hover {
+        background-color: darkgreen;
+    }
+    /* end services */
 }
 
 /* 
@@ -75,6 +122,9 @@
 @media only screen and (min-width: 64.063em) {
     #about img {
         width: 100%;
+    }
+    #services p {
+        padding: 0em 3em;
     }
 }
 
