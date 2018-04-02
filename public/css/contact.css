@@ -1,120 +1,122 @@
-/* header */
+/*
+    Small screens - MOBILE
+    max-width 641px, small screens
+*/
 
-header .intro-text {
-    padding: 2em 1em 0em 1em;
-    font-size: 3em;
-    text-align: center;
+@media only screen {
+    /* header */
+    header .intro-text {
+        padding: 2em 1em 0em 1em;
+        font-size: 3em;
+        text-align: center;
+    }
+    header p {
+        margin: 0em 2em 1em 2em;
+        font-size: 1.5em;
+        font-weight: 595;
+    }
+    /* end header */
+    /* map */
+    #map {
+        height: 30em;
+        width: 100%;
+    }
+    /* end map */
+    /* contact */
+    #contact {
+        padding: 4em 0em;
+        text-align: center;
+        background-color: #333333;
+    }
+    #contact h3 {
+        color: white;
+        font-size: 2.5em;
+        margin: 0em 0.5em;
+        font-weight: 600;
+    }
+    #contact .row {
+        margin-top: 3em;
+    }
+    #contact .text-danger {
+        color: #e74c3c;
+    }
+    #contact label {
+        background-color: white;
+        color: #e74c3c;
+        font-size: 1.2em;
+        padding: 1em 1em;
+        margin: 0em 0em 0em 0em;
+    }
+    #contactUsForm .form-control {
+        background: white;
+        color: black;
+        border-radius: 0em;
+        box-shadow: none;
+        margin-bottom: 1.5em;
+        padding: 0.5em;
+        height: auto;
+        font-size: 1.4em;
+    }
+    #contactUsForm .form-control::placeholder {
+        color: #333333;
+        font-weight: 500;
+    }
+    #contactUsForm .form-control-btn {
+        color: white;
+        background-color: #16A667;
+        border-color: #16A667;
+        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.2em;
+        padding: 0.5em;
+        box-shadow: none;
+    }
+    #contactUsForm .form-control-btn:hover,
+    #contactUsForm .form-control-btn:focus,
+    #contactUsForm .form-control-btn:active,
+    #contactUsForm .form-control-btn:active {
+        color: white;
+        background-color: darkgreen;
+        border-color: darkgreen;
+    }
+    div#contactUsSuccess,
+    div#contactUsError {
+        display: none;
+    }
+    span.fancy-text {
+        color: white;
+        font-weight: 500;
+        font-size: 1.25em;
+        display: block;
+        margin-bottom: 0.5em;
+    }
+    /* end contact */
 }
 
-header p {
-    margin: 0em 2em 1em 2em;
-    font-size: 1.5em;
-    font-weight: 595;
-}
+/* 
+    Medium screens - TABLET
+    min-width 641px, medium screens
+*/
 
+@media only screen and (min-width: 40.063em) {}
 
-/* end header */
+/* 
+    Large screens - DESKTOP
+    min-width 1025px, large screens
+*/
 
-
-/* map */
-
-#map {
-    height: 30em;
-    width: 100%;
-}
-
-
-/* end map */
-
-
-/* contact */
-
-#contact {
-    padding: 4em 0em;
-    text-align: center;
-    background-color: #333333;
-}
-
-#contact h3 {
-    color: white;
-    font-size: 2.5em;
-    margin: 0em 0.5em;
-    font-weight: 600;
-}
-
-#contact .row {
-    margin-top: 3em;
-}
-
-#contact .text-danger {
-    color: #e74c3c;
-}
-
-#contact label {
-    background-color: white;
-    color: #e74c3c;
-    font-size: 1.2em;
-    padding: 1em 1em;
-    margin: 0em 0em 0em 0em;
-}
-
-#contactUsForm .form-control {
-    background: white;
-    color: black;
-    border-radius: 0px;
-    box-shadow: none;
-    margin-bottom: 22px;
-    padding: 10px;
-    height: auto;
-    font-size: 1.4em;
-}
-
-#contactUsForm .form-control::placeholder {
-    color: #333333;
-    font-weight: 500;
-}
-
-#contactUsForm .form-control-btn {
-    color: white;
-    background-color: #16A667;
-    border-color: #16A667;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.2em;
-    padding: 8px;
-    box-shadow: none;
-}
-
-#contactUsForm .form-control-btn:hover,
-#contactUsForm .form-control-btn:focus,
-#contactUsForm .form-control-btn:active,
-#contactUsForm .form-control-btn:active {
-    color: white;
-    background-color: darkgreen;
-    border-color: darkgreen;
-}
-
-div#contactUsSuccess,
-div#contactUsError {
-    display: none;
-}
-
-span.fancy-text {
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
-    display: block;
-    margin-bottom: 10px;
-}
-
-
-/* end contact */
-
-@media (min-width: 768px) {
+@media only screen and (min-width: 64.063em) {
     /* contact */
     #contact h3 {
         text-align: left;
     }
     /* end contact */
 }
+
+/* 
+    XLarge screens
+    min-width 1441px, xlarge screens
+*/
+
+@media only screen and (min-width: 90.063em) {}
