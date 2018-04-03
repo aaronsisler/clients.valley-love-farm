@@ -25,11 +25,12 @@
     /* end header */
     /* widgets */
     .widget_row {
+        background: transparent;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         list-style: none;
-        margin: 0;
+        margin: -8em 0;
         padding: 0;
         -webkit-flex-flow: row wrap;
     }
@@ -64,13 +65,22 @@
         font-size: 1.25em;
     }
     /* end widgets */
-    #widgets_spacing {
-        /* height:  */
+    /* widget spacing */
+    #widget_spacing {
+        background: #f5f4eb;
+        height: 100em;
+        left: 0;
+        position: absolute;
+        top: 30em;
+        width: 100%;
+        z-index: -1;
     }
+    /* end widget spacing */
     /* about */
     #about {
-        padding: 2em 0 2em;
         background: #f5f4eb;
+        margin-top: -16em;
+        padding: 18em 0 2em;
     }
     #about h3 {
         font-size: 2.5em;
@@ -98,6 +108,7 @@
     /* end about */
     /* services */
     #services {
+        background: white;
         padding: 4em 2em;
     }
     #services .row {
