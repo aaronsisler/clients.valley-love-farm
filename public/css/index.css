@@ -23,10 +23,64 @@
         font-size: 5em;
     }
     /* end header */
+    /* widgets */
+    .widget_row {
+        background: transparent;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        list-style: none;
+        margin: -8em 0;
+        padding: 0;
+        -webkit-flex-flow: row wrap;
+    }
+    .widget {
+        background: #16A667;
+        color: white;
+        font-size: 1em;
+        height: 22em;
+        margin: 0.5em 1em;
+        padding: 2em 1em;
+        text-align: center;
+        width: 15em;
+    }
+    .widget img {
+        border: 0.25em solid #eee;
+        border-radius: 10em;
+        padding: 0.25em 0.25em;
+    }
+    .widget img:hover {
+        transform: rotateY(360deg);
+        transition: 2.5s all;
+        -webkit-transition: 2.5s all;
+        -moz-transition: 2.5s all;
+        -o-transition: 2.5s all;
+        -ms-transition: 2.5s all;
+    }
+    .widget h4 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .widget p {
+        font-size: 1.25em;
+    }
+    /* end widgets */
+    /* widget spacing */
+    #widget_spacing {
+        background: #f5f4eb;
+        height: 100em;
+        left: 0;
+        position: absolute;
+        top: 30em;
+        width: 100%;
+        z-index: -1;
+    }
+    /* end widget spacing */
     /* about */
     #about {
-        padding: 2em 0 2em;
         background: #f5f4eb;
+        margin-top: -16em;
+        padding: 18em 0 2em;
     }
     #about h3 {
         font-size: 2.5em;
@@ -54,6 +108,7 @@
     /* end about */
     /* services */
     #services {
+        background: white;
         padding: 4em 2em;
     }
     #services .row {
