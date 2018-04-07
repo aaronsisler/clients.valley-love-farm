@@ -34,13 +34,37 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 
-<body id="page-top">
-	<nav>
+<body id="page_top">
+	<nav id="nav_side_menu">
+		<a href="index.html" class="nav_side_menu_link">Home</a>
+		<a href="farm.html" class="nav_side_menu_link">Farm</a>
+		<a href="lawn.html" class="nav_side_menu_link">Lawn</a>
+		<a href="contact.html" class="nav_side_menu_link">Contact</a>
+	</nav>
+	<nav id="mobile_nav_toggles">
 		<div id="brand">
-			<a href="#page-top">Valley Love Farm</a>
+			<a href="#page_top">Valley Love Farm</a>
+		</div>
+		<div id="nav_mobile_open">
+			<a href="javascript:void(0)" onclick="openSideMenu()">
+				<i class="fas fa-bars"></i>
+			</a>
+		</div>
+		<div id="nav_mobile_close">
+			<a href="javascript:void(0)" onclick="closeSideMenu()">
+				&times;
+			</a>
+		</div>
+	</nav>
+	<nav id="desktop_menu">
+		<div id="brand">
+			<a href="#page_top">Valley Love Farm</a>
 		</div>
 		<div>
 			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
 				<li>
 					<a href="farm.html">Farm</a>
 				</li>
@@ -248,7 +272,6 @@
 	<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
 	<!-- Contains Validation configs and email call -->
 	<script type="text/javascript" src="js/contact.js"></script>
-
 </body>
 
 </html>

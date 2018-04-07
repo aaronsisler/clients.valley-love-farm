@@ -7,6 +7,12 @@
     /* page level */
     body {
         font-family: 'Arima Madurai', sans-serif;
+        left: 0;
+        overflow-x: hidden;
+        position: relative;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
     }
     h3 {
         text-align: center;
@@ -15,63 +21,93 @@
         text-align: center;
     }
     /* end page level */
-    /* navbar */
-    .navbar-custom {
-        background-color: #222222;
-        border-color: transparent;
+    /* nav brand */
+    #brand {
+        align-items: center;
+        display: flex;
+        margin-left: 1em;
     }
-    .navbar-custom .navbar-brand {
-        color: #ffffff;
+    #brand a {
+        color: white;
         font-family: 'Lobster', cursive;
-        font-size: 2.5em;
+        font-size: 3rem;
     }
-    .navbar-custom .navbar-brand:hover,
-    .navbar-custom .navbar-brand:focus,
-    .navbar-custom .navbar-brand:active,
-    .navbar-custom .navbar-brand.active {
+    #brand a:hover {
         color: #16A667;
+        text-decoration: none;
     }
-    .navbar-custom .navbar-collapse {
-        border-color: rgba(255, 255, 255, 0.02);
-    }
-    .navbar-custom .navbar-toggle {
-        background-color: #16A667;
-        border-color: #16A667;
-        text-transform: uppercase;
-        color: white;
-    }
-    .navbar-custom .navbar-toggle:hover,
-    .navbar-custom .navbar-toggle:focus {
-        background-color: #16A667;
-    }
-    .navbar-custom .nav li a {
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 1em;
-        letter-spacing: 0.1em;
-        color: white;
-    }
-    .navbar-custom .nav li a:hover,
-    .navbar-custom .nav li a:focus {
-        color: #16A667;
-        outline: none;
-    }
-    .navbar-custom .navbar-nav>.active>a {
-        border-radius: 0;
-        color: white;
-        background-color: #16A667;
-    }
-    .navbar-custom .navbar-nav>.active>a:hover,
-    .navbar-custom .navbar-nav>.active>a:focus {
-        color: white;
-        background-color: #16A667;
-    }
-    .navbar-custom.affix,
-    .navbar-custom.affix-top {
+    /* end brand nav */
+    /* mobile nav */
+    #mobile_nav_toggles {
         background-color: #222222;
-        padding: 0.5em 0 0 0.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        left: 0;
+        position: sticky;
+        top: 0;
+        width: 100%;
     }
-    /* end navbar */
+    #nav_side_menu {
+        background: #16A667;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        width: 240px;
+        z-index: 1000;
+    }
+    #nav_side_menu .nav_side_menu_link {
+        color: #fff;
+        display: block;
+        font-size: 1.1em;
+        font-weight: 6 00;
+        padding: 1em;
+        text-transform: uppercase;
+    }
+    #nav_side_menu .nav_side_menu_link:hover {
+        background: rgb(20, 136, 86);
+        text-decoration: none;
+    }
+    #nav_side_menu {
+        right: -240px;
+    }
+    #nav_side_menu.nav_side_menu_open {
+        right: 0px;
+    }
+    .body_open {
+        left: -240px;
+    }
+    #nav_side_menu {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    #nav_mobile_open {
+        align-content: center;
+        display: flex;
+        padding: 0.5em 0.75em 0 0;
+    }
+    #nav_mobile_open a {
+        color: white;
+        font-size: 4em;
+        line-height: 1em;
+    }
+    #nav_mobile_close {
+        display: none;
+    }
+    #nav_mobile_close a {
+        color: white;
+        font-size: 5em;
+        line-height: 1em;
+        margin-right: 0.25em;
+        text-decoration: none;
+    }
+    /* end mobile nav */
+    /* desktop nav */
+    #desktop_menu {
+        display: none;
+    }
+    /* end desktop nav */
     /* footer */
     footer {
         padding: 2em 0;
@@ -108,33 +144,63 @@
         text-align: inherit;
     }
     /* end page level */
-    /* navbar */
-    .navbar-custom {
-        background-color: rgba(10, 40, 11, 0.3);
-        padding: 0.75em 0em 0em 0em;
-        -webkit-transition: padding 0.3s;
-        -moz-transition: padding 0.3s;
-        transition: padding 0.3s;
-        border: none;
+    /* brand nav */
+    #brand a {
+        font-size: 4rem;
     }
-    .navbar-custom .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
+    /* end brand nav */
+    /* mobile nav */
+    #mobile_nav_toggles {
+        display: none;
     }
-    .navbar-custom .navbar-nav>.active>a {
-        border-radius: 0.3em;
-    }
-    .navbar-custom.affix,
-    .navbar-custom.affix-top {
+    /* end mobile nav */
+    /* desktop nav */
+    #desktop_menu {
         background-color: #222222;
-        padding: 0.75em 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        left: 0;
+        position: sticky;
+        top: 0;
+        width: 100%;
     }
-    .navbar-custom.affix .navbar-brand {
-        font-size: 2.5em;
+    #desktop_menu ul {
+        list-style-type: none;
+        margin: 1em;
+        padding: 1em;
     }
-    /* end navbar */
+    #desktop_menu li {
+        display: inline;
+        margin: 0.5em 0 0.5em 1em;
+        text-transform: uppercase;
+    }
+    #desktop_menu li a {
+        color: white;
+        letter-spacing: 0.1em;
+        font-size: 1em;
+        font-weight: bolder;
+    }
+    #desktop_menu li a:link {
+        text-decoration: none;
+    }
+    #desktop_menu li a:hover {
+        color: rgb(20, 136, 86);
+        outline: none;
+    }
+    #desktop_menu li:last-child a {
+        margin-right: 2em;
+        border-radius: 1.5em;
+        border: 3px solid white;
+        padding: 0.5em 1.5em;
+    }
+    #desktop_menu li:last-child a:hover {
+        background: white;
+        color: darkgreen;
+        font-weight: bolder;
+        transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+    /* end desktop nav */
 }
 
 /* 

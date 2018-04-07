@@ -20,6 +20,20 @@ function appendLi(item) {
     return li;
 }
 
+//Functions for nav menu on each page
+function openSideMenu() {
+    $('#nav_side_menu').addClass('nav_side_menu_open');
+    $('#page_top').addClass('body_open');
+    $('#nav_mobile_open').hide();
+    $('#nav_mobile_close').show();
+}
+function closeSideMenu() {
+    $('#nav_side_menu').removeClass('nav_side_menu_open');
+    $('#page_top').removeClass('body_open');
+    $('#nav_mobile_close').hide();
+    $('#nav_mobile_open').show();
+}
+
 (function ($) {
     "use strict"; // Start of use strict
 
@@ -31,23 +45,5 @@ function appendLi(item) {
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
-
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    });
-
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function () {
-        $('.navbar-toggle:visible').click();
-    });
-
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
 
 })(jQuery); // End of use strict

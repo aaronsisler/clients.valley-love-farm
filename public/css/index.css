@@ -4,66 +4,6 @@
 */
 
 @media only screen {
-    /* nav */
-    nav {
-        background-color: #222222;
-        position: sticky;
-        top: 0;
-        left: 0;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-    #brand {
-        align-items: center;
-        display: flex;
-        margin-left: 1em;
-    }
-    #brand a {
-        color: white;
-        font-family: 'Lobster', cursive;
-        font-size: 4rem;
-    }
-    #brand a:hover {
-        color: #16A667;
-        text-decoration: none;
-    }
-    nav ul {
-        list-style-type: none;
-        margin: 1em;
-        padding: 1em;
-    }
-    nav li {
-        display: inline;
-        margin: 0.5em 0 0.5em 1em;
-        text-transform: uppercase;
-    }
-    nav li a {
-        color: white;
-        letter-spacing: 0.1em;
-        font-size: 1em;
-        font-weight: bolder;
-    }
-    nav li a:link {
-        text-decoration: none;
-    }
-    nav li a:hover {
-        color: rgb(20, 136, 86);
-        outline: none;
-    }
-    nav li:last-child a {
-        margin-right: 2em;
-        border-radius: 1.5em;
-        border: 3px solid white;
-        padding: 0.5em 1.5em;
-    }
-    nav li:last-child a:hover {
-        background: white;
-        color: darkgreen;
-        font-weight: bolder;
-        transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-    }
-    /* end nav */
     /* header */
     header {
         background-attachment: scroll;
