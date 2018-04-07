@@ -52,35 +52,36 @@
         background: #16A667;
         height: 100%;
         position: fixed;
+        right: -240px;
         top: 0;
+        transition: all 0.3s ease;
         width: 240px;
         z-index: 1000;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
     }
     #nav_side_menu .nav_side_menu_link {
         color: #fff;
         display: block;
         font-size: 1.1em;
-        font-weight: 6 00;
+        font-weight: 600;
+        margin: 0.5em 1em;
         padding: 1em;
+        text-align: center;
+        text-decoration: none;
         text-transform: uppercase;
     }
-    #nav_side_menu .nav_side_menu_link:hover {
-        background: rgb(20, 136, 86);
-        text-decoration: none;
-    }
-    #nav_side_menu {
-        right: -240px;
+    #nav_side_menu .contact {
+        margin: 0.5em 4em;
+        border-radius: 1.5em;
+        border: 3px solid white;
+        padding: 0.5em 0.5em;
     }
     #nav_side_menu.nav_side_menu_open {
         right: 0px;
     }
     .body_open {
         left: -240px;
-    }
-    #nav_side_menu {
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        transition: all 0.3s ease;
     }
     #nav_mobile_open {
         align-content: center;
@@ -188,13 +189,13 @@
         color: rgb(20, 136, 86);
         outline: none;
     }
-    #desktop_menu li:last-child a {
+    #desktop_menu .contact {
         margin-right: 2em;
         border-radius: 1.5em;
         border: 3px solid white;
         padding: 0.5em 1.5em;
     }
-    #desktop_menu li:last-child a:hover {
+    #desktop_menu .contact:hover {
         background: white;
         color: darkgreen;
         font-weight: bolder;

@@ -23,13 +23,13 @@ function appendLi(item) {
 //Functions for nav menu on each page
 function openSideMenu() {
     $('#nav_side_menu').addClass('nav_side_menu_open');
-    $('#page_top').addClass('body_open');
+    $('body').addClass('body_open');
     $('#nav_mobile_open').hide();
     $('#nav_mobile_close').show();
 }
 function closeSideMenu() {
     $('#nav_side_menu').removeClass('nav_side_menu_open');
-    $('#page_top').removeClass('body_open');
+    $('body').removeClass('body_open');
     $('#nav_mobile_close').hide();
     $('#nav_mobile_open').show();
 }
