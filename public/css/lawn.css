@@ -6,18 +6,17 @@
 @media only screen {
     /* header */
     header {
-        padding: 0em 0em 2em 0em;
+        margin: 2em 0;
         text-align: center;
     }
     header .intro-text {
         font-size: 3em;
-        padding: 2em 1em 1em 1em;
+        padding: 0 1em;
         text-align: center;
     }
     header p {
         font-size: 1.5em;
-        font-weight: 595;
-        margin: 0em 3em 2em 3em;
+        margin: 1em 1em 2em;
     }
     header a.btn {
         background-color: #16A667;
@@ -151,7 +150,7 @@
 @media only screen and (min-width: 64.063em) {
     /* header */
     header p {
-        margin: 0em 5em 1em 5em;
+        margin: 1em 5em;
     }
     /* end header */
 }
