@@ -6,24 +6,24 @@
 @media only screen {
     /* header */
     header {
-        text-align: center;
         padding: 0em 0em 2em 0em;
+        text-align: center;
     }
     header .intro-text {
-        padding: 2em 1em 1em 1em;
         font-size: 3em;
+        padding: 2em 1em 1em 1em;
         text-align: center;
     }
     header p {
-        margin: 0em 3em 2em 3em;
         font-size: 1.5em;
         font-weight: 595;
+        margin: 0em 3em 2em 3em;
     }
     header a.btn {
-        font-size: 1.25em;
-        padding: 0.5em 0.5em;
         background-color: #16A667;
         color: #ffffff;
+        font-size: 1.25em;
+        padding: 0.5em 0.5em;
     }
     header a.btn:hover {
         background-color: darkgreen;
@@ -31,63 +31,68 @@
     }
     /* end header */
     /* plans */
-    #plans {
-        padding: 1em 0em;
-    }
-    #plans .col-md-3 {
-        padding: 1em 0.5em;
-        width: 65%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    #plans .plans_row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        -webkit-flex-flow: row wrap;
     }
     .plan {
-        box-sizing: border-box;
-        box-shadow: 2;
-        box-shadow: 0 0.5rem 1rem 0 rgba(189, 195, 199, 0.6);
-        border: 1px solid #bbb;
-    }
-    .plan_header,
-    .plan_pricing {
-        text-align: center;
-    }
-    .plan_header,
-    .plan_content {
-        background: linear-gradient(45deg, rgb(80, 156, 103) 45%, #16A667 100%);
-        color: white;
+        margin: 1em 1em;
     }
     .plan_header {
+        background: linear-gradient(45deg, rgb(80, 156, 103) 45%, #16A667 100%);
+        border: 1px solid #bbb;
+        border-bottom: none;
+        box-sizing: border-box;
+        box-sizing: content-box;
+        box-shadow: 0 0.5rem 1rem 0 rgba(189, 195, 199, 0.6);
+        color: white;
         padding: 0.5em 0em;
+        text-align: center;
     }
     .plan h3 {
         font-weight: 600;
     }
+    .plan_pricing {
+        border: 1px solid #bbb;
+        border-bottom: none;
+        border-top: none;
+        box-sizing: border-box;
+        box-sizing: content-box;
+        box-shadow: 0 0.5rem 1rem 0 rgba(189, 195, 199, 0.6);
+        padding: 1em 0em;
+        text-align: center;
+    }
     .plan span {
         font-weight: 600;
     }
-    .plan li {
-        font-size: 1.25em;
+    .plan h2 {
+        font-size: 4em;
+        font-weight: 800;
     }
     .plan h5 {
-        font-weight: 600;
         font-size: 1.25em;
-    }
-    .plan h2 {
-        font-weight: 800;
-        font-size: 4em;
-    }
-    .plan_pricing {
-        padding: 1em 0em;
+        font-weight: 600;
     }
     .plan_content {
-        padding: 2em 1.5em 2em 0em;
+        background: linear-gradient(45deg, rgb(80, 156, 103) 45%, #16A667 100%);
+        border: 1px solid #bbb;
+        border-top: none;
+        box-sizing: border-box;
+        box-sizing: content-box;
+        box-shadow: 0 0.5rem 1rem 0 rgba(189, 195, 199, 0.6);
+        color: white;
+        padding: 2em 2em 2em 0em;
     }
     .plan_content li {
+        font-size: 1.25em;
         padding: 0em 0em 1em 0em;
     }
-    #plans .col-md-12 {
+    .plan_disclaimer {
+        font-style: italic;
+        padding: 2em 3em;
         text-align: center;
-        padding: 2em 0em 1em 0em;
     }
     /* end plans */
     /* gallery */
@@ -95,11 +100,11 @@
         padding: 1em 0em 2em 0em;
     }
     #gallery .col-md-3 {
-        padding: 1em 0.5em;
-        width: 50%;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        padding: 1em 0.5em;
+        width: 50%;
     }
     /* end gallery */
     /* additional */
@@ -107,16 +112,16 @@
         padding: 1em 0em;
     }
     #additional h3 {
-        font-size: 2.5em;
         color: #000000;
-        margin: 0 0.5em;
+        font-size: 2.5em;
         font-weight: 600;
+        margin: 0 0.5em;
     }
     #additional p {
-        font-size: 1.5em;
-        padding: 1em 2em;
         color: #333;
+        font-size: 1.5em;
         line-height: 1.8em;
+        padding: 1em 2em;
     }
     /* end additional */
     /* additional plans */
@@ -124,11 +129,11 @@
         padding: 0em 0em 2em 0em;
     }
     #additional_plans .col-md-4 {
-        padding: 1em 0.5em;
-        width: 55%;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        padding: 1em 0.5em;
+        width: 55%;
     }
     /* end additional plans */
 }
@@ -139,19 +144,6 @@
 */
 
 @media only screen and (min-width: 40.063em) {
-    /* plans */
-    #plans .col-md-3 {
-        float: none;
-        padding: 1em 0.5em;
-        width: 65%;
-    }
-    .plan_content {
-        padding: 2em 1.5em 2em 2em;
-    }
-    .plan_content li {
-        padding: 0em 0em 1em 0em;
-    }
-    /* end plans */
     /* additional plans */
     #additional_plans .col-md-4 {
         float: none;
@@ -175,19 +167,6 @@
         margin: 0em 5em 1em 5em;
     }
     /* end header */
-    /* plans */
-    #plans .col-md-3 {
-        float: left;
-        padding: 1em 0.5em;
-        width: 25%;
-    }
-    .plan_content {
-        padding: 2em 1.5em 2em 0em;
-    }
-    .plan_content li {
-        padding: 0em 0em 1em 0em;
-    }
-    /* end plans */
     /* gallery */
     #gallery .col-md-3 {
         padding: 0.25em 0.25em;
@@ -195,7 +174,6 @@
     }
     /* end gallery */
     /* additional plans */
-    /* plans */
     #additional_plans .col-md-4 {
         float: left;
         padding: 1em 0.5em;
