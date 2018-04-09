@@ -223,14 +223,23 @@
     /* end contact */
     /* gallery */
     #gallery {
-        padding: 5em 0em;
+        padding: 1em 5em 2em 5em;
     }
-    #gallery .col-md-3 {
-        padding: 1em 0.5em;
-        width: 50%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    .gallery_row {
+        background: transparent;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        -webkit-flex-flow: row wrap;
+    }
+    .gallery_row li {
+        margin: 0.25em;
+        width: 20em;
+    }
+    .gallery_row img {
+        width: 100%;
     }
     /* end gallery */
 }
@@ -246,11 +255,6 @@
         padding: 5em 0em 2em 0em;
     }
     /* end header */
-    /* gallery */
-    #gallery .col-md-3 {
-        padding: 0.5em 0.5em;
-    }
-    /* end gallery */
 }
 
 /* 
@@ -269,12 +273,6 @@
         padding: 0em 3em;
     }
     /* end services */
-    /* gallery */
-    #gallery .col-md-3 {
-        padding: 0em 0em;
-        width: 25%;
-    }
-    /* end gallery */
 }
 
 /* 
