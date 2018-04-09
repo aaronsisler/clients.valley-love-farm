@@ -13,7 +13,7 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
-        width: 65%;
+        /* width: 65%; */
     }
     header .intro-text {
         padding: 2em 1em 1em 1em;
@@ -78,6 +78,11 @@
 */
 
 @media only screen and (min-width: 40.063em) {
+    /* header */
+    header .header_row {
+        width: 85%;
+    }
+    /* end header */
     /* choices */
     .choices_row {
         width: 80%;
@@ -94,6 +99,11 @@
 */
 
 @media only screen and (min-width: 64.063em) {
+    /* header */
+    header .header_row {
+        width: 65%;
+    }
+    /* end header */
     /* choices */
     #choices {
         display: flex;
