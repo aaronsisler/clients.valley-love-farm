@@ -8,22 +8,22 @@
     header {
         display: flex;
         justify-content: space-around;
+        margin: 2em 0;
     }
     header .header_row {
         display: flex;
         flex-flow: column;
         justify-content: center;
-        /* width: 65%; */
     }
     header .intro-text {
-        padding: 2em 1em 1em 1em;
         font-size: 3em;
+        padding: 0 1em 0.5em;
         text-align: center;
     }
     header p {
         font-size: 1.5em;
         justify-content: center;
-        margin: 0em 2em 1em 2em;
+        padding: 0 1em;
     }
     /* end header */
     /* choices */
