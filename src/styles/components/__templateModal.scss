@@ -1,0 +1,74 @@
+/*
+    Small screens - MOBILE
+    max-width 640px, small screens
+*/
+
+@media only screen {
+    .ReactModalPortal .ReactModal__Overlay {
+        display: flex;
+        transition: opacity 200ms ease-in-out;
+    }
+    .ReactModalPortal .ReactModal__Overlay--before-close {
+        opacity: 0;
+    }
+    .template_modal {
+        background: white;
+        font-family: $mainFont;
+        margin: 0 10%;
+        outline: none;
+        padding: 0 $large;
+        text-align: center;
+        width: 100%;
+    }
+    .close_modal {
+        display: flex;
+        justify-content: flex-end;
+        margin: $xxlarge 0 0;
+    }
+    .template_modal_header {
+        margin: 0 0 $large;
+    }
+    .template_modal_header h3 {
+        font-size: $large;
+        margin: 0 0 $medium 0;
+    }
+}
+
+/*
+    Medium screens - TABLET
+    min-width 641px, medium screens
+*/
+
+@media only screen and (min-width: 40.063em) {}
+
+/*
+    Large screens - DESKTOP
+    min-width 1025px, large screens
+*/
+
+@media only screen and (min-width: 64.063em) {
+    .close_modal {
+        display: flex;
+        margin: $xxlarge 0 0;
+    }
+    .close_modal .favicon {
+        cursor: pointer;
+    }
+    .template_modal_content {
+        margin: $large 0;
+    }
+}
+
+/*
+    XLarge screens
+    min-width 1441px, xlarge screens
+*/
+
+@media only screen and (min-width: 90.063em) {}
+
+/*
+    XXLarge screens
+    min-width 1921px, xlarge screens
+*/
+
+@media only screen and (min-width: 120.063em) {}

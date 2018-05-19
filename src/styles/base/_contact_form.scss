@@ -1,0 +1,75 @@
+//Small screens - MOBILE
+//max-width 640px, small screens
+@media only screen {
+    .contact_form {
+        display: flex;
+        font-family: $secondaryFont;
+        flex-flow: column;
+        justify-content: space-evenly;
+        padding: 0 $medium;
+        text-align: center;
+    }
+    .contact_form_input {
+        font-size: $medium;
+        line-height: $large;
+        margin: $xsmall 0;
+        padding: $xsmall;
+    }
+    .contact_form_input::placeholder {
+        font-weight: bold;
+    }
+    .contact_form_error {
+        font-size: $medium;
+        margin: 0;
+    }
+    .contact_form_button {
+        background-color: $blue;
+        border-radius: $xsmall;
+        color: white;
+        font-size: $large;
+        margin: 0;
+        padding: $xsmall $small;
+        text-decoration: none;
+        width: 100%;
+    }
+    .contact_form_button:hover {
+        background: darken($blue, 15);
+        transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+    .contact_form_button:disabled {
+        background: darken($blue, 15);
+        opacity: .5;
+    }
+    .contact_form_email {
+        font-size: $midlarge;
+        font-weight: bold;
+        padding: 0 $midlarge;
+    }
+}
+
+//Medium screens - TABLET
+//min-width 641px, medium screens
+@media only screen and (min-width: $mediumScreen) {}
+
+//Large screens - DESKTOP
+//min-width 1025px, large screens
+@media only screen and (min-width: $largeScreen) {
+    .contact_form {
+        margin: 0 auto;
+        max-width: 60rem;
+        max-width: 60%;
+    }
+    .contact_form_input {
+        font-size: $medium;
+        line-height: $large;
+        padding: $xsmall;
+    }
+}
+
+//XLarge screens
+//min-width 1441px, xlarge screens
+@media only screen and (min-width: $xlargeScreen) {}
+
+//XXLarge screens
+//min-width 1921px, xlarge screens
+@media only screen and (min-width: $xxlargeScreen) {}

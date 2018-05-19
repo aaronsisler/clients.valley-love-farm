@@ -1,0 +1,45 @@
+//Small screens - MOBILE
+//max-width 640px, small screens
+@media only screen {
+    .contact_form_container {
+        margin: $large 0;
+    }
+    #contact_page>header {
+        margin: $medium 0 $large;
+        padding: 0 $medium;
+        text-align: center;
+    }
+    #contact_page>header>h3 {
+        font-family: $mainFont;
+        font-size: $large;
+        margin: 0;
+        text-align: center;
+    }
+    #contact_page>header>p {
+        font-family: $secondaryFont;
+        font-size: $midlarge;
+    }
+}
+
+//Medium screens - TABLET
+//min-width 641px, medium screens
+@media only screen and (min-width: $mediumScreen) {}
+
+//Large screens - DESKTOP
+//min-width 1025px, large screens
+@media only screen and (min-width: $largeScreen) {
+    #contact_page>header>header {
+        margin: $large 10%;
+    }
+    #contact_page>header>h3 {
+        font-size: $xlarge;
+    }
+}
+
+//XLarge screens
+//min-width 1441px, xlarge screens
+@media only screen and (min-width: $xlargeScreen) {}
+
+//XXLarge screens
+//min-width 1921px, xlarge screens
+@media only screen and (min-width: $xxlargeScreen) {}

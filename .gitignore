@@ -1,2 +1,5 @@
-# Node.js Tools
 node_modules/
+public/dist/
+yarn-error.log
+firebase-debug.log
+sh.exe.stackdump

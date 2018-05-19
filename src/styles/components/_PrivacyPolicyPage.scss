@@ -1,0 +1,38 @@
+//Small screens - MOBILE
+//max-width 640px, small screens
+@media only screen {
+    #privacy_policy_page {
+        font-family: $secondaryFont;
+        margin: 0 $medium;
+    }
+    #privacy_policy_page>h3 {
+        font-size: $large;
+    }
+    #privacy_policy_page>h4 {
+        font-size: $medium;
+    }
+    #privacy_policy_page>p {
+        font-size: $medium;
+        text-align: left;
+    }
+}
+
+//Medium screens - TABLET
+//min-width 641px, medium screens
+@media only screen and (min-width: 40.063em) {}
+
+//Large screens - DESKTOP
+//min-width 1025px, large screens
+@media only screen and (min-width: 64.063em) {
+    #privacy_policy_page {
+        margin: 0 $xxlarge 0 $large;
+    }
+}
+
+//XLarge screens
+//min-width 1441px, xlarge screens
+@media only screen and (min-width: 90.063em) {}
+
+//XXLarge screens
+//min-width 1921px, xlarge screens
+@media only screen and (min-width: 120.063em) {}
