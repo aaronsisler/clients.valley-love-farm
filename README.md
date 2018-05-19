@@ -1,5 +1,5 @@
-# React Boilerplate Template
-Code base for React Boilerplate Template
+# Valley Love Farm
+Code base for Valley Love Farm
 
 ## Deving steps:
 
