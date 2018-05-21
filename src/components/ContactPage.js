@@ -15,16 +15,17 @@ export default class ContactPage extends React.Component {
     render() {
         return (
             <div id='contact_page'>
-                <header>
-                    <h3>Contact Us</h3>
+                <div className="contact_call">
+                    <h3>Give us a call</h3>
                     <p>
-                        We promise that your email won&apos;t disappear into the nether.
+                        (919) 886-9101
                     </p>
-                    <p>
-                        We are more than happy to answer any questions you may have.
-                    </p>
-                </header>
+                </div>
+                <div className="contact_map">
+                    Google Map Goes Here
+                </div>
                 <div className='contact_form_container'>
+                    <h3>Send us a message</h3>
                     <ContactForm />
                 </div>
             </div>

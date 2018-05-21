@@ -23,7 +23,7 @@
         margin: 0;
     }
     .contact_form_button {
-        background-color: $blue;
+        background-color: $green;
         border-radius: $xsmall;
         color: white;
         font-size: $large;
@@ -33,11 +33,11 @@
         width: 100%;
     }
     .contact_form_button:hover {
-        background: darken($blue, 15);
+        background: darken($green, 15);
         transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
     }
     .contact_form_button:disabled {
-        background: darken($blue, 15);
+        background: darken($green, 15);
         opacity: .5;
     }
     .contact_form_email {

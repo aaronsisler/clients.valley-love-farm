@@ -1,16 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { handlePageView, handleEvent } from '../tools/analytics';
-import { navigateByButtonEvent } from '../tools/analytics_events';
+import { handlePageView } from '../tools/analytics';
+
+// import WidgetsSection from './WidgetsSection'; <WidgetsSection />
+import AboutSection from './AboutSection';
+import ServicesSection from './ServicesSection';
+import GallerySection from './GallerySection';
 
 export default class LandingPage extends React.Component {
     constructor(props) {
         super(props);
-        this.handleAnalyticsEvent = this.handleAnalyticsEvent.bind(this);
-    }
-
-    handleAnalyticsEvent() {
-        handleEvent(navigateByButtonEvent)
     }
 
     componentDidMount() {
@@ -21,11 +19,12 @@ export default class LandingPage extends React.Component {
         return (
             <div id="landing_page">
                 <header>
-                    <div className="intro_text">Boilerplate Template</div>
-                    <div>
-                        <Link to='/contact' onClick={this.handleAnalyticsEvent} className='link'>Go to Contact Page</Link>
-                    </div>
+                    <div className="intro_text">Valley Love Farm</div>
                 </header>
+
+                <AboutSection />
+                <ServicesSection />
+                <GallerySection />
             </div>
         );
     }

@@ -1,17 +1,16 @@
 // Colors
-$lightBlue: rgba(31, 130, 227, 0.8);
-$blue: #0066cc;
+$green: #16A667;
 $lightGrey: #f3f3f3;
 $midLightGrey: #e8e8e8;
 $midGrey: #666666;
 $darkGrey: #222222;
-$fontGrey: rgba(0, 0, 0, .7);
+$fontGrey: #333333;
 $closeIconGrey: #aaa;
 //Spacing
 $xxsmall: 0.3rem;
 $xsmall: 0.6rem;
 $small: 1.2rem;
-$medium: 1.6rem;
+$medium: 1.8rem;
 $midlarge: 2.4rem;
 $large: 3.2rem;
 $xlarge: 4.8rem;
@@ -19,16 +18,16 @@ $xxlarge: 7.6rem;
 $navMenuWidth: 240px;
 $desktopBreakpoint: 45rem;
 //Font Imports
-@import url('../fonts/Coolvetica.scss');
-@import url('../fonts/Ubuntu.scss');
+@import url('../fonts/ArimaMadurai.scss');
+@import url('../fonts/Lobster.scss');
 //Font Variables
-$coolveticaFont: "Coolvetica";
-$ubuntuLightFont: "UbuntuLight";
-$ubuntuFont: "Ubuntu";
+$lobsterFont: "Lobster";
+$arimaMaduraiLightFont: "ArimaMaduraiLight";
+$arimaMadurai: "ArimaMadurai";
 //Site Fonts
-$mainFont: $ubuntuFont;
-$secondaryFont: $ubuntuLightFont;
-$accentFont: $coolveticaFont;
+$mainFont: $arimaMadurai;
+$secondaryFont: $arimaMaduraiLightFont;
+$accentFont: $lobsterFont;
 //CSS Breakpoints
 $mediumScreen: 40.063em;
 $largeScreen: 64.063em;

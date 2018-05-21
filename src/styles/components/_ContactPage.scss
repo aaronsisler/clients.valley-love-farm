@@ -1,23 +1,32 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
-    .contact_form_container {
-        margin: $large 0;
-    }
-    #contact_page>header {
+    #contact_page .contact_call {
         margin: $medium 0 $large;
         padding: 0 $medium;
         text-align: center;
     }
-    #contact_page>header>h3 {
-        font-family: $mainFont;
+    #contact_page .contact_call h3 {
+        font-family: $secondaryFont;
         font-size: $large;
         margin: 0;
         text-align: center;
     }
-    #contact_page>header>p {
+    #contact_page .contact_call p {
         font-family: $secondaryFont;
         font-size: $midlarge;
+    }
+    #contact_page .contact_map {
+        height: 10rem;
+        width: 100%;
+    }
+    .contact_form_container {
+        margin: $large 0;
+    }
+    #contact_page .contact_form_container>h3 {
+        font-family: $secondaryFont;
+        font-size: $large;
+        margin: $small 15%;
     }
 }
 
@@ -27,14 +36,7 @@
 
 //Large screens - DESKTOP
 //min-width 1025px, large screens
-@media only screen and (min-width: $largeScreen) {
-    #contact_page>header>header {
-        margin: $large 10%;
-    }
-    #contact_page>header>h3 {
-        font-size: $xlarge;
-    }
-}
+@media only screen and (min-width: $largeScreen) {}
 
 //XLarge screens
 //min-width 1441px, xlarge screens

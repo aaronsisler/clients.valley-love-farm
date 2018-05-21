@@ -2,11 +2,11 @@
 //max-width 640px, small screens
 @media only screen {
     #landing_page>header {
-        // background-image: url('/images/header.jpg');
+        background-image: url('/images/header.jpg');
         background-size: cover;
         display: flex;
         flex-flow: column;
-        font-family: $mainFont;
+        font-family: $accentFont;
         height: 50rem;
         justify-content: space-evenly;
         text-align: center;
@@ -15,24 +15,8 @@
     #landing_page .intro_text {
         color: white;
         font-size: $xlarge;
-        font-weight: 700;
         margin: 20rem 0 0;
         padding: $medium;
-        text-transform: uppercase;
-    }
-    #landing_page .link {
-        background-color: $lightBlue;
-        border-radius: $xsmall;
-        color: white;
-        font-size: $midlarge;
-        font-weight: bolder;
-        padding: 0.5em 1.5em;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-    #landing_page .link:hover {
-        background: $blue;
-        transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
     }
 }
 
@@ -56,9 +40,6 @@
     #landing_page .intro_text {
         margin: 30rem 0 0;
         font-size: $xxlarge;
-    }
-    #landing_page .link {
-        font-size: $large;
     }
 }
 

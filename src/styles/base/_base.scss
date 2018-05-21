@@ -33,7 +33,11 @@
 
 //Large screens - DESKTOP
 //min-width 1025px, large screens
-@media only screen and (min-width: $largeScreen) {}
+@media only screen and (min-width: $largeScreen) {
+    .container {
+        margin: 0 15%;
+    }
+}
 
 //XLarge screens
 //min-width 1441px, xlarge screens
