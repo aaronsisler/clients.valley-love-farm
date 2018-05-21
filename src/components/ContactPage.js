@@ -1,5 +1,6 @@
 import React from 'react';
 import { handlePageView } from '../tools/analytics';
+import GoogleMapSection from './GoogleMapSection';
 import ContactForm from './ContactForm';
 
 
@@ -22,7 +23,7 @@ export default class ContactPage extends React.Component {
                     </p>
                 </div>
                 <div className="contact_map">
-                    Google Map Goes Here
+                    <GoogleMapSection />
                 </div>
                 <div className='contact_form_container'>
                     <h3>Send us a message</h3>

@@ -3,6 +3,7 @@
 @media only screen {
     #landing_page>header {
         background-image: url('/images/header.jpg');
+        background-position: center;
         background-size: cover;
         display: flex;
         flex-flow: column;

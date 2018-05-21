@@ -16,17 +16,14 @@
         font-family: $secondaryFont;
         font-size: $midlarge;
     }
-    #contact_page .contact_map {
-        height: 10rem;
-        width: 100%;
-    }
     .contact_form_container {
         margin: $large 0;
     }
     #contact_page .contact_form_container>h3 {
         font-family: $secondaryFont;
         font-size: $large;
-        margin: $small 15%;
+        margin: $small;
+        text-align: center;
     }
 }
 
@@ -36,7 +33,12 @@
 
 //Large screens - DESKTOP
 //min-width 1025px, large screens
-@media only screen and (min-width: $largeScreen) {}
+@media only screen and (min-width: $largeScreen) {
+    #contact_page .contact_form_container>h3 {
+        margin: $small 15%;
+        text-align: inherit;
+    }
+}
 
 //XLarge screens
 //min-width 1441px, xlarge screens
