@@ -33,11 +33,11 @@
         width: 100%;
     }
     .contact_form_button:hover {
-        background: darken($green, 15);
+        background: $darkGreen;
         transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
     }
     .contact_form_button:disabled {
-        background: darken($green, 15);
+        background: $darkGreen;
         opacity: .5;
     }
     .contact_form_email {

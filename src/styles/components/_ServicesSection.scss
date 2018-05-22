@@ -1,6 +1,53 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
-@media only screen {}
+@media only screen {
+    #services {
+        background: white;
+        font-family: $mainFont;
+        margin: $large 0;
+    }
+    #services .services_row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    #services h3 {
+        color: #000000;
+        font-size: $large;
+        margin: $medium 0;
+        text-align: center;
+    }
+    .service {
+        flex: 1 1 0;
+        padding: $small $medium $large;
+        text-align: center;
+    }
+    .service_image>img {
+        width: 100%;
+    }
+    #services h4 {
+        color: #000000;
+        font-size: $midlarge;
+        margin: $medium 0;
+    }
+    #services p {
+        color: $darkGrey;
+        font-size: $medium;
+        line-height: 1.8em;
+        margin-bottom: $large;
+    }
+    #services .link {
+        background-color: $green;
+        color: white;
+        font-size: $medium;
+        padding: $small $medium;
+        text-decoration: none;
+    }
+    #services .link:hover {
+        background-color: $darkGreen;
+    }
+}
 
 //Medium screens - TABLET
 //min-width 641px, medium screens
@@ -8,7 +55,18 @@
 
 //Large screens - DESKTOP
 //min-width 1025px, large screens
-@media only screen and (min-width: $largeScreen) {}
+@media only screen and (min-width: $largeScreen) {
+    #services h3 {
+        text-align: inherit;
+    }
+    #services .services_row {
+        flex-direction: row;
+    }
+    #services .service {
+        margin: 0 $large;
+        padding: $small 0 $large;
+    }
+}
 
 //XLarge screens
 //min-width 1441px, xlarge screens
