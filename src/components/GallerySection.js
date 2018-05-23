@@ -1,9 +1,18 @@
 import React from 'react';
+import gallery from '../content/gallery';
 
 const GallerySection = () => (
-    <div>
-        I am a GallerySection
-    </div>
+    <section id="gallery">
+        <div className="container">
+            <ul className="gallery_row">
+                {gallery.map((item, index) => (
+                    <li className="gallery_item" key={index}>
+                        <img className="gallery_image" src={item.imagePath} />
+                    </li>
+                ))}
+            </ul>
+        </div>
+    </section>
 );
 
 export default GallerySection;

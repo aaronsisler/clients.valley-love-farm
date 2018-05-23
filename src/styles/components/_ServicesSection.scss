@@ -20,7 +20,8 @@
     }
     .service {
         flex: 1 1 0;
-        padding: $small $medium $large;
+        margin: 0 5%;
+        padding: $small $large $large;
         text-align: center;
     }
     .service_image>img {
@@ -64,7 +65,10 @@
     }
     #services .service {
         margin: 0 $large;
-        padding: $small 0 $large;
+        padding: $small $large $large;
+    }
+    .service_image>img {
+        width: 100%;
     }
 }
 
