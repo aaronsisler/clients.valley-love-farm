@@ -14,6 +14,12 @@
         font-family: $secondaryFont;
         font-size: $large;
     }
+    #farm .farm_header p {
+        color: $darkGrey;
+        font-size: $medium;
+        line-height: 1.8em;
+        margin-bottom: $large;
+    }
     #farm .choices_row {
         display: flex;
         flex-direction: column;
@@ -29,12 +35,12 @@
     .choice_image>img {
         width: 100%;
     }
-    #farm h4 {
+    #farm .choice_content h4 {
         color: #000000;
         font-size: $midlarge;
         margin: $medium 0;
     }
-    #farm p {
+    #farm .choice_content p {
         color: $darkGrey;
         font-size: $medium;
         line-height: 1.8em;

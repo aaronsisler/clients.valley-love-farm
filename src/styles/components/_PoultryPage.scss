@@ -1,6 +1,31 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
-@media only screen {}
+@media only screen {
+    #poultry {
+        background: white;
+        font-family: $mainFont;
+        margin: $large 0;
+    }
+    #poultry .poultry_header {
+        margin: 0 10%;
+        text-align: center;
+    }
+    #poultry .poultry_header h3 {
+        font-family: $secondaryFont;
+        font-size: $large;
+    }
+    #poultry .poultry_header p {
+        color: $darkGrey;
+        font-size: $medium;
+        line-height: 1.8em;
+        margin-bottom: $large;
+    }
+    #poultry .poultry_content {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 10%;
+    }
+}
 
 //Medium screens - TABLET
 //min-width 641px, medium screens
@@ -8,7 +33,11 @@
 
 //Large screens - DESKTOP
 //min-width 1025px, large screens
-@media only screen and (min-width: $largeScreen) {}
+@media only screen and (min-width: $largeScreen) {
+    #poultry .poultry_header p {
+        margin: 0 10% $large;
+    }
+}
 
 //XLarge screens
 //min-width 1441px, xlarge screens
