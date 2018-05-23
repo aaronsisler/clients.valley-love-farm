@@ -1,6 +1,56 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
-@media only screen {}
+@media only screen {
+    #farm {
+        background: white;
+        font-family: $mainFont;
+        margin: $large 0;
+    }
+    #farm .farm_header {
+        margin: 0 10%;
+        text-align: center;
+    }
+    #farm .farm_header h3 {
+        font-family: $secondaryFont;
+        font-size: $large;
+    }
+    #farm .choices_row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .choice {
+        flex: 1 1 0;
+        margin: 0 5%;
+        padding: $small $large $large;
+        text-align: center;
+    }
+    .choice_image>img {
+        width: 100%;
+    }
+    #farm h4 {
+        color: #000000;
+        font-size: $midlarge;
+        margin: $medium 0;
+    }
+    #farm p {
+        color: $darkGrey;
+        font-size: $medium;
+        line-height: 1.8em;
+        margin-bottom: $large;
+    }
+    #farm .link {
+        background-color: $green;
+        color: white;
+        font-size: $medium;
+        padding: $small $medium;
+        text-decoration: none;
+    }
+    #farm .link:hover {
+        background-color: $darkGreen;
+    }
+}
 
 //Medium screens - TABLET
 //min-width 641px, medium screens
@@ -8,7 +58,18 @@
 
 //Large screens - DESKTOP
 //min-width 1025px, large screens
-@media only screen and (min-width: $largeScreen) {}
+@media only screen and (min-width: $largeScreen) {
+    #farm .choices_row {
+        flex-direction: row;
+    }
+    #farm .choice {
+        margin: 0 $large;
+        padding: $small $large $large;
+    }
+    .choice_image>img {
+        width: 75%;
+    }
+}
 
 //XLarge screens
 //min-width 1441px, xlarge screens
