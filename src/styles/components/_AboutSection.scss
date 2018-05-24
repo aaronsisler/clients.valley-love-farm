@@ -4,6 +4,7 @@
     #about {
         background: $lightGrey;
         font-family: $mainFont;
+        margin-top: 10rem;
     }
     #about h3 {
         font-size: $large;
@@ -41,7 +42,8 @@
 //min-width 1025px, large screens
 @media only screen and (min-width: $largeScreen) {
     #about {
-        padding-bottom: $xlarge;
+        margin-top: 13rem;
+        padding-bottom: $large;
     }
     #about h3 {
         text-align: inherit;
