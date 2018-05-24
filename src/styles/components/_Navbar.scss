@@ -56,6 +56,8 @@
         color: white;
         display: block;
         font-size: $medium;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
         margin: $xsmall $xlarge;
         padding: $medium;
         text-align: center;
@@ -130,8 +132,9 @@
     }
     #desktop_menu li a {
         color: white;
-        letter-spacing: 0.1em;
         font-size: $medium;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
     }
     #desktop_menu li a:link {
         text-decoration: none;
@@ -141,9 +144,9 @@
         outline: none;
     }
     #desktop_menu .nav_menu_contact {
-        margin-right: $medium;
         border-radius: $xxsmall;
         border: 1px solid white;
+        margin-right: $medium;
         padding: 0.5em 1.5em;
     }
     #desktop_menu .nav_menu_contact:hover {

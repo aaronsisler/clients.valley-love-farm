@@ -17,7 +17,7 @@
     #farm .farm_header p {
         color: $darkGrey;
         font-size: $medium;
-        line-height: 1.8em;
+        line-height: $large;
         margin-bottom: $large;
     }
     #farm .choices_row {
@@ -43,7 +43,7 @@
     #farm .choice_content p {
         color: $darkGrey;
         font-size: $medium;
-        line-height: 1.8em;
+        line-height: $large;
         margin-bottom: $large;
     }
     #farm .link {

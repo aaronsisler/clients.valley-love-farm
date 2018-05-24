@@ -1,6 +1,27 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
-@media only screen {}
+@media only screen {
+    #lawn {
+        font-family: $mainFont;
+    }
+    .lawn_gallery {
+        margin: $small 0;
+    }
+    .lawn_gallery_row {
+        background: transparent;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+    .lawn_gallery_row .lawn_gallery_item {
+        margin: $small 10%;
+    }
+    .lawn_gallery_row .lawn_gallery_image {
+        width: 100%;
+    }
+}
 
 //Medium screens - TABLET
 //min-width 641px, medium screens
@@ -8,7 +29,12 @@
 
 //Large screens - DESKTOP
 //min-width 1025px, large screens
-@media only screen and (min-width: $largeScreen) {}
+@media only screen and (min-width: $largeScreen) {
+    .lawn_gallery_row .lawn_gallery_item {
+        margin: $xsmall;
+        width: 30rem;
+    }
+}
 
 //XLarge screens
 //min-width 1441px, xlarge screens

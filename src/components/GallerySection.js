@@ -7,7 +7,7 @@ const GallerySection = () => (
             <ul className="gallery_row">
                 {gallery.map((item, index) => (
                     <li className="gallery_item" key={index}>
-                        <img className="gallery_image" src={item.imagePath} />
+                        <img className="gallery_image" src={item.imagePath} alt={item.alt} />
                     </li>
                 ))}
             </ul>
