@@ -13,12 +13,13 @@
     #poultry .poultry_header h3 {
         font-family: $secondaryFont;
         font-size: $large;
+        margin: $small;
     }
     #poultry .poultry_header p {
         color: $darkGrey;
         font-size: $medium;
         line-height: $large;
-        margin-bottom: $large;
+        margin-bottom: $medium;
     }
     #poultry .poultry_content {
         display: flex;
@@ -35,7 +36,7 @@
 //min-width 1025px, large screens
 @media only screen and (min-width: $largeScreen) {
     #poultry .poultry_header p {
-        margin: 0 10% $large;
+        margin: 0 20% $medium;
     }
 }
 

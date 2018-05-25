@@ -7,18 +7,19 @@
         margin: $large 0;
     }
     #pork .pork_header {
-        margin: 0 20%;
+        margin: 0 10%;
         text-align: center;
     }
     #pork .pork_header h3 {
         font-family: $secondaryFont;
         font-size: $large;
+        margin: $small;
     }
     #pork .pork_header p {
         color: $darkGrey;
         font-size: $medium;
         line-height: $large;
-        margin-bottom: $large;
+        margin-bottom: $medium;
     }
     #pork .pork_content {
         display: flex;
@@ -35,7 +36,7 @@
 //min-width 1025px, large screens
 @media only screen and (min-width: $largeScreen) {
     #pork .pork_header p {
-        margin: 0 10% $large;
+        margin: 0 20% $medium;
     }
 }
 
