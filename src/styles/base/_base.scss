@@ -1,0 +1,48 @@
+//Small screens - MOBILE
+//max-width 640px, small screens
+@media only screen {
+    * {
+        box-sizing: border-box;
+    }
+    html {
+        font-size: 62.5%;
+    }
+    body {
+        left: 0;
+        overflow-x: hidden;
+        position: relative;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+    }
+    button {
+        cursor: pointer;
+    }
+    .close_modal_span {
+        color: $closeIconGrey;
+        cursor: pointer;
+        font-family: $secondaryFont;
+        font-size: $xxlarge;
+        font-weight: 300;
+    }
+}
+
+//Medium screens - TABLET
+//min-width 641px, medium screens
+@media only screen and (min-width: $mediumScreen) {}
+
+//Large screens - DESKTOP
+//min-width 1025px, large screens
+@media only screen and (min-width: $largeScreen) {
+    .container {
+        margin: 0 15%;
+    }
+}
+
+//XLarge screens
+//min-width 1441px, xlarge screens
+@media only screen and (min-width: $xlargeScreen) {}
+
+//XXLarge screens
+//min-width 1921px, xlarge screens
+@media only screen and (min-width: $xxlargeScreen) {}

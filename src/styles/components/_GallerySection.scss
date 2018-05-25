@@ -1,0 +1,42 @@
+//Small screens - MOBILE
+//max-width 640px, small screens
+@media only screen {
+    #gallery {
+        margin: $large 0;
+    }
+    .gallery_row {
+        background: transparent;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+    .gallery_row .gallery_item {
+        margin: $small 10%;
+    }
+    .gallery_row .gallery_image {
+        width: 100%;
+    }
+}
+
+//Medium screens - TABLET
+//min-width 641px, medium screens
+@media only screen and (min-width: $mediumScreen) {}
+
+//Large screens - DESKTOP
+//min-width 1025px, large screens
+@media only screen and (min-width: $largeScreen) {
+    .gallery_row .gallery_item {
+        margin: $small;
+        width: 30rem;
+    }
+}
+
+//XLarge screens
+//min-width 1441px, xlarge screens
+@media only screen and (min-width: $xlargeScreen) {}
+
+//XXLarge screens
+//min-width 1921px, xlarge screens
+@media only screen and (min-width: $xxlargeScreen) {}

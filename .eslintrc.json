@@ -1,0 +1,55 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "arrow-body-style": [
+            "error",
+            "as-needed"
+        ],
+        "curly": "error",
+        "max-len": [
+            "error",
+            150,
+            4,
+            {
+                "ignoreComments": true,
+                "ignoreUrls": true
+            }
+        ],
+        "no-shadow": "error",
+        "no-undef": "error",
+        "no-unused-expressions": "off",
+        "no-unused-vars": "error",
+        "object-shorthand": [
+            "error",
+            "always"
+        ],
+        "one-var": [
+            "error",
+            "never"
+        ],
+        "padded-blocks": [
+            "error",
+            "never"
+        ],
+        "prefer-const": "error",
+        "prefer-destructuring": "error",
+        "prefer-template": "error"
+    },
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        }
+    }
+}
