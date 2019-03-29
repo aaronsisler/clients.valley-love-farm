@@ -1,5 +1,12 @@
 node_modules/
 public/dist/
 yarn-error.log
-firebase-debug.log
 sh.exe.stackdump
+
+# Firebase
+.firebase/
+firebase-debug.log
+**/firebase.js
+
+#Credentials and secrets
+**/secrets.js
