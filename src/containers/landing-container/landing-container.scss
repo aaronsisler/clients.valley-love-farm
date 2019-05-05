@@ -1,0 +1,84 @@
+@import "../../styles/variables.scss";
+
+//Small screens - MOBILE
+//max-width 640px, small screens
+@media only screen {
+  .landing_container {
+    &__splash {
+      align-items: center;
+      background-image: url("/images/landing_container_mobile.jpg");
+      background-position: center;
+      background-size: cover;
+      display: grid;
+      min-height: 94vh;
+      justify-content: center;
+      width: 100%;
+      &-text {
+        color: white;
+        font-size: $xlarge;
+        font-weight: bold;
+        padding-top: 30vh;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      &-link {
+        align-self: flex-start;
+        margin: 0 auto;
+        a {
+          background-color: $secColor;
+          border-radius: $xsmall;
+          color: white;
+          font-size: $midlarge;
+          font-weight: bolder;
+          padding: $small $midlarge;
+          text-decoration: none;
+          text-transform: uppercase;
+          &:hover {
+            background-color: $mainColor;
+            transition: background-color 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Medium screens - TABLET
+//min-width 641px, medium screens
+@media only screen and (min-width: 40.063em) {
+}
+
+//Large screens - DESKTOP
+//min-width 1025px, large screens
+@media only screen and (min-width: 64.063em) {
+  .landing_container {
+    &__splash {
+      background-image: url("/images/landing_container_desktop.png");
+      display: grid;
+      height: 75vh;
+      justify-content: center;
+      width: 100%;
+      &-text {
+        font-size: $xxlarge;
+        padding-top: 35vh;
+      }
+      &-link {
+        a {
+          border-radius: $xsmall;
+          font-size: $large;
+          padding: $medium $large;
+        }
+      }
+    }
+  }
+}
+
+//XLarge screens
+//min-width 1441px, xlarge screens
+@media only screen and (min-width: 90.063em) {
+}
+
+//XXLarge screens
+//min-width 1921px, xlarge screens
+@media only screen and (min-width: 120.063em) {
+}
