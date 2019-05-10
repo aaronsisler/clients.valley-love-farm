@@ -1,7 +1,15 @@
 import {
+  analyticsTrackingId,
+  googleMaps,
   pointOfContactEmail,
   servicesApiGatewayURL,
   servicesApiGatewayToken
-} from "./secrets";
+} from "./config";
 
-export { pointOfContactEmail, servicesApiGatewayURL, servicesApiGatewayToken };
+export {
+  analyticsTrackingId,
+  googleMaps,
+  pointOfContactEmail,
+  servicesApiGatewayURL,
+  servicesApiGatewayToken
+};

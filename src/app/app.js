@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import AppContainer from "../containers/app-container";
 import "normalize.css/normalize.css";
 import "./app.scss";
@@ -6,6 +7,10 @@ import "./app.scss";
 
 // initializeAnalytics();
 
-const App = () => <AppContainer />;
+const App = () => (
+  <BrowserRouter>
+    <AppContainer />
+  </BrowserRouter>
+);
 
 export default App;

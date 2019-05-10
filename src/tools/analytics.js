@@ -1,6 +1,6 @@
 import ReactGA from "react-ga";
+import { analyticsTrackingId } from "../config";
 
-const trackingId = "UA-115509506-1";
 const eventTestObject = {
   category: "Test Category",
   action: "Test Action",
@@ -8,7 +8,7 @@ const eventTestObject = {
 };
 
 export const initializeAnalytics = () => {
-  ReactGA.initialize(trackingId);
+  ReactGA.initialize(analyticsTrackingId);
 };
 
 export const handlePageView = (pageUrl = window.location.pathname) => {
