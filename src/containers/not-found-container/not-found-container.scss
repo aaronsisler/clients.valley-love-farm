@@ -4,7 +4,7 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
-  .not_found_container {
+  .not-found-container {
     @include font-type($mainFont, $large);
 
     padding: $large;

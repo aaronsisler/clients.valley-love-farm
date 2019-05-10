@@ -9,7 +9,7 @@ export default class ContactPage extends React.Component {
 
   render() {
     return (
-      <main className="contact_page">
+      <main className="contact-page">
         <ContactContainer />
       </main>
     );
