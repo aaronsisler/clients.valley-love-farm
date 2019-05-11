@@ -1,4 +1,6 @@
 @import "../fonts/Ubuntu.scss";
+@import "../fonts/ArimaMadurai.scss";
+@import "../fonts/Lobster.scss";
 @import "./variables.scss";
 
 @mixin font-type($fontFamily: $mainFont, $fontSize: $medium, $fontWeight: 400) {

@@ -1,4 +1,5 @@
 @import "../../styles/variables.scss";
+@import "../../styles/typography.scss";
 
 //Small screens - MOBILE
 //max-width 640px, small screens
@@ -19,9 +20,8 @@
     }
     &__brand {
       a {
+        @include font-type($accentFont, $midlarge, bold);
         color: white;
-        font-size: $midlarge;
-        font-weight: bold;
         letter-spacing: 0.1rem;
         text-decoration: none;
         text-transform: uppercase;
