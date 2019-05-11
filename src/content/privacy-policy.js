@@ -1,7 +1,7 @@
 import React from "react";
 /* eslint-disable max-len */
 export default {
-  companyWebsite: "eandbsolutions.com",
+  companyWebsite: "valleylovefarm.com",
   policy: [
     {
       isBold: false,

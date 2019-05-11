@@ -9,7 +9,7 @@ export default class NotFoundPage extends React.Component {
 
   render() {
     return (
-      <main className="not_found_page">
+      <main className="not-found-page">
         <NotFoundContainer />
       </main>
     );

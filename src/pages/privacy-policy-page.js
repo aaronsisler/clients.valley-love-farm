@@ -9,7 +9,7 @@ export default class PrivacyPolicyPage extends React.Component {
 
   render() {
     return (
-      <div className="privacy_policy_page">
+      <div className="privacy-policy-page">
         <PrivacyPolicyContainer />
       </div>
     );
