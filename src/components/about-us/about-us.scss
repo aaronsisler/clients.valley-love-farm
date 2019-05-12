@@ -4,6 +4,35 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
+  .about-us {
+    background-color: $lightGrey;
+    padding: $medium 5%;
+    text-align: center;
+    &__title {
+      @include font-type($mainFont, $large, bold);
+    }
+    &__content {
+      &-image {
+        display: flex;
+        justify-content: center;
+        margin: $medium 0;
+        img {
+          max-height: 30vh;
+          object-fit: scale-down;
+          width: 100%;
+        }
+      }
+      &-text {
+        @include font-type($mainFont, $medium);
+
+        color: $fontGrey;
+        line-height: $large;
+        div {
+          padding: $small $large;
+        }
+      }
+    }
+  }
 }
 
 //Medium screens - TABLET
@@ -14,6 +43,22 @@
 //Large screens - DESKTOP
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
+  .about-us {
+    padding: $large 10%;
+    text-align: inherit;
+
+    &__content {
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+      &-image {
+        img {
+          max-height: 40vh;
+        }
+      }
+    }
+  }
 }
 
 //XLarge screens

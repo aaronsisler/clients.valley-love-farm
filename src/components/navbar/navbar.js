@@ -18,13 +18,13 @@ export default class Navbar extends React.Component {
   closeSideMenu = () => this.setState({ isNavOpen: false });
 
   render() {
-    const isNavOpenClass = this.state.isNavOpen ? "nav_menu__links-open" : "";
+    const isNavOpenClass = this.state.isNavOpen ? "nav-menu__links-open" : "";
     return (
-      <nav className="nav_menu">
-        <div className="nav_menu__brand">
+      <nav className="nav-menu">
+        <div className="nav-menu__brand">
           <Link to="/">{this.props.companyName}</Link>
         </div>
-        <div className="nav_menu__toggle">
+        <div className="nav-menu__toggle">
           {!this.state.isNavOpen && (
             <FontAwesomeIcon
               icon={faBars}
@@ -42,31 +42,31 @@ export default class Navbar extends React.Component {
             />
           )}
         </div>
-        <div className={`nav_menu__links ${isNavOpenClass}`}>
+        <div className={`nav-menu__links ${isNavOpenClass}`}>
           <Link
             to="/"
-            className="nav_menu__links-link"
+            className="nav-menu__links-link"
             onClick={this.closeSideMenu}
           >
             Home
           </Link>
           <Link
             to="/farm"
-            className="nav_menu__links-link"
+            className="nav-menu__links-link"
             onClick={this.closeSideMenu}
           >
             Farm
           </Link>
           <Link
             to="/lawn"
-            className="nav_menu__links-link"
+            className="nav-menu__links-link"
             onClick={this.closeSideMenu}
           >
             Lawn
           </Link>
           <Link
             to="/contact"
-            className="nav_menu__links-link nav_menu__links-contact"
+            className="nav-menu__links-link nav-menu__links-contact"
             onClick={this.closeSideMenu}
           >
             Contact

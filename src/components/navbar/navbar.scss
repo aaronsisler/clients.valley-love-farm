@@ -4,7 +4,7 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
-  .nav_menu {
+  .nav-menu {
     align-items: center;
     background-color: $darkGrey;
     display: flex;
@@ -21,6 +21,7 @@
     &__brand {
       a {
         @include font-type($accentFont, $midlarge, bold);
+
         color: white;
         letter-spacing: 0.1rem;
         text-decoration: none;
@@ -36,7 +37,7 @@
       top: 72px;
       transition: right 0.3s ease;
       width: $navMenuWidth;
-      &.nav_menu__links-open {
+      &.nav-menu__links-open {
         right: 0px;
       }
       &-close {
@@ -71,7 +72,7 @@
 //Large screens - DESKTOP
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
-  .nav_menu {
+  .nav-menu {
     &__brand {
       a {
         &:hover {
