@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Ubuntu Light";
-  src: "./Ubuntu_Light.woff" format("woff"),
-    "./Ubuntu_Light.woff2" format("woff2");
+  src: url("../fonts/Ubuntu_Light.woff") format("woff"),
+    url("../fonts/Ubuntu_Light.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Ubuntu Regular";
-  src: "./Ubuntu_Regular.woff" format("woff"),
-    "./Ubuntu_Regular.woff2" format("woff2");
+  src: url("../fonts/Ubuntu_Regular.woff") format("woff"),
+    url("../fonts/Ubuntu_Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
