@@ -8,6 +8,7 @@
     &__image {
       padding: 0 5%;
       img {
+        max-height: 50vh;
         object-fit: scale-down;
         width: 100%;
       }
@@ -22,6 +23,7 @@
         color: $darkGrey;
         line-height: $large;
         margin-bottom: $small;
+        padding: 0 $small;
       }
     }
   }
@@ -35,6 +37,13 @@
 //Large screens - DESKTOP
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
+  .service {
+    &__content {
+      &-text {
+        padding: 0 $medium;
+      }
+    }
+  }
 }
 
 //XLarge screens
