@@ -2,7 +2,8 @@ import React from "react";
 import Landing from "../../components/landing";
 import AboutUs from "../../components/about-us";
 import Services from "../../components/services";
-import LandingGallery from "../../components/landing-gallery";
+import Gallery from "../../components/gallery";
+import landingGallery from "../../content/landing-gallery";
 import "./landing-container.scss";
 
 const LandingContainer = () => (
@@ -10,7 +11,7 @@ const LandingContainer = () => (
     <Landing />
     <AboutUs />
     <Services />
-    <LandingGallery />
+    <Gallery images={landingGallery} />
   </div>
 );
 

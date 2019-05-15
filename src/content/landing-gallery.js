@@ -1,47 +1,56 @@
 const landingGallery = [
   {
-    imagePath: "images/landing-gallery1.jpg",
+    key: "landingGallery1",
+    source: "images/landing-gallery/landing-gallery1.jpg",
     alt: "Landing Gallery 1"
   },
   {
-    imagePath: "images/landing-gallery2.jpg",
+    key: "landingGallery2",
+    source: "images/landing-gallery/landing-gallery2.jpg",
     alt: "Landing Gallery 2"
   },
   {
-    imagePath: "images/landing-gallery3.jpg",
+    key: "landingGallery3",
+    source: "images/landing-gallery/landing-gallery3.jpg",
     alt: "Landing Gallery 3"
   },
   {
-    imagePath: "images/landing-gallery5.jpg",
+    key: "landingGallery4",
+    source: "images/landing-gallery/landing-gallery4.jpg",
+    alt: "Landing Gallery 4"
+  },
+  {
+    key: "landingGallery5",
+    source: "images/landing-gallery/landing-gallery5.jpg",
     alt: "Landing Gallery 5"
   },
   {
-    imagePath: "images/landing-gallery6.jpg",
+    key: "landingGallery6",
+    source: "images/landing-gallery/landing-gallery6.jpg",
     alt: "Landing Gallery 6"
   },
   {
-    imagePath: "images/landing-gallery7.jpg",
+    key: "landingGallery7",
+    source: "images/landing-gallery/landing-gallery7.jpg",
     alt: "Landing Gallery 7"
   },
   {
-    imagePath: "images/landing-gallery8.jpg",
+    key: "landingGallery7",
+    source: "images/landing-gallery/landing-gallery8.jpg",
     alt: "Landing Gallery 8"
   },
   {
-    imagePath: "images/landing-gallery9.jpg",
+    key: "landingGallery8",
+    source: "images/landing-gallery/landing-gallery9.jpg",
     alt: "Landing Gallery 9"
   },
   {
-    imagePath: "images/landing-gallery10.jpg",
+    source: "images/landing-gallery/landing-gallery10.jpg",
     alt: "Landing Gallery 10"
   },
   {
-    imagePath: "images/landing-gallery11.jpg",
+    source: "images/landing-gallery/landing-gallery11.jpg",
     alt: "Landing Gallery 11"
-  },
-  {
-    imagePath: "images/landing-gallery12.jpg",
-    alt: "Landing Gallery 12"
   }
 ];
 
