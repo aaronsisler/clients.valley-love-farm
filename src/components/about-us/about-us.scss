@@ -8,13 +8,13 @@
     background-color: $lightGrey;
     padding: $medium 5%;
     text-align: center;
+
     &__title {
       @include font-type($mainFont, $large, bold);
     }
+
     &__content {
       &-image {
-        display: flex;
-        justify-content: center;
         margin: $medium 0;
         img {
           max-height: 30vh;
@@ -22,14 +22,15 @@
           width: 100%;
         }
       }
+
       &-text {
         @include font-type($mainFont, $medium);
 
         color: $fontGrey;
+        display: grid;
+        grid-gap: $medium;
         line-height: $large;
-        div {
-          padding: $small $large;
-        }
+        padding: 0 $medium;
       }
     }
   }
@@ -50,13 +51,9 @@
     &__content {
       align-items: center;
       display: grid;
+      grid-gap: $medium;
       grid-template-columns: 1fr 1fr;
       text-align: center;
-      &-image {
-        img {
-          max-height: 40vh;
-        }
-      }
     }
   }
 }

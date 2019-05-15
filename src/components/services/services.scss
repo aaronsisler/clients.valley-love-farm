@@ -29,6 +29,12 @@
   .services {
     padding: $large 10%;
     text-align: inherit;
+    &__content {
+      display: grid;
+      grid-gap: $midlarge;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+    }
   }
 }
 
