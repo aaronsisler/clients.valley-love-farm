@@ -5,10 +5,15 @@
 //max-width 640px, small screens
 @media only screen {
   .services {
+    padding: $large 5%;
+    text-align: center;
+    &__title {
+      @include font-type($mainFont, $large, bold);
+      margin-bottom: $medium;
+    }
     &__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      display: grid;
+      grid-gap: $midlarge;
     }
   }
 }
@@ -21,6 +26,10 @@
 //Large screens - DESKTOP
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
+  .services {
+    padding: $large 10%;
+    text-align: inherit;
+  }
 }
 
 //XLarge screens

@@ -11,7 +11,7 @@ const Service = ({ image, linkPath, text, title }) => (
     <div className="service__content">
       <div className="service__content-title">{title}</div>
       <div className="service__content-text">{text}</div>
-      <Link to={`/${linkPath}`} className="link">
+      <Link to={`/${linkPath}`} className="nav_link">
         Find Out More
       </Link>
     </div>
@@ -24,7 +24,7 @@ Service.propTypes = {
     source: PropTypes.string.isRequired
   }),
   linkPath: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired
 };
 
