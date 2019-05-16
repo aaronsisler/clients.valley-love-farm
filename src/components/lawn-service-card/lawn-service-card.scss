@@ -4,6 +4,15 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
+  .lawn-service-card {
+    &-text {
+      @include font-type($mainFont, $medium);
+      color: $darkGrey;
+      line-height: $large;
+      margin-bottom: $small;
+      padding: 0 $small;
+    }
+  }
 }
 
 //Medium screens - TABLET
@@ -14,6 +23,8 @@
 //Large screens - DESKTOP
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
+  .lawn-service-card {
+  }
 }
 
 //XLarge screens

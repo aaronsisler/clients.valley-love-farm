@@ -1,17 +1,17 @@
 import React from "react";
-import Lawn from "../../components/lawn";
+import LawnServices from "../../components/lawn-services";
 import Gallery from "../../components/gallery";
 import lawnGallery from "../../content/lawn-gallery";
-import LawnAdditional from "../../components/lawn-additional";
+import LawnAdditionalServices from "../../components/lawn-additional-services";
 import "./lawn-container.scss";
 
 const LawnContainer = () => (
   <div className="lawn-container">
-    <Lawn />
+    <LawnServices />
     <br />
     <Gallery images={lawnGallery} />
     <br />
-    <LawnAdditional />
+    <LawnAdditionalServices />
   </div>
 );
 

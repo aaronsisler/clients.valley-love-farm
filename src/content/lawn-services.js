@@ -1,23 +1,23 @@
-const pricing1 = "from...";
+const fromText = "from...";
 
 const lawnServices = [
   {
     title: "Trim Shubbery",
     pricing: {
-      pricing1,
-      pricing2: "$60",
-      pricing3: "per hour"
+      from: fromText,
+      price: "$60",
+      units: "per hour"
     },
-    content: ["Pruning shrubs to shape", "Placing scraps at roadside"]
+    details: ["Pruning shrubs to shape", "Placing scraps at roadside"]
   },
   {
     title: "Whole Nine Yards",
     pricing: {
-      pricing1,
-      pricing2: "$25",
-      pricing3: "per week"
+      from: fromText,
+      price: "$25",
+      units: "per week"
     },
-    content: [
+    details: [
       "Cutting grass",
       "Edging and weed eating​",
       "Blowing leaves to curb in Fall",
@@ -29,20 +29,20 @@ const lawnServices = [
   {
     title: "Mulching",
     pricing: {
-      pricing1,
-      pricing2: "$80",
-      pricing3: "per yard of mulch"
+      from: fromText,
+      price: "$80",
+      units: "per yard of mulch"
     },
-    content: ["Ordering", "Pickup and delivery", "Spreading"]
+    details: ["Ordering", "Pickup and delivery", "Spreading"]
   },
   {
     title: "Aerate Lawn",
     pricing: {
-      pricing1,
-      pricing2: "$150",
-      pricing3: "per yard"
+      from: fromText,
+      price: "$150",
+      units: "per yard"
     },
-    content: ["Aeration of lawn"]
+    details: ["Aeration of lawn"]
   }
 ];
 
