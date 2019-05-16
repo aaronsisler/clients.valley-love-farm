@@ -2,55 +2,57 @@ const landingGallery = [
   {
     key: "landingGallery1",
     source: "images/landing-gallery/landing-gallery1.jpg",
-    alt: "Landing Gallery 1"
+    altText: "Landing Gallery 1"
   },
   {
     key: "landingGallery2",
     source: "images/landing-gallery/landing-gallery2.jpg",
-    alt: "Landing Gallery 2"
+    altText: "Landing Gallery 2"
   },
   {
     key: "landingGallery3",
     source: "images/landing-gallery/landing-gallery3.jpg",
-    alt: "Landing Gallery 3"
+    altText: "Landing Gallery 3"
   },
   {
     key: "landingGallery4",
     source: "images/landing-gallery/landing-gallery4.jpg",
-    alt: "Landing Gallery 4"
+    altText: "Landing Gallery 4"
   },
   {
     key: "landingGallery5",
     source: "images/landing-gallery/landing-gallery5.jpg",
-    alt: "Landing Gallery 5"
+    altText: "Landing Gallery 5"
   },
   {
     key: "landingGallery6",
     source: "images/landing-gallery/landing-gallery6.jpg",
-    alt: "Landing Gallery 6"
+    altText: "Landing Gallery 6"
   },
   {
     key: "landingGallery7",
     source: "images/landing-gallery/landing-gallery7.jpg",
-    alt: "Landing Gallery 7"
-  },
-  {
-    key: "landingGallery7",
-    source: "images/landing-gallery/landing-gallery8.jpg",
-    alt: "Landing Gallery 8"
+    altText: "Landing Gallery 7"
   },
   {
     key: "landingGallery8",
+    source: "images/landing-gallery/landing-gallery8.jpg",
+    altText: "Landing Gallery 8"
+  },
+  {
+    key: "landingGallery9",
     source: "images/landing-gallery/landing-gallery9.jpg",
-    alt: "Landing Gallery 9"
+    altText: "Landing Gallery 9"
   },
   {
+    key: "landingGallery10",
     source: "images/landing-gallery/landing-gallery10.jpg",
-    alt: "Landing Gallery 10"
+    altText: "Landing Gallery 10"
   },
   {
+    key: "landingGallery11",
     source: "images/landing-gallery/landing-gallery11.jpg",
-    alt: "Landing Gallery 11"
+    altText: "Landing Gallery 11"
   }
 ];
 

@@ -4,6 +4,9 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
+  .gallery {
+    padding: 0 10%;
+  }
 }
 
 //Medium screens - TABLET
@@ -14,6 +17,11 @@
 //Large screens - DESKTOP
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
+  .gallery {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
 }
 
 //XLarge screens
