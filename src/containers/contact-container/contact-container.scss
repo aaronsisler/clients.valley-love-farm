@@ -5,7 +5,7 @@
 //max-width 640px, small screens
 @media only screen {
   .contact_container {
-    background-image: url("/images/contact_container_mobile.jpg");
+    background-image: url("/images/contact/contact_container_mobile.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -38,7 +38,7 @@
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
   .contact_container {
-    background-image: url("/images/contact_container_desktop.png");
+    background-image: url("/images/contact/contact_container_desktop.png");
     &__content {
       padding: $large $medium;
     }

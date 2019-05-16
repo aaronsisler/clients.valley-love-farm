@@ -145,9 +145,6 @@ export default class ContactForm extends React.Component {
           <React.Fragment>
             <div className="contact_form__header">
               <div className="contact_form__header-content">
-                We promise that your email won&apos;t disappear into the nether.
-              </div>
-              <div className="contact_form__header-content">
                 We are more than happy to answer any questions you may have.
               </div>
             </div>
