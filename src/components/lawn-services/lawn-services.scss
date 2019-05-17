@@ -6,19 +6,31 @@
 @media only screen {
   .lawn-services {
     &__header {
+      margin: $large $midlarge $medium;
       text-align: center;
       &-title {
         @include font-type($secFont, $large, bold);
+        margin-bottom: $medium;
       }
       &-text {
         @include font-type($mainFont, $medium);
-        padding: 0 10%;
+        line-height: $large;
+        margin: 0 5%;
       }
     }
     &__content {
+      align-items: flex-start;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-bottom: $medium;
     }
     &__disclaimer {
       @include font-type($mainFont, $medium);
+      color: $fontGrey;
+      font-style: italic;
+      margin: 0 $medium;
+      text-align: center;
     }
   }
 }
@@ -32,6 +44,15 @@
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
   .lawn-services {
+    &__header {
+      &-text {
+        margin: 0 20%;
+      }
+    }
+
+    &__disclaimer {
+      @include font-type($mainFont, $medium);
+    }
   }
 }
 

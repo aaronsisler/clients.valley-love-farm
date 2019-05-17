@@ -40,7 +40,7 @@ const lawnServices = [
     pricing: {
       from: fromText,
       price: "$150",
-      units: "per yard"
+      units: "per house"
     },
     details: ["Aeration of lawn"]
   }

@@ -13,7 +13,9 @@ const LawnServiceCard = ({ pricing, title, details }) => (
     <div className="lawn-service-card__details">
       <ul>
         {details.map((detail, index) => (
-          <li key={index}>{detail}</li>
+          <li className="lawn-service-card__details-detail" key={index}>
+            {detail}
+          </li>
         ))}
       </ul>
     </div>

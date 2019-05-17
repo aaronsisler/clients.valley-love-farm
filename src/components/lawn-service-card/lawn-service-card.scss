@@ -5,12 +5,49 @@
 //max-width 640px, small screens
 @media only screen {
   .lawn-service-card {
-    &-text {
-      @include font-type($mainFont, $medium);
-      color: $darkGrey;
-      line-height: $large;
-      margin-bottom: $small;
-      padding: 0 $small;
+    background: white;
+    // box-shadow: 0 $xsmall $small $boxShadowGrey;
+    // filter: drop-shadow(3px 3px 6px black);
+    filter: drop-shadow(3px 3px 6px $boxShadowGrey);
+    margin: $small $medium;
+    &__title {
+      @include font-type($mainFont, $midlarge);
+      background: $mainColorGradient;
+      color: white;
+      padding: $medium 0;
+      text-align: center;
+    }
+    &__pricing {
+      border: $border;
+      padding: $small;
+      text-align: center;
+      &-from {
+        @include font-type($secFont, $medium);
+      }
+      &-price {
+        @include font-type($secFont, $xlarge, bold);
+        margin-top: $medium;
+        margin-bottom: $xsmall;
+      }
+      &-units {
+        @include font-type($secFont, $medium);
+      }
+    }
+    &__details {
+      @include font-type($mainFont, $midlarge);
+      background: $mainColorGradient;
+      color: white;
+      display: grid;
+      justify-content: center;
+      padding: $medium $small $medium 0;
+      ul {
+        list-style-type: square;
+        margin: 0;
+        padding-left: $large;
+      }
+      &-detail {
+        line-height: $large;
+      }
     }
   }
 }
@@ -24,6 +61,7 @@
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
   .lawn-service-card {
+    margin: $small;
   }
 }
 
