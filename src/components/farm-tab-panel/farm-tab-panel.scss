@@ -4,18 +4,26 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
-  .poultry-container {
-    &__header {
-      margin: $large $midlarge $medium;
+  .farm-tab-panel {
+    list-style-type: none;
+    &__item {
+      @include font-type($mainFont, $midlarge, bold);
+
+      border: solid 1px $midLightGrey;
+      display: flex;
+      flex-direction: column;
+      height: 20rem;
+      justify-content: center;
+      list-style-type: none;
+      margin: $xsmall;
+      padding: $small;
       text-align: center;
+      width: 20rem;
+
       &-title {
-        @include font-type($secFont, $large, bold);
-        margin-bottom: $medium;
       }
-      &-text {
-        @include font-type($mainFont, $medium);
-        line-height: $large;
-        margin: 0 5% $medium;
+      &-price {
+        color: $mainColor;
       }
     }
   }
@@ -29,13 +37,6 @@
 //Large screens - DESKTOP
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
-  .poultry-container {
-    &__header {
-      &-text {
-        margin: 0 20% $medium;
-      }
-    }
-  }
 }
 
 //XLarge screens

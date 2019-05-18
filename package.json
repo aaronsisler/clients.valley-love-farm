@@ -27,7 +27,8 @@
     "react-dom": "^16.8.4",
     "react-ga": "^2.5.7",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^3.0.0"
+    "react-scripts": "^3.0.0",
+    "react-tabs": "^3.0.0"
   },
   "devDependencies": {
     "firebase-tools": "^6.9.2"

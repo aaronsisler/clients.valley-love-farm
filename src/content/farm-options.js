@@ -6,7 +6,7 @@ const poultryOption = {
     source: "images/farm/farm1.jpg",
     altText: "Poultry"
   },
-  linkPath: "farm",
+  linkPath: "poultry",
   title: "Chicken & Eggs",
   text: (
     <React.Fragment>
