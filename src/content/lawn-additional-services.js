@@ -1,27 +1,32 @@
+const fromText = "from...";
+
 const lawnAdditionalServices = [
   {
     title: "Removing small tree",
     pricing: {
-      pricing1: "starting at...",
-      pricing2: "$99"
+      from: fromText,
+      price: "$99",
+      units: "per tree"
     },
-    content: ["Safely removing tree", "Moving debris to roadside"]
+    details: ["Safely removing tree", "Moving debris to roadside"]
   },
   {
     title: "Gutter Cleaning",
     pricing: {
-      pricing1: "starting at...",
-      pricing2: "$75"
+      from: fromText,
+      price: "$75",
+      units: "per hour"
     },
-    content: ["Removal of gutter debris"]
+    details: ["Removal of gutter debris"]
   },
   {
     title: "Pressure Washing",
     pricing: {
-      pricing1: "starting at...",
-      pricing2: "$75"
+      from: fromText,
+      price: "$75",
+      units: "per surface"
     },
-    content: ["Walkways and patios", "Driveways"]
+    details: ["Walkways and patios", "Driveways"]
   }
 ];
 
