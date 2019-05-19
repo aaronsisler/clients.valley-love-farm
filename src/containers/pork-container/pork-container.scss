@@ -4,6 +4,26 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
+  .pork-container {
+    &__header {
+      margin: $large $midlarge $medium;
+      text-align: center;
+      &-title {
+        @include font-type($secFont, $large, bold);
+        margin-bottom: $medium;
+      }
+      &-text {
+        @include font-type($mainFont, $medium);
+        line-height: $large;
+        margin: 0 5% $medium;
+      }
+    }
+    &__content {
+      display: flex;
+      justify-content: center;
+      margin: 0 5% $large;
+    }
+  }
 }
 
 //Medium screens - TABLET
@@ -14,6 +34,16 @@
 //Large screens - DESKTOP
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
+  .pork-container {
+    &__header {
+      &-text {
+        margin: 0 20% $medium;
+      }
+    }
+    &__content {
+      margin: 0 20% $large;
+    }
+  }
 }
 
 //XLarge screens
