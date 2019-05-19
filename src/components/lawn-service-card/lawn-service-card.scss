@@ -6,8 +6,6 @@
 @media only screen {
   .lawn-service-card {
     background: white;
-    // box-shadow: 0 $xsmall $small $boxShadowGrey;
-    // filter: drop-shadow(3px 3px 6px black);
     filter: drop-shadow(3px 3px 6px $boxShadowGrey);
     margin: $small $medium;
     &__title {

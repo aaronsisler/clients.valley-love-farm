@@ -4,25 +4,29 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
-  .farm-tab-panel {
-    list-style-type: none;
+  .farm-tab-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     &__item {
-      @include font-type($mainFont, $midlarge, bold);
-
-      border: solid 1px $midLightGrey;
+      align-items: center;
+      border: solid 1px $borderGrey;
+      box-shadow: 0 $xxsmall $xsmall $boxShadowGrey;
       display: flex;
       flex-direction: column;
-      height: 20rem;
+      height: 15rem;
       justify-content: center;
-      list-style-type: none;
       margin: $xsmall;
-      padding: $small;
+      padding: $medium;
       text-align: center;
-      width: 20rem;
+      width: 15rem;
 
       &-title {
+        @include font-type($mainFont, $midlarge, bold);
+        margin-bottom: $small;
       }
       &-price {
+        @include font-type($secFont, $midlarge, bold);
         color: $mainColor;
       }
     }

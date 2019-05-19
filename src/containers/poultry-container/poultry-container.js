@@ -1,6 +1,6 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import FarmTabPanel from "../../components/farm-tab-panel";
+import FarmTabContent from "../../components/farm-tab-content";
 import poultryItems from "../../content/poultry-items";
 import "../../styles/react_tabs.scss";
 import "./poultry-container.scss";
@@ -24,38 +24,25 @@ const PoultryContainer = () => (
         saturated fat, more Vitamin A, and significantly more Omega-3 levels.
       </div>
     </div>
-    <div className="poultry-container__content" />
-    <Tabs>
-      <TabList>
-        <Tab>Chicken</Tab>
-        <Tab>Eggs</Tab>
-        <Tab>Chicken Sausage</Tab>
-      </TabList>
+    <div className="poultry-container__content">
+      <Tabs>
+        <TabList>
+          <Tab>Chicken</Tab>
+          <Tab>Eggs</Tab>
+          <Tab>Chicken Sausage</Tab>
+        </TabList>
 
-      <TabPanel>
-        <FarmTabPanel content={chicken} />
-      </TabPanel>
-      <TabPanel>
-        <ul className="tab_content">
-          {eggs.map((item, index) => (
-            <li className="tab_item" key={index}>
-              <h4>{item.title}</h4>
-              <h5>{item.price}</h5>
-            </li>
-          ))}
-        </ul>
-      </TabPanel>
-      <TabPanel>
-        <ul className="tab_content">
-          {chickenSausage.map((item, index) => (
-            <li className="tab_item" key={index}>
-              <h4>{item.title}</h4>
-              <h5>{item.price}</h5>
-            </li>
-          ))}
-        </ul>
-      </TabPanel>
-    </Tabs>
+        <TabPanel>
+          <FarmTabContent content={chicken} />
+        </TabPanel>
+        <TabPanel>
+          <FarmTabContent content={eggs} />
+        </TabPanel>
+        <TabPanel>
+          <FarmTabContent content={chickenSausage} />
+        </TabPanel>
+      </Tabs>
+    </div>
   </div>
 );
 
