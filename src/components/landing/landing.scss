@@ -4,6 +4,23 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
+  .landing {
+    &__splash {
+      background-image: url("/images/landing/splash.jpg");
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      z-index: -1;
+    }
+    &__title {
+      @include font-type($accentFont, $xxlarge, bold);
+      color: white;
+      padding: 30rem 0 10rem;
+      text-align: center;
+    }
+  }
 }
 
 //Medium screens - TABLET
@@ -14,6 +31,14 @@
 //Large screens - DESKTOP
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
+  .landing {
+    &__splash {
+      height: 75vh;
+    }
+    &__title {
+      padding: 30rem 0 5rem;
+    }
+  }
 }
 
 //XLarge screens
