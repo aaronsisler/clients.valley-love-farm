@@ -9,7 +9,8 @@ export const googleMaps = {
 };
 
 // Email
-export const pointOfContactEmail = "valleylovehs@gmail.com";
+// export const pointOfContactEmail = "valleylovehs@gmail.com";
+export const pointOfContactEmail = "aaron.sisler@eandbsolutions.com";
 
 //Services Gateway Config
 export const servicesApiGatewayURL =

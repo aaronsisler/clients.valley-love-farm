@@ -11,9 +11,7 @@ const LandingContainer = () => (
     <Landing />
     <AboutUs />
     <Services />
-    <div className="landing-container__gallery">
-      <Gallery images={landingGallery} />
-    </div>
+    <Gallery images={landingGallery} />
   </div>
 );
 
