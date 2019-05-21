@@ -149,7 +149,7 @@ export default class ContactForm extends React.Component {
               </div>
             </div>
             <div className="contact-form__form">
-              <div className="contact-form__input">
+              <div className="contact-form__form-input">
                 {error.name && <FormError error={error.name} />}
                 <input
                   name="name"
@@ -160,7 +160,7 @@ export default class ContactForm extends React.Component {
                   value={name}
                 />
               </div>
-              <div className="contact-form__input">
+              <div className="contact-form__form-input">
                 {error.emailAddress && <FormError error={error.emailAddress} />}
                 <input
                   name="emailAddress"
@@ -171,7 +171,7 @@ export default class ContactForm extends React.Component {
                   value={emailAddress}
                 />
               </div>
-              <div className="contact-form__input">
+              <div className="contact-form__form-input">
                 {error.phoneNumber && <FormError error={error.phoneNumber} />}
                 <input
                   name="phone"
@@ -190,7 +190,7 @@ export default class ContactForm extends React.Component {
                 value={message}
               />
               <button
-                className="contact-form__button"
+                className="contact-form__form-button"
                 disabled={isSendButtonDisabled}
                 onClick={this.handleSubmitContactForm}
               >
