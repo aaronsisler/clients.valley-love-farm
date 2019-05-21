@@ -4,7 +4,7 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
-  .contact_form {
+  .contact-form {
     @include font-type();
 
     height: 100%;
@@ -63,7 +63,7 @@
 //Large screens - DESKTOP
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
-  .contact_form {
+  .contact-form {
     display: grid;
     margin: 0 auto;
     max-width: 30vw;

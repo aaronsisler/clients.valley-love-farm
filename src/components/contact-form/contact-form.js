@@ -140,16 +140,16 @@ export default class ContactForm extends React.Component {
       phoneNumber
     } = this.state;
     return (
-      <div className="contact_form">
+      <div className="contact-form">
         {!emailSent && !emailError && (
           <React.Fragment>
-            <div className="contact_form__header">
-              <div className="contact_form__header-content">
+            <div className="contact-form__header">
+              <div className="contact-form__header-content">
                 We are more than happy to answer any questions you may have.
               </div>
             </div>
-            <div className="contact_form__form">
-              <div className="contact_form__input">
+            <div className="contact-form__form">
+              <div className="contact-form__input">
                 {error.name && <FormError error={error.name} />}
                 <input
                   name="name"
@@ -160,7 +160,7 @@ export default class ContactForm extends React.Component {
                   value={name}
                 />
               </div>
-              <div className="contact_form__input">
+              <div className="contact-form__input">
                 {error.emailAddress && <FormError error={error.emailAddress} />}
                 <input
                   name="emailAddress"
@@ -171,7 +171,7 @@ export default class ContactForm extends React.Component {
                   value={emailAddress}
                 />
               </div>
-              <div className="contact_form__input">
+              <div className="contact-form__input">
                 {error.phoneNumber && <FormError error={error.phoneNumber} />}
                 <input
                   name="phone"
@@ -190,7 +190,7 @@ export default class ContactForm extends React.Component {
                 value={message}
               />
               <button
-                className="contact_form__button"
+                className="contact-form__button"
                 disabled={isSendButtonDisabled}
                 onClick={this.handleSubmitContactForm}
               >
@@ -200,13 +200,13 @@ export default class ContactForm extends React.Component {
           </React.Fragment>
         )}
         {emailSent && (
-          <div className="contact_form__email">
+          <div className="contact-form__email">
             Thank you for reaching out! We are excited to get back in touch with
             you.
           </div>
         )}
         {emailError && (
-          <div className="contact_form__email">
+          <div className="contact-form__email">
             Something went wrong unfortunately. Please try reloading the page.
           </div>
         )}

@@ -4,27 +4,31 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
-  .contact_container {
+  .contact-container {
     background-image: url("/images/contact/contact_container_mobile.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
     flex: 1 1 auto;
-    padding: $large;
-
-    &__content {
+    flex-direction: column;
+    padding: $large $small;
+    &__upper {
       background: white;
       display: grid;
       height: fit-content;
-      margin: 0 auto;
+      margin: 0 auto $large;
       opacity: 0.95;
       padding: $medium $small;
-
       &-title {
-        font-size: $large;
-        font-weight: bold;
-        margin: 0 auto $medium;
+        @include font-type($mainFont, $large, bold);
+        margin-bottom: $small;
+        text-align: center;
       }
+    }
+    &__lower {
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
   }
 }
@@ -37,10 +41,10 @@
 //Large screens - DESKTOP
 //min-width 1025px, large screens
 @media only screen and (min-width: 64.063em) {
-  .contact_container {
+  .contact-container {
     background-image: url("/images/contact/contact_container_desktop.png");
-    &__content {
-      padding: $large $medium;
+    &__lower {
+      display: grid;
     }
   }
 }
