@@ -1,0 +1,35 @@
+@import "./variables.scss";
+@import "./typography.scss";
+
+.react-tabs {
+  &__tab-list {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  &__tab {
+    @include font-type($secFont, $medium);
+
+    color: $fontGrey;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: $small $medium $xsmall;
+    &--selected {
+      @include font-type($secFont, $medium, bold);
+      border-bottom: 3px solid $mainColor;
+      color: $fontGrey;
+      font-weight: bold;
+    }
+  }
+  &__tab-panel {
+    display: none;
+    &--selected {
+      display: flex;
+      padding-top: $small;
+    }
+  }
+}

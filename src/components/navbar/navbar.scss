@@ -1,0 +1,128 @@
+@import "../../styles/variables.scss";
+@import "../../styles/typography.scss";
+
+//Small screens - MOBILE
+//max-width 640px, small screens
+@media only screen {
+  .nav-menu {
+    align-items: center;
+    background-color: $darkGrey;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: $small;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .favicon {
+      color: white;
+      cursor: pointer;
+    }
+    &__brand {
+      a {
+        @include font-type($accentFont, $midlarge, bold);
+
+        color: white;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+      }
+    }
+    &__links {
+      background-color: $darkMainColor;
+      height: 100%;
+      padding-top: $large;
+      position: fixed;
+      right: -$navMenuWidth;
+      top: 72px;
+      transition: right 0.3s ease;
+      width: $navMenuWidth;
+      &.nav-menu__links-open {
+        right: 0px;
+      }
+      &-close {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: $small;
+      }
+      &-link {
+        color: white;
+        display: block;
+        font-size: $medium;
+        padding: $small;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      &-contact {
+        border-radius: $xxsmall;
+        border: 1px solid white;
+        margin: $small $large;
+      }
+    }
+  }
+}
+
+//Medium screens - TABLET
+//min-width 641px, medium screens
+@media only screen and (min-width: 40.063em) {
+}
+
+//Large screens - DESKTOP
+//min-width 1025px, large screens
+@media only screen and (min-width: 64.063em) {
+  .nav-menu {
+    &__brand {
+      a {
+        &:hover {
+          color: $mainColor;
+          transition: color 0.5s ease-in;
+        }
+      }
+    }
+    &__toggle {
+      display: none;
+    }
+    &__links {
+      align-items: center;
+      background-color: inherit;
+      display: flex;
+      height: inherit;
+      padding: 0;
+      position: inherit;
+      right: inherit;
+      top: inherit;
+      transition: none;
+      width: inherit;
+      &-close {
+        display: none;
+      }
+      &-link {
+        &:hover {
+          color: $mainColor;
+          transition: color 0.5s ease-in;
+        }
+      }
+      &-contact {
+        margin: 0;
+        margin-left: $small;
+        &:hover {
+          background-color: white;
+          color: $mainColor;
+          font-weight: bolder;
+          transition: background-color 0.5s ease-in, color 0.5s ease-in;
+        }
+      }
+    }
+  }
+}
+
+//XLarge screens
+//min-width 1441px, xlarge screens
+@media only screen and (min-width: 90.063em) {
+}
+
+//XXLarge screens
+//min-width 1921px, xlarge screens
+@media only screen and (min-width: 120.063em) {
+}

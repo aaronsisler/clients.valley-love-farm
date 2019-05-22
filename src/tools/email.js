@@ -1,31 +1,27 @@
-import { validate } from 'email-validator';
-import { apiGatewayEmailURL, apiGatewayToken, pointOfContactEmail } from '../config';
+import axios from "axios";
+import { validate } from "email-validator";
+import {
+  pointOfContactEmail,
+  servicesApiGatewayURL,
+  servicesApiGatewayToken
+} from "../config";
 
-const createRequest = (data, done, fail) => {
-    const emailProperties = {
-        pointOfContactEmail,
-        name: "",
-        website: "",
-        emailAddress: "",
-        phoneNumber: "",
-        message: "",
-        ...data
-    }
-    const request = new XMLHttpRequest();
-    request.onload = function () {
-        done();
-    }
-    request.onerror = function () {
-        fail();
-    }
-    request.open('POST', apiGatewayEmailURL, true);
-    request.setRequestHeader("X-Api-Key", apiGatewayToken);
-    request.setRequestHeader("Content-Type", "application/json");
-    request.send(JSON.stringify(emailProperties));
-}
+const headers = {
+  "Content-Type": "application/json",
+  "X-Api-Key": servicesApiGatewayToken
+};
 
-export const isEmailValid = (emailAddress) => validate(emailAddress);
+const emailOptions = { headers };
 
-export const sendEmail = (data, done, fail) => {
-    createRequest(data, done, fail);
-}
+export const isEmailValid = emailAddress => validate(emailAddress);
+
+export const sendEmail = async (data, done, fail) => {
+  const emailData = { pointOfContactEmail, ...data };
+
+  try {
+    await axios.post(servicesApiGatewayURL, emailData, emailOptions);
+    done();
+  } catch {
+    fail();
+  }
+};

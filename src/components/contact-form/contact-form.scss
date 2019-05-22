@@ -1,0 +1,87 @@
+@import "../../styles/variables.scss";
+@import "../../styles/typography.scss";
+
+//Small screens - MOBILE
+//max-width 640px, small screens
+@media only screen {
+  .contact-form {
+    @include font-type();
+
+    height: 100%;
+    width: 100%;
+
+    &__header {
+      @include font-type();
+
+      margin: 0 auto;
+      text-align: center;
+
+      &-content {
+        @include font-type($secFont);
+
+        display: grid;
+        margin: 0 auto;
+        padding-bottom: $small;
+        text-align: center;
+      }
+    }
+
+    &__form {
+      display: grid;
+      grid-gap: $medium;
+      grid-template-columns: 100%;
+      justify-content: center;
+      margin: $medium auto;
+      width: 100%;
+
+      &-input {
+        display: grid;
+        font-size: $medium;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      &-button {
+        font-size: $medium;
+        padding: $small;
+      }
+    }
+
+    &__email {
+      font-size: $midlarge;
+      padding: $small 0 $medium;
+      text-align: center;
+    }
+  }
+}
+
+//Medium screens - TABLET
+//min-width 641px, medium screens
+@media only screen and (min-width: 40.063em) {
+}
+
+//Large screens - DESKTOP
+//min-width 1025px, large screens
+@media only screen and (min-width: 64.063em) {
+  .contact-form {
+    display: grid;
+    margin: 0 auto;
+    max-width: 30vw;
+    padding: 0 $medium;
+    &__email {
+      font-size: $midlarge;
+      padding: $medium 0;
+      text-align: center;
+    }
+  }
+}
+
+//XLarge screens
+//min-width 1441px, xlarge screens
+@media only screen and (min-width: 90.063em) {
+}
+
+//XXLarge screens
+//min-width 1921px, xlarge screens
+@media only screen and (min-width: 120.063em) {
+}

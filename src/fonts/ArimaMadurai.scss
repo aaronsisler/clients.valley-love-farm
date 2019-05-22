@@ -1,13 +1,15 @@
 @font-face {
-    font-family: 'ArimaMaduraiLight';
-    src: url('ArimaMaduraiLight.woff') format('woff'), url('ArimaMaduraiLight.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Arima Madurai Light";
+  src: url("../fonts/ArimaMaduraiLight.woff") format("woff"),
+    url("../fonts/ArimaMaduraiLight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'ArimaMadurai';
-    src: url('ArimaMaduraiRegular.woff') format('woff'), url('ArimaMaduraiRegular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Arima Madurai";
+  src: url("../fonts/ArimaMaduraiRegular.woff") format("woff"),
+    url("../fonts/ArimaMaduraiRegular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }

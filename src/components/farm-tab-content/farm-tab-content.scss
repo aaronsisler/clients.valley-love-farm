@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+@import "../../styles/typography.scss";
+
+//Small screens - MOBILE
+//max-width 640px, small screens
+@media only screen {
+  .farm-tab-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    &__item {
+      align-items: center;
+      border: solid 1px $borderGrey;
+      box-shadow: 0 $xxsmall $xsmall $boxShadowGrey;
+      display: flex;
+      flex-direction: column;
+      height: 15rem;
+      justify-content: center;
+      margin: $xsmall;
+      padding: $medium;
+      text-align: center;
+      width: 15rem;
+
+      &-title {
+        @include font-type($mainFont, $midlarge, bold);
+        margin-bottom: $small;
+      }
+      &-price {
+        @include font-type($secFont, $midlarge, bold);
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+//Medium screens - TABLET
+//min-width 641px, medium screens
+@media only screen and (min-width: 40.063em) {
+}
+
+//Large screens - DESKTOP
+//min-width 1025px, large screens
+@media only screen and (min-width: 64.063em) {
+}
+
+//XLarge screens
+//min-width 1441px, xlarge screens
+@media only screen and (min-width: 90.063em) {
+}
+
+//XXLarge screens
+//min-width 1921px, xlarge screens
+@media only screen and (min-width: 120.063em) {
+}
