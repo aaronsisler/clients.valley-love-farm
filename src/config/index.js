@@ -1,10 +1,10 @@
 import {
   analyticsTrackingId,
-  googleMaps,
   pointOfContactEmail,
-  servicesApiGatewayURL,
-  servicesApiGatewayToken
+  servicesApiGatewayURL
 } from "./config";
+
+import { googleMaps, servicesApiGatewayToken } from "./secrets";
 
 export {
   analyticsTrackingId,
