@@ -1,10 +1,7 @@
 // Colors
 $mainColor: #398466;
 $darkMainColor: darken($mainColor, 10);
-// $mainColorGradient: linear-gradient(45deg, rgb(80, 156, 103) 45%, $green 100%);
-// $mainColorGradient: linear-gradient(45deg, $mainColor 45%, $darkMainColor 100%);
 $mainColorGradient: linear-gradient(45deg, $darkMainColor 25%, $mainColor 100%);
-// $secColor: rgba(31, 130, 227, 0.8);
 $lightGrey: #f3f3f3;
 $midLightGrey: #e8e8e8;
 $midGrey: #666666;
@@ -26,10 +23,6 @@ $xxlarge: 7.6rem;
 $navMenuWidth: 240px;
 $desktopBreakpoint: 45rem;
 //Site Fonts
-// $mainFont: "Ubuntu Regular", sans-serif;
-// $secFont: "Ubuntu Light", sans-serif;
-// $accentFont: "Lobster", sans-serif;
-
 $mainFont: "Arima Madurai", sans-serif;
 $secFont: "Arima Madurai Light", sans-serif;
 $accentFont: "Lobster", sans-serif;
