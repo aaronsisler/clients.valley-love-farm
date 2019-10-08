@@ -14,6 +14,9 @@ const poultryItems = {
     { title: "Flat (2.5 Dozen)", price: "$15" }
   ],
   chickenSausage: [
+    { title: "Cranberry and Sage Breakfast Links", price: "$15/lb" },
+    { title: "Garlic and Rosemary", price: "$15/lb" },
+    { title: `Jalape\u00F1o and Cheddar`, price: "$15/lb" },
     { title: "Maple Breakfast Links", price: "$15/lb" },
     { title: "Tomato and Basil", price: "$15/lb" },
     { title: "Garlic and Spinach", price: "$15/lb" },
