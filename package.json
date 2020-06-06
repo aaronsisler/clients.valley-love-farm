@@ -10,9 +10,9 @@
     "xxcreate-domain:prod": "sls create_domain",
     "xxdeploy:beta": "yarn build && sls deploy --config=serverless.beta.yml && yarn clear-serverless && yarn clear-next",
     "xxdeploy:prod": "yarn build && sls deploy && yarn clear-serverless && yarn clear-next",
-    "gen:comp": "node ./utils/generateComponent --templateType=COMPONENT",
-    "gen:cont": "node ./utils/generateContainer --templateType=CONTAINER",
-    "gen:page": "node ./utils/generatePage --templateType=PAGE",
+    "gen:comp": "node ./node_modules/@ebsolutions/generate-react-templates --type=COMP",
+    "gen:cont": "node ./node_modules/@ebsolutions/generate-react-templates --type=CONT",
+    "gen:page": "node ./node_modules/@ebsolutions/generate-react-templates --type=PAGE",
     "lint": "eslint \"./**/*.js\"",
     "lint:style": "node ./node_modules/stylelint/bin/stylelint.js \"**/*.{css,scss}\"",
     "start": "yarn clear-next && next ./src"
@@ -45,6 +45,7 @@
     "yup": "^0.28.1"
   },
   "devDependencies": {
+    "@ebsolutions/generate-react-templates": "^0.8.0",
     "babel-eslint": "^10.0.2",
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.4.0",
