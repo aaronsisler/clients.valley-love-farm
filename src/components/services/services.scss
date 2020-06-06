@@ -5,11 +5,12 @@
 //max-width 640px, small screens
 @media only screen {
   .services {
-    background-color: $lightGrey;
     padding: $large 5%;
     text-align: center;
+    background-color: $lightGrey;
     &__title {
       @include font-type($mainFont, $large, bold);
+
       margin-bottom: $medium;
     }
     &__content {

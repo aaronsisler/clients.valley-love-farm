@@ -7,13 +7,13 @@
   footer {
     @include font-type($secFont);
 
-    align-items: center;
-    background-color: $darkGrey;
-    color: white;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     padding: $small;
+    color: white;
     text-align: center;
+    background-color: $darkGrey;
     a {
       color: white;
       text-decoration: none;

@@ -7,15 +7,13 @@
   .contact-form {
     @include font-type();
 
-    height: 100%;
     width: 100%;
-
+    height: 100%;
     &__header {
       @include font-type();
 
       margin: 0 auto;
       text-align: center;
-
       &-content {
         @include font-type($secFont);
 
@@ -25,31 +23,27 @@
         text-align: center;
       }
     }
-
     &__form {
       display: grid;
       grid-gap: $medium;
       grid-template-columns: 100%;
       justify-content: center;
-      margin: $medium auto;
       width: 100%;
-
+      margin: $medium auto;
       &-input {
         display: grid;
-        font-size: $medium;
-        margin: 0 auto;
         width: 100%;
-      }
-
-      &-button {
+        margin: 0 auto;
         font-size: $medium;
+      }
+      &-button {
         padding: $small;
+        font-size: $medium;
       }
     }
-
     &__email {
-      font-size: $midlarge;
       padding: $small 0 $medium;
+      font-size: $midlarge;
       text-align: center;
     }
   }
@@ -65,12 +59,12 @@
 @media only screen and (min-width: 64.063em) {
   .contact-form {
     display: grid;
-    margin: 0 auto;
     max-width: 30vw;
+    margin: 0 auto;
     padding: 0 $medium;
     &__email {
-      font-size: $midlarge;
       padding: $medium 0;
+      font-size: $midlarge;
       text-align: center;
     }
   }

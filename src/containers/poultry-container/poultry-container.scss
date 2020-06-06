@@ -10,12 +10,14 @@
       text-align: center;
       &-title {
         @include font-type($secFont, $large, bold);
+
         margin-bottom: $medium;
       }
       &-text {
         @include font-type($mainFont, $medium);
-        line-height: $large;
+
         margin: 0 5% $medium;
+        line-height: $large;
       }
     }
     &__content {

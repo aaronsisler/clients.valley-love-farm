@@ -5,10 +5,10 @@
 //max-width 640px, small screens
 @media only screen {
   .contact-map {
-    align-content: center;
-    background-color: white;
     display: grid;
+    align-content: center;
     height: 25rem;
+    background-color: white;
     opacity: 0.95;
   }
 }

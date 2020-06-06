@@ -5,16 +5,17 @@
 //max-width 640px, small screens
 @media only screen {
   .contact-phone {
-    background-color: white;
     display: flex;
     flex-direction: column;
-    height: 20rem;
     justify-content: center;
-    opacity: 0.95;
-    text-align: center;
     width: 100%;
+    height: 20rem;
+    text-align: center;
+    background-color: white;
+    opacity: 0.95;
     &__title {
       @include font-type($mainFont, $large, bold);
+
       margin-bottom: $medium;
     }
     &__content {

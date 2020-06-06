@@ -1,0 +1,51 @@
+@import-normalize;
+
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./mixins.scss";
+
+//Small screens - MOBILE
+//max-width 640px, small screens
+@media only screen {
+  * {
+    @include font-type();
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  html {
+    height: 100%;
+    font-size: 62.5%;
+  }
+  body {
+    #__next {
+      display: flex;
+      flex-flow: column;
+      min-height: 100vh;
+      main {
+        display: flex;
+        flex: 1 1 auto;
+        flex-flow: column;
+        min-height: 200px;
+      }
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $mediumScreen) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $largeScreen) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $xLargeScreen) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $xxLargeScreen) {
+}

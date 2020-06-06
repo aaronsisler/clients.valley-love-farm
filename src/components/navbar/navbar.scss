@@ -5,15 +5,15 @@
 //max-width 640px, small screens
 @media only screen {
   .nav-menu {
-    align-items: center;
-    background-color: $darkGrey;
-    display: flex;
-    justify-content: space-between;
-    left: 0;
-    padding: $small;
     position: sticky;
     top: 0;
+    left: 0;
     z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $small;
+    background-color: $darkGrey;
     .favicon {
       color: white;
       cursor: pointer;
@@ -28,36 +28,36 @@
       }
     }
     &__links {
-      background-color: $darkMainColor;
+      position: fixed;
+      top: 72px;
+      right: -$navMenuWidth;
+      width: $navMenuWidth;
       height: 100%;
       padding-top: $large;
-      position: fixed;
-      right: -$navMenuWidth;
-      top: 72px;
+      background-color: $darkMainColor;
       transition: right 0.3s ease;
-      width: $navMenuWidth;
       &.nav-menu__links-open {
-        right: 0px;
+        right: 0;
       }
       &-close {
-        align-items: center;
         display: flex;
+        align-items: center;
         justify-content: flex-end;
         margin-right: $small;
       }
       &-link {
-        color: white;
         display: block;
-        font-size: $medium;
         padding: $small;
+        color: white;
+        font-size: $medium;
         text-align: center;
-        text-decoration: none;
         text-transform: uppercase;
+        text-decoration: none;
       }
       &-contact {
-        border-radius: $xxsmall;
-        border: 1px solid white;
         margin: $small $large;
+        border: 1px solid white;
+        border-radius: $xxsmall;
       }
     }
   }
@@ -84,16 +84,16 @@
       display: none;
     }
     &__links {
-      align-items: center;
-      background-color: inherit;
+      position: inherit;
+      top: inherit;
+      right: inherit;
       display: flex;
+      align-items: center;
+      width: inherit;
       height: inherit;
       padding: 0;
-      position: inherit;
-      right: inherit;
-      top: inherit;
+      background-color: inherit;
       transition: none;
-      width: inherit;
       &-close {
         display: none;
       }
@@ -107,9 +107,9 @@
         margin: 0;
         margin-left: $small;
         &:hover {
-          background-color: white;
           color: $mainColor;
           font-weight: bolder;
+          background-color: white;
           transition: background-color 0.5s ease-in, color 0.5s ease-in;
         }
       }

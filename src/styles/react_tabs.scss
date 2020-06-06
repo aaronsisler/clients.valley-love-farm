@@ -1,10 +1,9 @@
 @import "./variables.scss";
 @import "./typography.scss";
-
 .react-tabs {
   &__tab-list {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -13,16 +12,17 @@
   &__tab {
     @include font-type($secFont, $medium);
 
-    color: $fontGrey;
-    cursor: pointer;
     display: flex;
     justify-content: center;
     padding: $small $medium $xsmall;
+    color: $fontGrey;
+    cursor: pointer;
     &--selected {
       @include font-type($secFont, $medium, bold);
-      border-bottom: 3px solid $mainColor;
+
       color: $fontGrey;
       font-weight: bold;
+      border-bottom: 3px solid $mainColor;
     }
   }
   &__tab-panel {

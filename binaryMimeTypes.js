@@ -1,0 +1,22 @@
+module.exports = [
+  "application/javascript",
+  "application/json",
+  "application/octet-stream",
+  "application/xml",
+  "font/eot",
+  "font/opentype",
+  "font/otf",
+  "font/woff",
+  "font/woff2",
+  "image/jpeg",
+  "image/png",
+  "image/svg+xml",
+  "image/x-icon",
+  "text/comma-separated-values",
+  "text/css",
+  "text/html",
+  "text/javascript",
+  "text/plain",
+  "text/text",
+  "text/xml"
+];

@@ -5,22 +5,23 @@
 //max-width 640px, small screens
 @media only screen {
   .contact-container {
-    background-image: url("/images/contact/contact_container_mobile.jpg");
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
     padding: $large $small;
+    background-image: url("/images/contact/contact_container_mobile.jpg");
+    background-position: center;
+    background-size: cover;
     &__upper {
-      background: white;
       display: grid;
       height: fit-content;
       margin: 0 auto $large;
-      opacity: 0.95;
       padding: $medium $small;
+      background: white;
+      opacity: 0.95;
       &-title {
         @include font-type($mainFont, $large, bold);
+
         margin-bottom: $small;
         text-align: center;
       }

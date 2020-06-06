@@ -7,29 +7,26 @@
   .about-us {
     padding: $medium 5%;
     text-align: center;
-
     &__title {
       @include font-type($mainFont, $large, bold);
     }
-
     &__content {
       &-image {
         margin: $medium 0;
         img {
+          width: 100%;
           max-height: 50vh;
           object-fit: scale-down;
-          width: 100%;
         }
       }
-
       &-text {
         @include font-type($mainFont, $medium);
 
-        color: $fontGrey;
         display: grid;
         grid-gap: $medium;
-        line-height: $large;
         padding: 0 $medium;
+        color: $fontGrey;
+        line-height: $large;
       }
     }
   }
@@ -46,12 +43,11 @@
   .about-us {
     padding: $large 10%;
     text-align: inherit;
-
     &__content {
-      align-items: center;
       display: grid;
       grid-gap: $medium;
       grid-template-columns: 1fr 1fr;
+      align-items: center;
       text-align: center;
     }
   }

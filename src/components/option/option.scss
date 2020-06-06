@@ -8,22 +8,24 @@
     &__image {
       padding: 0 5%;
       img {
+        width: 100%;
         max-height: 50vh;
         object-fit: scale-down;
-        width: 100%;
       }
     }
     &__content {
       &-title {
         @include font-type($mainFont, $midlarge, bold);
+
         margin: $medium 0;
       }
       &-text {
         @include font-type($mainFont, $medium);
-        color: $darkGrey;
-        line-height: $large;
+
         margin-bottom: $small;
         padding: 0 $small;
+        color: $darkGrey;
+        line-height: $large;
       }
     }
   }

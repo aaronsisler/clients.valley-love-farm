@@ -5,17 +5,17 @@
 //max-width 640px, small screens
 @media only screen {
   .landing-widget {
-    background: $mainColorGradient;
-    color: white;
+    width: 20rem;
     margin: $small;
     padding: $large $medium;
+    color: white;
     text-align: center;
-    width: 20rem;
+    background: $mainColorGradient;
     &__image {
       img {
+        padding: 0.25rem;
         border: 0.25rem solid #eee;
         border-radius: 10rem;
-        padding: 0.25rem;
         &:hover {
           transform: rotateY(360deg);
           transition: 2.5s all;
@@ -24,6 +24,7 @@
     }
     &__title {
       @include font-type($secFont, $midlarge, bold);
+
       margin: $small 0;
     }
     &__text {

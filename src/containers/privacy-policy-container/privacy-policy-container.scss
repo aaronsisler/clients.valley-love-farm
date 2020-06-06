@@ -4,17 +4,17 @@
 //max-width 640px, small screens
 @media only screen {
   .privacy_policy_container {
-    font-family: $secFont;
     padding: $medium;
+    font-family: $secFont;
     &__title {
-      font-size: $midlarge;
-      font-weight: bold;
       margin-bottom: $medium;
+      font-weight: bold;
+      font-size: $midlarge;
     }
     &__heading {
+      margin: $medium 0 $xsmall;
       font-weight: bold;
       font-size: $medium;
-      margin: $medium 0 $xsmall;
     }
     &__content {
       font-size: $medium;

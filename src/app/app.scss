@@ -7,55 +7,49 @@
 @media only screen {
   * {
     @include font-type();
+
     box-sizing: border-box;
   }
-
   html {
-    font-size: 62.5%;
     height: 100%;
+    font-size: 62.5%;
   }
-
   body {
     height: 100%;
   }
-
   button,
   .nav_link {
+    display: inline-block;
     align-self: center;
+    margin: 0;
+    padding: $medium $midlarge;
+    color: $mainColor;
+    font-size: $medium;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
     background-color: white;
     border: 2px solid $mainColor;
     border-radius: $xxsmall;
-    color: $mainColor;
     cursor: pointer;
-    display: inline-block;
-    font-size: $medium;
-    margin: 0;
-    padding: $medium $midlarge;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-
     &:hover {
-      background: $mainColor;
       color: white;
+      background: $mainColor;
       transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
     }
-
     &:disabled {
+      color: white;
       background: $mainColor;
       cursor: not-allowed;
-      color: white;
       opacity: 0.5;
     }
   }
-
   input,
   textarea {
+    padding: $small $xsmall;
     border: 0.5px solid $fontGrey;
     border-radius: 5px;
-    padding: $small $xsmall;
   }
-
   textarea {
     font-size: $medium;
   }

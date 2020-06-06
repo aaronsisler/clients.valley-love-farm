@@ -1,0 +1,31 @@
+service: valley-love-farm
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: prod
+  region: us-east-1
+  environment:
+    NODE_ENV: prod
+
+functions:
+  server:
+    handler: index.server
+    events:
+      - http: ANY /
+      - http: ANY /{proxy+}
+
+plugins:
+  - serverless-apigw-binary
+  - serverless-domain-manager
+
+custom:
+  secrets: ${file(secrets.json)}
+  apigwBinary:
+    types:
+      - "*/*"
+  customDomain:
+    domainName: ${self:custom.secrets.prod.DOMAIN}
+    basePath: ""
+    stage: prod
+    createRoute53Record: true

@@ -10,12 +10,14 @@
     &__header {
       &-title {
         @include font-type($secFont, $large, bold);
+
         margin-bottom: $medium;
       }
       &-text {
         @include font-type($mainFont, $medium);
-        line-height: $large;
+
         margin-bottom: $medium;
+        line-height: $large;
       }
     }
     &__content {

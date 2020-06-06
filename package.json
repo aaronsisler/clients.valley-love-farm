@@ -1,51 +1,72 @@
 {
   "name": "valleylovefarm",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "react-scripts build",
-    "deploy": "yarn build && yarn firebase deploy",
-    "start": "react-scripts start",
-    "test": "react-scripts test"
+    "build": "yarn clear-next && next build ./src",
+    "clear-next": "rm -rf ./.next",
+    "clear-serverless": "rm -rf ./.serverless",
+    "xxcreate-domain:beta": "sls create_domain --config=serverless.beta.yml",
+    "xxcreate-domain:prod": "sls create_domain",
+    "xxdeploy:beta": "yarn build && sls deploy --config=serverless.beta.yml && yarn clear-serverless && yarn clear-next",
+    "xxdeploy:prod": "yarn build && sls deploy && yarn clear-serverless && yarn clear-next",
+    "gen:comp": "node ./utils/generateComponent --templateType=COMPONENT",
+    "gen:cont": "node ./utils/generateContainer --templateType=CONTAINER",
+    "gen:page": "node ./utils/generatePage --templateType=PAGE",
+    "lint": "eslint \"./**/*.js\"",
+    "lint:style": "node ./node_modules/stylelint/bin/stylelint.js \"**/*.{css,scss}\"",
+    "start": "yarn clear-next && next ./src"
   },
   "engines": {
-    "yarn": ">=1.13.0",
-    "node": ">=10.15.1"
+    "node": ">=12.0.0",
+    "yarn": ">=1.13.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.17",
     "@fortawesome/free-brands-svg-icons": "^5.8.1",
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "axios": "^0.18.1",
-    "cross-env": "^5.2.0",
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
     "email-validator": "^2.0.3",
+    "express": "^4.16.4",
+    "next": "^9.3.2",
     "node-sass": "^4.12.0",
-    "normalize.css": "^8.0.1",
+    "normalize-scss": "^7.0.1",
     "prop-types": "^15.6.1",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-ga": "^2.5.7",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "^3.0.0",
-    "react-tabs": "^3.0.0"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-hook-form": "^4.7.2",
+    "react-media": "^1.10.0",
+    "serverless-apigw-binary": "^0.4.4",
+    "serverless-domain-manager": "^2.6.0",
+    "serverless-http": "^1.6.0",
+    "yup": "^0.28.1"
   },
   "devDependencies": {
-    "firebase-tools": "^6.9.2"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-config-react-app": "^5.0.2",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.2.0",
+    "file-loader": "^4.2.0",
+    "fs-extra": "^8.0.1",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "minimist": "^1.2.2",
+    "prettier": "^1.18.2",
+    "replace-in-file": "^4.1.0",
+    "stylelint": "^11.1.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-order": "^3.1.1",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.2"
   }
 }

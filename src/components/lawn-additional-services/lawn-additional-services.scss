@@ -10,18 +10,20 @@
       text-align: center;
       &-title {
         @include font-type($secFont, $large, bold);
+
         margin-bottom: $medium;
       }
       &-text {
         @include font-type($mainFont, $medium);
-        line-height: $large;
+
         margin: 0 5%;
+        line-height: $large;
       }
     }
     &__content {
-      align-items: flex-start;
       display: flex;
       flex-flow: row wrap;
+      align-items: flex-start;
       justify-content: center;
       margin-bottom: $medium;
     }

@@ -9,24 +9,25 @@
     flex-flow: row wrap;
     justify-content: center;
     &__item {
-      align-items: center;
-      border: solid 1px $borderGrey;
-      box-shadow: 0 $xxsmall $xsmall $boxShadowGrey;
       display: flex;
       flex-direction: column;
-      height: 18rem;
+      align-items: center;
       justify-content: center;
+      width: 15rem;
+      height: 18rem;
       margin: $xsmall;
       padding: $medium;
       text-align: center;
-      width: 15rem;
-
+      border: solid 1px $borderGrey;
+      box-shadow: 0 $xxsmall $xsmall $boxShadowGrey;
       &-title {
         @include font-type($mainFont, $midlarge, bold);
+
         margin-bottom: $small;
       }
       &-price {
         @include font-type($secFont, $midlarge, bold);
+
         color: $mainColor;
       }
     }

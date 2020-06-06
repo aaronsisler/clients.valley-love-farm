@@ -5,25 +5,27 @@
 //max-width 640px, small screens
 @media only screen {
   .lawn-service-card {
+    margin: $small $medium;
     background: white;
     filter: drop-shadow(3px 3px 6px $boxShadowGrey);
-    margin: $small $medium;
     &__title {
       @include font-type($mainFont, $midlarge);
-      background: $mainColorGradient;
-      color: white;
+
       padding: $medium 0;
+      color: white;
       text-align: center;
+      background: $mainColorGradient;
     }
     &__pricing {
-      border: $border;
       padding: $small;
       text-align: center;
+      border: $border;
       &-from {
         @include font-type($secFont, $medium);
       }
       &-price {
         @include font-type($secFont, $xlarge, bold);
+
         margin-top: $medium;
         margin-bottom: $xsmall;
       }
@@ -33,15 +35,16 @@
     }
     &__details {
       @include font-type($mainFont, $midlarge);
-      background: $mainColorGradient;
-      color: white;
+
       display: grid;
       justify-content: center;
       padding: $medium $small $medium 0;
+      color: white;
+      background: $mainColorGradient;
       ul {
-        list-style-type: square;
         margin: 0;
         padding-left: $large;
+        list-style-type: square;
       }
       &-detail {
         line-height: $large;

@@ -2,9 +2,9 @@
 //max-width 640px, small screens
 @media only screen {
   .form_error {
-    font-family: $secFont;
-    font-size: $medium;
     padding-bottom: $small;
+    font-size: $medium;
+    font-family: $secFont;
   }
 }
 
