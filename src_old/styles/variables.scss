@@ -1,3 +1,32 @@
+// Colors
+$mainColor: #398466;
+$darkMainColor: darken($mainColor, 10);
+$mainColorGradient: linear-gradient(45deg, $darkMainColor 25%, $mainColor 100%);
+$lightGrey: #f3f3f3;
+$midLightGrey: #e8e8e8;
+$midGrey: #666;
+$darkGrey: #222;
+$fontGrey: rgba(0, 0, 0, 0.7);
+$closeIconGrey: #aaa;
+$borderGrey: #bbb;
+$border: 1px solid $borderGrey;
+$boxShadowGrey: rgba(189, 195, 199, 0.6);
+//Spacing
+$xxsmall: 0.3rem;
+$xsmall: 0.6rem;
+$small: 1.2rem;
+$medium: 1.8rem;
+$midlarge: 2.4rem;
+$large: 3.2rem;
+$xlarge: 4.8rem;
+$xxlarge: 7.6rem;
+$navMenuWidth: 240px;
+$desktopBreakpoint: 45rem;
+//Site Fonts
+$mainFont: "Arima Madurai", sans-serif;
+$secFont: "Arima Madurai Light", sans-serif;
+$accentFont: "Lobster", sans-serif;
+
 // New from WB
 // Colors
 $MAIN_COLOR: #0a4275;

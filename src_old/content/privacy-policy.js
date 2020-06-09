@@ -2,7 +2,7 @@ import React from "react";
 /* eslint-disable max-len */
 export default {
   companyWebsite: "valleylovefarm.com",
-  policies: [
+  policy: [
     {
       isBold: false,
       text:

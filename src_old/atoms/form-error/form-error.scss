@@ -3,6 +3,11 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .form-error {
+    @include font-type($MAIN_FONT, $MEDIUM);
+
+    color: lighten(darkred, 15);
+  }
 }
 
 //Medium screens - TABLET
