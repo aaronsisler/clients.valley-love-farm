@@ -1,15 +1,20 @@
 import {
-  analyticsTrackingId,
-  pointOfContactEmail,
-  servicesApiGatewayURL
+  CDN_URL,
+  CONTACT_ADDRESS,
+  CONTACT_PHONE_NUMBER,
+  GOOGLE_MAPS_LOCATION,
+  POINT_OF_CONTACT_EMAIL,
+  SERVICES_GATEWAY_URL
 } from "./config";
 
-import { googleMaps, servicesApiGatewayToken } from "./secrets";
+import { SERVICES_API_KEY } from "./secrets";
 
 export {
-  analyticsTrackingId,
-  googleMaps,
-  pointOfContactEmail,
-  servicesApiGatewayURL,
-  servicesApiGatewayToken
+  CDN_URL,
+  CONTACT_ADDRESS,
+  CONTACT_PHONE_NUMBER,
+  GOOGLE_MAPS_LOCATION,
+  POINT_OF_CONTACT_EMAIL,
+  SERVICES_GATEWAY_URL,
+  SERVICES_API_KEY
 };
