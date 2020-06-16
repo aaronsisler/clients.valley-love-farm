@@ -11,7 +11,7 @@ export const servicesApiGatewayURL =
 // new things
 // CDN URL
 export const CDN_URL =
-  "https://cdn-e-and-b-solutions.s3.amazonaws.com/waterbrooke";
+  "https://cdn-e-and-b-solutions.s3.amazonaws.com/valley-love-farm";
 
 // Google Maps
 export const CONTACT_ADDRESS = ["143 Rosedale Dr", "Elizabeth City, NC 27909"];
