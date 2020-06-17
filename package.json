@@ -39,6 +39,7 @@
     "react-dom": "^16.9.0",
     "react-hook-form": "^4.7.2",
     "react-media": "^1.10.0",
+    "react-tabs": "^3.1.1",
     "serverless-apigw-binary": "^0.4.4",
     "serverless-domain-manager": "^2.6.0",
     "serverless-http": "^1.6.0",

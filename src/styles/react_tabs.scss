@@ -10,26 +10,26 @@
     text-align: center;
   }
   &__tab {
-    @include font-type($secFont, $medium);
+    @include font-type($MAIN_FONT, $MEDIUM);
 
     display: flex;
     justify-content: center;
-    padding: $small $medium $xsmall;
-    color: $fontGrey;
+    padding: $SMALL $MEDIUM $XSMALL;
+    color: $FONT_GRAY;
     cursor: pointer;
     &--selected {
-      @include font-type($secFont, $medium, bold);
+      @include font-type($MAIN_FONT, $MEDIUM, bold);
 
-      color: $fontGrey;
+      color: $FONT_GRAY;
       font-weight: bold;
-      border-bottom: 3px solid $mainColor;
+      border-bottom: 3px solid $MAIN_COLOR;
     }
   }
   &__tab-panel {
     display: none;
     &--selected {
       display: flex;
-      padding-top: $small;
+      padding-top: $SMALL;
     }
   }
 }
