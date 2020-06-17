@@ -1030,10 +1030,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@ebsolutions/generate-react-templates@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@ebsolutions/generate-react-templates/-/generate-react-templates-0.8.0.tgz#7f720510f1ea1383864709b57fd3b95166fa7738"
-  integrity sha512-YZjPopVG2zc84HbjX6GG404azzl3ipQkk4qxqEFK29aFbJ/xzY4z1c2so5BWmskFoUZjbumZjBFZ5FvMFQH6gA==
+"@ebsolutions/generate-react-templates@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@ebsolutions/generate-react-templates/-/generate-react-templates-1.0.0.tgz#dc5ac1a5067d186e813e686f3988135c0b47df0f"
+  integrity sha512-YUJ2RGy4dd/Y4ZummrbsNVmUgU8io3kSyA+bJFMrMvztUVsHkIJPQx3y5yI5BxIdgxnam4XvzquQhMVTn5kOiQ==
   dependencies:
     fs-extra "^8.1.0"
     minimist "^1.2.0"

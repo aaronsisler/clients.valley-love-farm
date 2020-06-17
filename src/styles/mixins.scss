@@ -36,17 +36,36 @@
   }
 }
 
+@mixin CTA-link {
+  display: inline-block;
+  align-self: center;
+  margin: 0;
+  padding: $MEDIUM $MIDLARGE;
+  color: $MAIN_COLOR;
+  font-size: $MEDIUM;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: white;
+  border: 2px solid $MAIN_COLOR;
+  border-radius: $XXSMALL;
+  cursor: pointer;
+  &:hover {
+    color: white;
+    background: $MAIN_COLOR;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  }
+  &:disabled {
+    color: white;
+    background: $MAIN_COLOR;
+    cursor: not-allowed;
+    opacity: 0.25;
+  }
+}
+
 @mixin textarea() {
   padding: $SMALL $XSMALL;
   font-size: $MEDIUM;
   border: 1px solid $BORDER_GRAY;
   border-radius: 5px;
-}
-
-@mixin headerImage($PADDING: 0, $MAX_HEIGHT: 45vh) {
-  @if $PADDING != 0 {
-    padding: $PADDING;
-  }
-
-  max-height: $MAX_HEIGHT;
 }

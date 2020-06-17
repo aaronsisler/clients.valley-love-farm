@@ -45,7 +45,7 @@
     "yup": "^0.28.1"
   },
   "devDependencies": {
-    "@ebsolutions/generate-react-templates": "^0.8.0",
+    "@ebsolutions/generate-react-templates": "1.0.0",
     "babel-eslint": "^10.0.2",
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.4.0",
