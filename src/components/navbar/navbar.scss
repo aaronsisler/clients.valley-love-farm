@@ -4,7 +4,7 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
-  .nav-menu {
+  .navbar {
     position: sticky;
     top: 0;
     left: 0;
@@ -12,8 +12,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: $NAV_MENU_HEIGHT;
     padding: $SMALL;
-    background-color: $GRAY_500;
+    background-color: $GRAY_600;
     &__brand {
       a {
         @include font-type($MAIN_FONT, $MIDLARGE, bold);
@@ -25,15 +26,15 @@
     }
     &__links {
       position: fixed;
-      top: 72px;
-      right: -$NAV_MENU_WIDTH;
-      width: $NAV_MENU_WIDTH;
+      top: $NAV_MENU_HEIGHT;
+      right: -100%;
+      width: 100%;
       height: 100%;
-      padding-top: $LARGE;
+      padding-top: $XXLARGE;
       background-color: $MAIN_COLOR_DARKEN;
-      transition: right 0.3s ease;
-      &.nav-menu__links-open {
-        right: 0;
+      transition: transform 0.3s ease;
+      &.navbar__links--open {
+        transform: translateX(-100%);
       }
       &-close {
         display: flex;
@@ -41,15 +42,15 @@
         justify-content: flex-end;
         margin-right: $SMALL;
       }
-      &-link {
-        display: block;
-        padding: $SMALL;
-        color: white;
-        font-size: $MEDIUM;
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
-      }
+    }
+    &__link {
+      display: block;
+      padding: $MEDIUM;
+      color: white;
+      font-size: $LARGE;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
     }
   }
 
@@ -61,7 +62,7 @@
   //Large screens - DESKTOP
   //min-width 1025px, large screens
   @media only screen and (min-width: $LARGE_SCREEN) {
-    .nav-menu {
+    .navbar {
       &__brand {
         a {
           &:hover {
@@ -84,11 +85,12 @@
         padding: 0;
         background-color: inherit;
         transition: none;
-        &-link {
-          &:hover {
-            color: $MAIN_COLOR;
-            transition: color 0.5s ease-in;
-          }
+      }
+      &__link {
+        font-size: $MEDIUM;
+        &:hover {
+          color: $MAIN_COLOR;
+          transition: color 0.2s ease-in;
         }
       }
     }

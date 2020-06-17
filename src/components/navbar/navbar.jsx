@@ -22,26 +22,26 @@ const Navbar = () => {
       </div>
       <div className={cn("navbar__links", menuToggledClass)}>
         <Hyperlink
-          to="/"
+          href="/"
           className="navbar__link"
           onClick={() => setMenuOpen(false)}
           title="Home"
         />
 
         <Hyperlink
-          to="/farm"
+          href="/farm"
           className="navbar__link"
           onClick={() => setMenuOpen(false)}
           title="Farm"
         />
         <Hyperlink
-          to="/lawn"
+          href="/lawn"
           className="navbar__link"
           onClick={() => setMenuOpen(false)}
           title="Lawn"
         />
         <Hyperlink
-          to="/contact"
+          href="/contact"
           className="navbar__link"
           onClick={() => setMenuOpen(false)}
           title="Contact"
