@@ -3,6 +3,28 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .pork-container {
+    &__header {
+      margin: $LARGE $MIDLARGE $MEDIUM;
+      text-align: center;
+      &-title {
+        @include font-type($MAIN_FONT, $LARGE);
+
+        margin-bottom: $MEDIUM;
+      }
+      &-text {
+        @include font-type($MAIN_FONT, $MEDIUM);
+
+        margin: 0 5% $MEDIUM;
+        line-height: $LARGE;
+      }
+    }
+    &__content {
+      display: flex;
+      justify-content: center;
+      margin: 0 5% $LARGE;
+    }
+  }
 }
 
 //Medium screens - TABLET
@@ -11,6 +33,16 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .pork-container {
+    &__header {
+      &-text {
+        margin: 0 20% $MEDIUM;
+      }
+    }
+    &__content {
+      margin: 0 20% $LARGE;
+    }
+  }
 }
 
 //XLarge screens

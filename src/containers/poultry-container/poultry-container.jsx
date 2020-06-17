@@ -1,11 +1,10 @@
 import React from "react";
 import { Tab, Tabs, TabList } from "react-tabs";
 import FarmTabPanel from "../../components/farm-tab-panel";
-import poultryItems from "../../content/poultry-items";
+import { chicken, eggs, chickenSausage } from "../../content/poultry-items";
 
 import "../../styles/react_tabs.scss";
 import "./poultry-container.scss";
-const { chicken, eggs, chickenSausage } = poultryItems;
 
 const PoultryContainer = () => (
   <div className="poultry-container">
