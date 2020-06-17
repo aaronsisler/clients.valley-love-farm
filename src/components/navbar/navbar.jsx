@@ -12,7 +12,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__brand">
-        <Hyperlink className="navbar__link" href="/" title="Valley Love Farm" />
+        <Hyperlink
+          className="navbar__brand-link navbar__link"
+          href="/"
+          title="Valley Love Farm"
+        />
       </div>
       <div className="navbar__toggle">
         <Hamburger

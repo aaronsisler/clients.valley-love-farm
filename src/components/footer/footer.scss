@@ -3,6 +3,25 @@
 
 //Small screens - MOBILE
 @media only screen {
+  footer {
+    @include font-type($SEC_FONT);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: $SMALL;
+    color: white;
+    text-align: center;
+    background-color: $GRAY_600;
+    .footer__link {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: $MAIN_COLOR;
+        transition: color 0.2s ease-in;
+      }
+    }
+  }
 }
 
 //Medium screens - TABLET
