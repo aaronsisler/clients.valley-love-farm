@@ -1,25 +1,18 @@
-//Analytics
-export const analyticsTrackingId = "UA-115632487-1";
-
 // Email
-export const POINT_OF_CONTACT_EMAIL = "valleylovehs@gmail.com";
+// export const POINT_OF_CONTACT_EMAIL = "valleylovehs@gmail.com";
+export const POINT_OF_CONTACT_EMAIL = "aaron.sisler@eandbsolutions.com";
 
-//Services Gateway Config
-export const servicesApiGatewayURL =
-  "https://2des5sl17b.execute-api.us-east-1.amazonaws.com/prod/send-email";
-
-// new things
 // CDN URL
 export const CDN_URL =
   "https://cdn-e-and-b-solutions.s3.amazonaws.com/valley-love-farm";
 
 // Google Maps
-export const CONTACT_ADDRESS = ["143 Rosedale Dr", "Elizabeth City, NC 27909"];
+export const CONTACT_ADDRESS = ["305 Teal Lake Dr", "Holly Springs, NC 27540"];
 export const GOOGLE_MAPS_LOCATION =
-  "https://www.google.com/maps/place/Waterbrooke+of+Elizabeth+City/@36.3228284,-76.2161666,15z/data=!4m5!3m4!1s0x0:0x35d9a7b10b5cf279!8m2!3d36.3228284!4d-76.2161666";
+  "https://www.google.com/maps/place/Valley+Love+Farm/@35.6345421,-78.8258538,17z/data=!3m1!4b1!4m5!3m4!1s0x89ac8e398fca3d89:0x1beac6300ebfef9b!8m2!3d35.6345421!4d-78.8236651";
 
 // Phone number
-export const CONTACT_PHONE_NUMBER = "(252) 331-2149";
+export const CONTACT_PHONE_NUMBER = "(919) 886-9101";
 
 // Services Gateway
 export const SERVICES_GATEWAY_URL = "https://services.eandbsolutions.com/beta";

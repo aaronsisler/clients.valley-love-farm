@@ -1,22 +1,106 @@
 @import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/typography.scss";
 
 //Small screens - MOBILE
+//max-width 640px, small screens
 @media only screen {
-}
+  .nav-menu {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $SMALL;
+    background-color: $GRAY_500;
+    &__brand {
+      a {
+        @include font-type($MAIN_FONT, $MIDLARGE, bold);
 
-//Medium screens - TABLET
-@media only screen and (min-width: $mediumScreen) {
-}
+        color: white;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+      }
+    }
+    &__links {
+      position: fixed;
+      top: 72px;
+      right: -$NAV_MENU_WIDTH;
+      width: $NAV_MENU_WIDTH;
+      height: 100%;
+      padding-top: $LARGE;
+      background-color: $MAIN_COLOR_DARKEN;
+      transition: right 0.3s ease;
+      &.nav-menu__links-open {
+        right: 0;
+      }
+      &-close {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: $SMALL;
+      }
+      &-link {
+        display: block;
+        padding: $SMALL;
+        color: white;
+        font-size: $MEDIUM;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
 
-//Large screens - DESKTOP
-@media only screen and (min-width: $largeScreen) {
+  //Medium screens - TABLET
+  //min-width 641px, medium screens
+  @media only screen and (min-width: $MEDIUM_SCREEN) {
+  }
+
+  //Large screens - DESKTOP
+  //min-width 1025px, large screens
+  @media only screen and (min-width: $LARGE_SCREEN) {
+    .nav-menu {
+      &__brand {
+        a {
+          &:hover {
+            color: $MAIN_COLOR;
+            transition: color 0.5s ease-in;
+          }
+        }
+      }
+      &__toggle {
+        display: none;
+      }
+      &__links {
+        position: inherit;
+        top: inherit;
+        right: inherit;
+        display: flex;
+        align-items: center;
+        width: inherit;
+        height: inherit;
+        padding: 0;
+        background-color: inherit;
+        transition: none;
+        &-link {
+          &:hover {
+            color: $MAIN_COLOR;
+            transition: color 0.5s ease-in;
+          }
+        }
+      }
+    }
+  }
 }
 
 //XLarge screens
-@media only screen and (min-width: $xLargeScreen) {
+//min-width 1441px, xlarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
 }
 
 //XXLarge screens
-@media only screen and (min-width: $xxLargeScreen) {
+//min-width 1921px, xlarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
 }
