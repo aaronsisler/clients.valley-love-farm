@@ -3,6 +3,31 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .lawn-container {
+    margin: $LARGE $MIDLARGE $MEDIUM;
+    text-align: center;
+    &__title {
+      @include font-type($MAIN_FONT, $LARGE);
+
+      margin-bottom: $MEDIUM;
+    }
+    &__text {
+      @include font-type($MAIN_FONT, $MEDIUM);
+
+      margin: 0 5% $MEDIUM;
+      line-height: $LARGE;
+    }
+    &__nav-link {
+      @include CTA-link();
+    }
+    &__gallery {
+      padding: $LARGE $SMALL;
+    }
+    &__image {
+      max-height: 50vh;
+      margin-bottom: $MEDIUM;
+    }
+  }
 }
 
 //Medium screens - TABLET
@@ -11,6 +36,20 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .lawn-container {
+    &__gallery {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
+      padding: $LARGE 10%;
+    }
+    &__image {
+      width: auto;
+      max-width: 25vw;
+      max-height: 30vh;
+      margin: $XSMALL;
+    }
+  }
 }
 
 //XLarge screens
