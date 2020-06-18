@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+//Small screens - MOBILE
+@media only screen {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    padding: $MEDIUM 5%;
+    text-align: center;
+    &__title {
+      @include font-type($MAIN_FONT, $LARGE, bold);
+    }
+    &__image {
+      max-height: 50vh;
+      margin: $MIDLARGE 0;
+    }
+    &__text {
+      @include font-type($MAIN_FONT, $MEDIUM);
+
+      display: grid;
+      grid-gap: $MIDLARGE;
+      padding: 0 $SMALL;
+      line-height: $LARGE;
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+  .about-us {
+    text-align: inherit;
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    &__text {
+      display: grid;
+      grid-gap: $MEDIUM;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

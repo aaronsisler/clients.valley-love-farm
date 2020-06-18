@@ -5,6 +5,7 @@
   $fontSize: $MEDIUM,
   $fontWeight: 400
 ) {
+  color: $FONT_GRAY;
   font-weight: $fontWeight;
   font-size: $fontSize;
   font-family: $fontFamily;
