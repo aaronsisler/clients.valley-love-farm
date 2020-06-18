@@ -36,6 +36,7 @@
     text-align: inherit;
     &__content {
       display: grid;
+      grid-gap: $MEDIUM;
       grid-template-columns: 1fr 1fr;
     }
     &__text {
