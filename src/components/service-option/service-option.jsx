@@ -9,7 +9,7 @@ const ServiceOption = ({ image, linkPath, text, title }) => (
   <div className="service-option">
     <Image
       className="service-option__image"
-      src={image.source}
+      src={image.src}
       altText={image.altText}
     />
     <div className="service-option__content">
@@ -27,7 +27,7 @@ const ServiceOption = ({ image, linkPath, text, title }) => (
 ServiceOption.propTypes = {
   image: PropTypes.shape({
     altText: PropTypes.string.isRequired,
-    source: PropTypes.string.isRequired
+    src: PropTypes.string.isRequired
   }),
   linkPath: PropTypes.string.isRequired,
   text: PropTypes.object.isRequired,

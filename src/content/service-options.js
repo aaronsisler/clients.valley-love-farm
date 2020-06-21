@@ -4,7 +4,7 @@ import { CDN_URL } from "../config";
 const farmOption = {
   key: "farm-service",
   image: {
-    source: `${CDN_URL}/landing/landing-container__service-farm.jpg`,
+    src: `${CDN_URL}/landing/landing-container__service-farm.jpg`,
     altText: "Farm service"
   },
   linkPath: "farm",
@@ -22,7 +22,7 @@ const farmOption = {
 const lawnOption = {
   key: "lawn-service",
   image: {
-    source: `${CDN_URL}/landing/landing-container__service-lawn.jpg`,
+    src: `${CDN_URL}/landing/landing-container__service-lawn.jpg`,
     altText: "Lawn service"
   },
   linkPath: "lawn",
