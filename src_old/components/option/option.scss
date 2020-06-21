@@ -4,14 +4,10 @@
 //Small screens - MOBILE
 //max-width 640px, small screens
 @media only screen {
-  .option {
+  .service-option {
     &__image {
+      max-height: 50vh;
       padding: 0 5%;
-      img {
-        width: 100%;
-        max-height: 50vh;
-        object-fit: scale-down;
-      }
     }
     &__content {
       &-title {

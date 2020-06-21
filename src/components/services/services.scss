@@ -3,6 +3,20 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .services {
+    padding: $LARGE 5%;
+    text-align: center;
+    background-color: $GRAY_100;
+    &__title {
+      @include font-type($MAIN_FONT, $LARGE);
+
+      margin-bottom: $MEDIUM;
+    }
+    &__content {
+      display: grid;
+      grid-gap: $MIDLARGE;
+    }
+  }
 }
 
 //Medium screens - TABLET
@@ -11,6 +25,16 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .services {
+    padding: $LARGE 5%;
+    text-align: inherit;
+    &__content {
+      display: grid;
+      grid-gap: $MIDLARGE;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+    }
+  }
 }
 
 //XLarge screens

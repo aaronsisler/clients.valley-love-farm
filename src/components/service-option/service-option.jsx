@@ -17,7 +17,7 @@ const ServiceOption = ({ image, linkPath, text, title }) => (
       <div className="service-option__content-text">{text}</div>
       <Hyperlink
         href={`/${linkPath}`}
-        className="service-option__nav_link"
+        className="service-option__nav-link"
         title="Find Out More"
       />
     </div>

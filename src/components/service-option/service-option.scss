@@ -3,6 +3,28 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .service-option {
+    &__image {
+      max-height: 50vh;
+      padding: 0 $MEDIUM;
+    }
+    &__content {
+      &-title {
+        @include font-type($MAIN_FONT, $MIDLARGE, bold);
+
+        margin: $SMALL 0;
+      }
+      &-text {
+        @include font-type($MAIN_FONT, $MEDIUM);
+
+        margin-bottom: $MIDLARGE;
+        line-height: $LARGE;
+      }
+    }
+    &__nav-link {
+      @include CTA-link();
+    }
+  }
 }
 
 //Medium screens - TABLET
@@ -11,6 +33,13 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .service-option {
+    &__content {
+      &-text {
+        padding: 0 $LARGE;
+      }
+    }
+  }
 }
 
 //XLarge screens

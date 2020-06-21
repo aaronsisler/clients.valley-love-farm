@@ -6,10 +6,10 @@
   .about-us {
     display: flex;
     flex-direction: column;
-    padding: $MEDIUM 5%;
+    padding: $MEDIUM 5% $LARGE;
     text-align: center;
     &__title {
-      @include font-type($MAIN_FONT, $LARGE, bold);
+      @include font-type($MAIN_FONT, $LARGE);
     }
     &__image {
       max-height: 50vh;
