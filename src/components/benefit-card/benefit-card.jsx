@@ -23,8 +23,7 @@ BenefitCard.propTypes = {
     altText: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired
   }),
-  linkPath: PropTypes.string.isRequired,
-  text: PropTypes.object.isRequired,
+  text: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired
 };
 

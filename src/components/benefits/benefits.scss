@@ -3,6 +3,12 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .benefits {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: $LARGE $SMALL;
+  }
 }
 
 //Medium screens - TABLET
@@ -11,6 +17,9 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .benefits {
+    padding: $LARGE 5%;
+  }
 }
 
 //XLarge screens
