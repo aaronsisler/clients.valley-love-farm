@@ -15,7 +15,9 @@
       &-text {
         @include font-type($MAIN_FONT, $MEDIUM);
 
-        margin-bottom: $MEDIUM;
+        max-width: 724px;
+        margin: 0 auto $MEDIUM;
+        padding: 0 5%;
         line-height: $LARGE;
       }
     }

@@ -8,20 +8,6 @@
       height: 50vh;
       object-fit: cover;
     }
-    &__content {
-      padding: $MEDIUM;
-      &-title {
-        @include font-type($MAIN_FONT, $LARGE, bold);
-      }
-      p {
-        margin: $SMALL 0;
-      }
-      &-sec-title {
-        @include font-type($MAIN_FONT, $MIDLARGE, bold);
-
-        margin: $SMALL 0;
-      }
-    }
   }
 }
 
@@ -30,12 +16,7 @@
   .landing-container {
     &__splash-image {
       height: 100%;
-    }
-    &__second-image {
-      height: 100%;
-    }
-    &__content {
-      padding: $MEDIUM 15% $MEDIUM;
+      max-height: 75vh;
     }
   }
 }

@@ -16,9 +16,9 @@
     &__text {
       @include font-type($MAIN_FONT, $MEDIUM);
 
-      margin-bottom: $SMALL;
-      padding: 0 $SMALL;
-      color: $GRAY_500;
+      max-width: 724px;
+      margin: 0 auto $MEDIUM;
+      padding: 0 5%;
       line-height: $LARGE;
     }
     &__nav-link {

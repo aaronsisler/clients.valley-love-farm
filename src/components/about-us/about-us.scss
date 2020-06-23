@@ -21,6 +21,8 @@
 
       display: grid;
       grid-gap: $MIDLARGE;
+      max-width: 724px;
+      margin: 0 auto $MEDIUM;
       padding: 0 $SMALL;
       line-height: $LARGE;
     }
