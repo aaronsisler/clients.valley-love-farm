@@ -11,7 +11,7 @@
     z-index: 100;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: $NAV_MENU_HEIGHT;
     padding: $SMALL;
     background-color: $MAIN_COLOR;
@@ -60,6 +60,7 @@
   //min-width 1025px, large screens
   @media only screen and (min-width: $LARGE_SCREEN) {
     .navbar {
+      justify-content: space-between;
       &__logo {
         position: static;
         left: auto;
