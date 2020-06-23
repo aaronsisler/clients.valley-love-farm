@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import cn from "classnames";
+import Logo from "../logo";
 import Hamburger from "../../atoms/hamburger";
 import Hyperlink from "../../atoms/hyperlink";
 
@@ -11,12 +12,8 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar__brand">
-        <Hyperlink
-          className="navbar__brand-link navbar__link"
-          href="/"
-          title="Valley Love Farm"
-        />
+      <div className="navbar__logo">
+        <Logo />
       </div>
       <div className="navbar__toggle">
         <Hamburger

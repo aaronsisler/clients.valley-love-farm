@@ -28,9 +28,8 @@
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
   .landing-container {
-    padding-bottom: $LARGE;
     &__splash-image {
-      height: 50vh;
+      height: 100%;
     }
     &__second-image {
       height: 100%;

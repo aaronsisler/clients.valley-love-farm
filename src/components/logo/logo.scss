@@ -3,6 +3,16 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .logo {
+    height: $NAV_MENU_HEIGHT;
+    cursor: pointer;
+    &__image {
+      max-height: 100%;
+      padding: $XSMALL;
+      object-fit: scale-down;
+      border-radius: 25px;
+    }
+  }
 }
 
 //Medium screens - TABLET

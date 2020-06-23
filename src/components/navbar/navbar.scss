@@ -14,15 +14,12 @@
     justify-content: space-between;
     height: $NAV_MENU_HEIGHT;
     padding: $SMALL;
-    background-color: $GRAY_600;
-    &__brand {
-      .navbar__brand-link {
-        @include font-type($MAIN_FONT, $MIDLARGE, bold);
-
-        color: white;
-        letter-spacing: 0.1rem;
-        text-decoration: none;
-      }
+    background-color: $MAIN_COLOR;
+    &__logo {
+      position: absolute;
+      left: 50%;
+      z-index: 9001;
+      transform: translateX(-50%);
     }
     &__links {
       position: fixed;
@@ -63,13 +60,10 @@
   //min-width 1025px, large screens
   @media only screen and (min-width: $LARGE_SCREEN) {
     .navbar {
-      &__brand {
-        .navbar__brand-link {
-          &:hover {
-            color: $MAIN_COLOR;
-            transition: color 0.5s ease-in;
-          }
-        }
+      &__logo {
+        position: static;
+        left: auto;
+        transform: none;
       }
       &__toggle {
         display: none;
@@ -89,7 +83,7 @@
       &__link {
         font-size: $MEDIUM;
         &:hover {
-          color: $MAIN_COLOR;
+          color: $MAIN_COLOR_INVERTED;
           transition: color 0.2s ease-in;
         }
       }

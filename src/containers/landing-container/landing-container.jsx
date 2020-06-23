@@ -10,7 +10,7 @@ import "./landing-container.scss";
 
 const splashImage = {
   altText: "Farmer on the field with tools",
-  src: `${CDN_URL}/landing/landing-container__splash.jpg`
+  src: `${CDN_URL}/landing/landing-container__splash-2.jpg`
 };
 
 const LandingContainer = () => (

@@ -3,6 +3,15 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .landing-gallery {
+    padding: $LARGE 10%;
+    &__image {
+      width: 100%;
+      max-height: 50vh;
+      margin: $XSMALL;
+      object-fit: scale-down;
+    }
+  }
 }
 
 //Medium screens - TABLET
@@ -11,6 +20,16 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .landing-gallery {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    &__image {
+      width: auto;
+      max-width: 25vw;
+      max-height: 30vh;
+    }
+  }
 }
 
 //XLarge screens

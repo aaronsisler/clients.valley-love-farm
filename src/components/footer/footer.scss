@@ -3,7 +3,7 @@
 
 //Small screens - MOBILE
 @media only screen {
-  footer {
+  .footer {
     @include font-type($SEC_FONT);
 
     display: flex;
@@ -13,11 +13,14 @@
     color: white;
     text-align: center;
     background-color: $GRAY_600;
-    .footer__link {
+    &__copyright,
+    &__link {
       color: white;
       text-decoration: none;
+    }
+    &__link {
       &:hover {
-        color: $MAIN_COLOR;
+        color: $MAIN_COLOR_INVERTED;
         transition: color 0.2s ease-in;
       }
     }
