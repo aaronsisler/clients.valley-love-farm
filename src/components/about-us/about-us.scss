@@ -12,8 +12,9 @@
       @include font-type($MAIN_FONT, $LARGE);
     }
     &__image {
-      max-height: 50vh;
-      margin: $MIDLARGE 0;
+      max-width: 50vmax;
+      max-height: 50vmax;
+      margin: $MIDLARGE auto;
     }
     &__text {
       @include font-type($MAIN_FONT, $MEDIUM);
