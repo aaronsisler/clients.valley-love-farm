@@ -36,11 +36,6 @@
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
   .pork-container {
-    &__header {
-      &-text {
-        margin: 0 20% $MEDIUM;
-      }
-    }
     &__content {
       margin: 0 10% $LARGE;
     }
