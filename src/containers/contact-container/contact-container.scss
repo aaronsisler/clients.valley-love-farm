@@ -4,43 +4,44 @@
 //Small screens - MOBILE
 @media only screen {
   .contact-container {
-    background-color: #bbf0f3;
-    background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);
-    &__content {
+    padding: $MEDIUM;
+    &__info {
       display: grid;
-      grid-gap: $MEDIUM;
-      padding: $MEDIUM $SMALL $XLARGE;
-    }
-    &__visit {
-      display: grid;
-      grid-gap: $MEDIUM;
-      padding: $MEDIUM;
+      gap: $MEDIUM;
+      width: 100%;
+      max-width: 724px;
+      padding: $SMALL;
       text-align: center;
-      background: white;
-      box-shadow: $BOX_SHADOW;
-      opacity: 0.95;
+      background-image:
+        linear-gradient(
+          90deg,
+          $MAIN_COLOR -10%,
+          white 25%,
+          white 75%,
+          $MAIN_COLOR 110%
+        );
+      box-shadow: $BOX_SHADOW_WIDGET;
+    }
+    &__form {
+      max-width: 724px;
+      margin-top: $MEDIUM;
+      box-shadow: $BOX_SHADOW_WIDGET;
     }
   }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
-  .contact-container {
-    min-height: calc(100vh - #{$NAV_MENU_HEIGHT});
-    &__content {
-      grid-template-columns: auto auto;
-      justify-content: center;
-      margin: 0 auto;
-    }
-    &__visit {
-      max-width: 30vw;
-      height: fit-content;
-    }
-  }
 }
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
+  .contact-container {
+    &__info {
+    }
+    &__form {
+    }
+  }
 }
 
 //XLarge screens

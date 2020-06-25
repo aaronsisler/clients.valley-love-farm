@@ -74,7 +74,7 @@ const ContactForm = () => {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
-      <h1 className="contact-form__title">Have some questions?</h1>
+      <h1 className="contact-form__title">Send a message</h1>
       <Input
         hasError={Boolean(errors.name)}
         label="Name"

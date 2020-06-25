@@ -7,11 +7,11 @@ import "./contact-container.scss";
 
 const ContactContainer = () => (
   <div className="contact-container">
-    <div className="contact-container__info">
-      <ContactPhone />
-      <ContactAddress />
-    </div>
-    <div className="contact-container__form">
+    <div className="contact-container__content">
+      <div className="contact-container__visit">
+        <ContactPhone />
+        <ContactAddress />
+      </div>
       <ContactForm />
     </div>
   </div>
