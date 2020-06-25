@@ -1,4 +1,5 @@
 import React from "react";
+import ExternalLink from "../../atoms/external-link";
 import { CONTACT_ADDRESS, GOOGLE_MAPS_LOCATION } from "../../config";
 
 import "./contact-address.scss";
@@ -7,17 +8,13 @@ const [streetAddress, cityStateZip] = CONTACT_ADDRESS;
 
 const ContactAddress = () => (
   <div className="contact-address">
-    <h2>Stop by to see us</h2>
     <p>{streetAddress}</p>
     <p>{cityStateZip}</p>
-    <a
+    <ExternalLink
       href={GOOGLE_MAPS_LOCATION}
-      className="hyperlink"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Get directions here
-    </a>
+      title="Get directions"
+      className="contact-address__nav-link"
+    />
   </div>
 );
 

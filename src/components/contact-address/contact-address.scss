@@ -4,8 +4,15 @@
 //Small screens - MOBILE
 @media only screen {
   .contact-address {
-    h2 {
-      @include font-type($MAIN_FONT, $MEDIUM, bold);
+    p {
+      @include font-type($MAIN_FONT, $MIDLARGE);
+
+      color: white;
+    }
+    &__nav-link {
+      @include CTA-link();
+
+      margin-top: $MIDLARGE;
     }
   }
 }
