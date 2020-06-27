@@ -14,7 +14,7 @@
     padding: $MEDIUM;
     opacity: 0.95;
     &__title {
-      @include font-type($MAIN_FONT, $MIDLARGE);
+      @include font-type($MAIN_FONT, $MIDLARGE, bold);
 
       margin-bottom: $SMALL;
       text-align: center;
@@ -47,6 +47,9 @@
   .contact-form {
     min-width: 500px;
     max-width: 750px;
+    &__title {
+      @include font-type($MAIN_FONT, $LARGE, bold);
+    }
   }
 }
 

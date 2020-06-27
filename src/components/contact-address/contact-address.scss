@@ -13,6 +13,9 @@
       @include CTA-link();
 
       margin-top: $MIDLARGE;
+      &:hover {
+        background-color: $MAIN_COLOR_LIGHTEN;
+      }
     }
   }
 }
