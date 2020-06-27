@@ -7,6 +7,9 @@
     @include font-type($MAIN_FONT, $MEDIUM);
 
     color: lighten(darkred, 15);
+    svg > path {
+      color: lighten(darkred, 15);
+    }
   }
 }
 
