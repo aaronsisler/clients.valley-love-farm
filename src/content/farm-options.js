@@ -1,12 +1,13 @@
 import React from "react";
+import { CDN_URL } from "../config";
 
 const poultryOption = {
   key: "poultry-option",
   image: {
-    source: "images/farm/farm1.jpg",
+    source: `${CDN_URL}/farm/farm-container__poultry.jpg`,
     altText: "Poultry"
   },
-  linkPath: "poultry",
+  linkHref: "poultry",
   title: "Chicken & Eggs",
   text: (
     <React.Fragment>
@@ -21,10 +22,10 @@ const poultryOption = {
 const porkOption = {
   key: "pork-option",
   image: {
-    source: "images/farm/farm2.jpg",
+    source: `${CDN_URL}/farm/farm-container__pork.jpg`,
     altText: "Pork"
   },
-  linkPath: "pork",
+  linkHref: "pork",
   title: " Pork & Sausage",
   text: (
     <React.Fragment>

@@ -1,28 +1,50 @@
 // Colors
-$mainColor: #398466;
-$darkMainColor: darken($mainColor, 10);
-$mainColorGradient: linear-gradient(45deg, $darkMainColor 25%, $mainColor 100%);
-$lightGrey: #f3f3f3;
-$midLightGrey: #e8e8e8;
-$midGrey: #666666;
-$darkGrey: #222222;
-$fontGrey: rgba(0, 0, 0, 0.7);
-$closeIconGrey: #aaa;
-$borderGrey: #bbb;
-$border: 1px solid $borderGrey;
-$boxShadowGrey: rgba(189, 195, 199, 0.6);
-//Spacing
-$xxsmall: 0.3rem;
-$xsmall: 0.6rem;
-$small: 1.2rem;
-$medium: 1.8rem;
-$midlarge: 2.4rem;
-$large: 3.2rem;
-$xlarge: 4.8rem;
-$xxlarge: 7.6rem;
-$navMenuWidth: 240px;
-$desktopBreakpoint: 45rem;
-//Site Fonts
-$mainFont: "Arima Madurai", sans-serif;
-$secFont: "Arima Madurai Light", sans-serif;
-$accentFont: "Lobster", sans-serif;
+$MAIN_COLOR: #2d5f69;
+$MAIN_COLOR_INVERTED: #d2a096;
+$MAIN_COLOR_DARKEN: darken($MAIN_COLOR, 10);
+$MAIN_COLOR_LIGHTEN: lighten($MAIN_COLOR, 10);
+$SEC_COLOR: #690359;
+$GRAY_600: #1f2022;
+$GRAY_500: #3d3f42;
+$GRAY_400: #5a5c5e;
+$GRAY_300: #9fa1a4;
+$GRAY_200: #d8d8d8;
+$GRAY_100: #f5f5f5;
+
+// Feature Specific Colors
+$FONT_GRAY: rgba(0, 0, 0, 0.7);
+$BORDER_GRAY: rgba(0, 0, 0, 0.5);
+$BOX_SHADOW_GRAY: rgba(189, 195, 199, 0.6);
+$BOX_SHADOW: 1px 2px $BOX_SHADOW_GRAY;
+$BOX_SHADOW_WIDGET: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$BOX_SHADOW_WIDGET_DARKEN: 5px 0 3px rgba(0, 0, 0, 0.384),
+  0 15px 12px rgba(0, 0, 0, 0.521);
+
+// Spacing
+$XXSMALL: 0.3rem;
+$XSMALL: 0.6rem;
+$SMALL: 1.2rem;
+$MEDIUM: 1.8rem;
+$MIDLARGE: 2.4rem;
+$LARGE: 3.2rem;
+$XLARGE: 4.8rem;
+$XXLARGE: 7.6rem;
+
+//Component Heights
+$NAV_MENU_HEIGHT: 90px;
+$FOOTER_HEIGHT: 50px;
+$MAIN_HEIGHT: calc(100vh - 140px);
+$LINE_HEIGHT: 1.5;
+
+// Screen Breakpoints
+$MEDIUM_SCREEN: 641px;
+$LARGE_SCREEN: 1025px;
+$XLARGE_SCREEN: 1441px;
+$XXLARGE_SCREEN: 1921px;
+
+// Site Fonts
+$MAIN_FONT: "Ubuntu Light", sans-serif;
+$SEC_FONT: "Ubuntu", sans-serif;
+
+// Fonts CDN
+$FONTS_CDN: "https://cdn-e-and-b-solutions.s3.amazonaws.com/resources/fonts";

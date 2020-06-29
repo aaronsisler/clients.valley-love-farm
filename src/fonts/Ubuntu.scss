@@ -1,0 +1,17 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Ubuntu Light";
+  font-style: normal;
+  src:
+    url($FONTS_CDN+"/Ubuntu_Light.woff") format("woff"),
+    url($FONTS_CDN+"/Ubuntu_Light.woff") format("woff2");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Ubuntu Regular";
+  font-style: normal;
+  src:
+    url($FONTS_CDN+"/Ubuntu_Regular.woff") format("woff"),
+    url($FONTS_CDN+"/Ubuntu_Regular.woff") format("woff2");
+}

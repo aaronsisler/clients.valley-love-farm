@@ -1,43 +1,44 @@
 @import "../../styles/variables.scss";
-@import "../../styles/typography.scss";
+@import "../../styles/mixins.scss";
 
 //Small screens - MOBILE
-//max-width 640px, small screens
 @media only screen {
   .farm-container {
-    padding: $large 5%;
+    padding: $LARGE 5%;
     text-align: center;
     &__header {
       &-title {
-        @include font-type($secFont, $large, bold);
-        margin-bottom: $medium;
+        @include font-type($MAIN_FONT, $LARGE, bold);
+
+        margin-bottom: $MEDIUM;
       }
       &-text {
-        @include font-type($mainFont, $medium);
-        line-height: $large;
-        margin-bottom: $medium;
+        @include font-type($MAIN_FONT, $MEDIUM);
+
+        max-width: 724px;
+        margin: 0 auto $MEDIUM;
+        padding: 0 5%;
+        line-height: $LARGE;
       }
     }
     &__content {
       display: grid;
-      grid-gap: $midlarge;
+      grid-gap: $MIDLARGE;
     }
   }
 }
 
 //Medium screens - TABLET
-//min-width 641px, medium screens
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: $MEDIUM_SCREEN) {
 }
 
 //Large screens - DESKTOP
-//min-width 1025px, large screens
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: $LARGE_SCREEN) {
   .farm-container {
-    padding: $large 15%;
+    padding: $LARGE 15%;
     &__content {
       display: grid;
-      grid-gap: $midlarge;
+      grid-gap: $MIDLARGE;
       grid-template-columns: 1fr 1fr;
       text-align: center;
     }
@@ -45,11 +46,9 @@
 }
 
 //XLarge screens
-//min-width 1441px, xlarge screens
-@media only screen and (min-width: 90.063em) {
+@media only screen and (min-width: $XLARGE_SCREEN) {
 }
 
 //XXLarge screens
-//min-width 1921px, xlarge screens
-@media only screen and (min-width: 120.063em) {
+@media only screen and (min-width: $XXLARGE_SCREEN) {
 }

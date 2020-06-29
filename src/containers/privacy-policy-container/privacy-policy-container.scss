@@ -1,43 +1,35 @@
 @import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
 
 //Small screens - MOBILE
-//max-width 640px, small screens
 @media only screen {
-  .privacy_policy_container {
-    font-family: $secFont;
-    padding: $medium;
+  .privacy-policy-container {
+    padding: $MEDIUM;
     &__title {
-      font-size: $midlarge;
-      font-weight: bold;
-      margin-bottom: $medium;
+      @include font-type($MAIN_FONT, $MIDLARGE, bold);
+
+      margin-bottom: $MEDIUM;
     }
-    &__heading {
-      font-weight: bold;
-      font-size: $medium;
-      margin: $medium 0 $xsmall;
-    }
-    &__content {
-      font-size: $medium;
+    &__policy-heading {
+      @include font-type($SEC_FONT, $MEDIUM);
+
+      margin: $MEDIUM 0 $XSMALL;
     }
   }
 }
 
 //Medium screens - TABLET
-//min-width 641px, medium screens
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: $MEDIUM_SCREEN) {
 }
 
 //Large screens - DESKTOP
-//min-width 1025px, large screens
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: $LARGE_SCREEN) {
 }
 
 //XLarge screens
-//min-width 1441px, xlarge screens
-@media only screen and (min-width: 90.063em) {
+@media only screen and (min-width: $XLARGE_SCREEN) {
 }
 
 //XXLarge screens
-//min-width 1921px, xlarge screens
-@media only screen and (min-width: 120.063em) {
+@media only screen and (min-width: $XXLARGE_SCREEN) {
 }

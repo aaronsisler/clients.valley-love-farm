@@ -1,68 +1,61 @@
 @import "../../styles/variables.scss";
-@import "../../styles/typography.scss";
+@import "../../styles/mixins.scss";
 
 //Small screens - MOBILE
-//max-width 640px, small screens
 @media only screen {
   .about-us {
-    padding: $medium 5%;
+    display: flex;
+    flex-direction: column;
+    padding: $MEDIUM 5% $LARGE;
     text-align: center;
-
     &__title {
-      @include font-type($mainFont, $large, bold);
+      @include font-type($MAIN_FONT, $LARGE);
     }
+    &__image {
+      max-width: 50vmax;
+      max-height: 50vmax;
+      margin: $MIDLARGE auto;
+    }
+    &__text {
+      @include font-type($MAIN_FONT, $MEDIUM);
 
-    &__content {
-      &-image {
-        margin: $medium 0;
-        img {
-          max-height: 50vh;
-          object-fit: scale-down;
-          width: 100%;
-        }
-      }
-
-      &-text {
-        @include font-type($mainFont, $medium);
-
-        color: $fontGrey;
-        display: grid;
-        grid-gap: $medium;
-        line-height: $large;
-        padding: 0 $medium;
-      }
+      display: grid;
+      grid-gap: $MIDLARGE;
+      max-width: 724px;
+      margin: 0 auto $MEDIUM;
+      padding: 0 $SMALL;
+      line-height: $LARGE;
     }
   }
 }
 
 //Medium screens - TABLET
-//min-width 641px, medium screens
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: $MEDIUM_SCREEN) {
 }
 
 //Large screens - DESKTOP
-//min-width 1025px, large screens
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: $LARGE_SCREEN) {
   .about-us {
-    padding: $large 10%;
     text-align: inherit;
-
     &__content {
-      align-items: center;
       display: grid;
-      grid-gap: $medium;
+      grid-gap: $MEDIUM;
       grid-template-columns: 1fr 1fr;
+    }
+    &__text {
+      display: grid;
+      grid-gap: $MEDIUM;
+      align-content: center;
+      justify-content: center;
       text-align: center;
     }
   }
 }
 
 //XLarge screens
-//min-width 1441px, xlarge screens
-@media only screen and (min-width: 90.063em) {
+@media only screen and (min-width: $XLARGE_SCREEN) {
 }
 
 //XXLarge screens
-//min-width 1921px, xlarge screens
-@media only screen and (min-width: 120.063em) {
+@media only screen and (min-width: $XXLARGE_SCREEN) {
 }

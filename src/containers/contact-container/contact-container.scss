@@ -1,60 +1,73 @@
 @import "../../styles/variables.scss";
-@import "../../styles/typography.scss";
+@import "../../styles/mixins.scss";
 
 //Small screens - MOBILE
-//max-width 640px, small screens
 @media only screen {
   .contact-container {
-    background-image: url("/images/contact/contact_container_mobile.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    padding: $large $small;
-    &__upper {
-      background: white;
+    min-height: $MAIN_HEIGHT;
+    padding: $MEDIUM;
+    background-image:
+      linear-gradient(
+        150deg,
+        white 25%,
+        white 35%,
+        $SEC_COLOR 130%
+      );
+    &__info {
       display: grid;
-      height: fit-content;
-      margin: 0 auto $large;
-      opacity: 0.95;
-      padding: $medium $small;
-      &-title {
-        @include font-type($mainFont, $large, bold);
-        margin-bottom: $small;
-        text-align: center;
-      }
-    }
-    &__lower {
-      display: flex;
-      justify-content: center;
+      gap: $MEDIUM;
       width: 100%;
+      max-width: 624px;
+      margin: 0 auto;
+      padding: $MIDLARGE;
+      text-align: center;
+      background-color: $MAIN_COLOR_DARKEN;
+      border-radius: 5px;
+      box-shadow: $BOX_SHADOW_WIDGET_DARKEN;
+    }
+    &__form {
+      max-width: 624px;
+      margin: 0 auto;
+      margin-top: $MEDIUM;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: $BOX_SHADOW_WIDGET;
     }
   }
 }
 
 //Medium screens - TABLET
-//min-width 641px, medium screens
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: $MEDIUM_SCREEN) {
 }
 
 //Large screens - DESKTOP
-//min-width 1025px, large screens
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: $LARGE_SCREEN) {
   .contact-container {
-    background-image: url("/images/contact/contact_container_desktop.png");
-    &__lower {
-      display: grid;
+    display: grid;
+    grid-template-columns: 350px auto;
+    align-content: center;
+    justify-content: center;
+    padding: $LARGE 5%;
+    overflow: auto;
+    &__info {
+      z-index: 2;
+      align-content: center;
+      align-self: center;
+      height: 350px;
+    }
+    &__form {
+      z-index: 1;
+      margin: 0;
+      margin-left: -$XLARGE;
+      padding: 0 $LARGE 0 $XXLARGE;
     }
   }
 }
 
 //XLarge screens
-//min-width 1441px, xlarge screens
-@media only screen and (min-width: 90.063em) {
+@media only screen and (min-width: $XLARGE_SCREEN) {
 }
 
 //XXLarge screens
-//min-width 1921px, xlarge screens
-@media only screen and (min-width: 120.063em) {
+@media only screen and (min-width: $XXLARGE_SCREEN) {
 }

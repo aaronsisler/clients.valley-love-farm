@@ -1,27 +1,16 @@
 # dependencies
 /node_modules
-.firebase/
-/.pnp
-.pnp.js
 
-# testing
-/coverage
+# build/production folders
+.next/
+.serverless/
 
-# production
-/build
-
-#Secrets
+# secrets
+secrets.json
 /src/config/secrets.js
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+# local error files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-firebase-debug.log
 sh.exe.stackdump
