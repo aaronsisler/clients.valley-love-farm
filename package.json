@@ -1,5 +1,5 @@
 {
-  "name": "valleylovefarm",
+  "name": "valley-love-farm",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,9 +7,9 @@
     "clear-next": "rm -rf ./.next",
     "clear-serverless": "rm -rf ./.serverless",
     "create-domain:beta": "sls create_domain --config=serverless.beta.yml",
-    "xxcreate-domain:prod": "sls create_domain",
+    "create-domain:prod": "sls create_domain",
     "deploy:beta": "yarn build && sls deploy --config=serverless.beta.yml && yarn clear-serverless && yarn clear-next",
-    "xxdeploy:prod": "yarn build && sls deploy && yarn clear-serverless && yarn clear-next",
+    "deploy:prod": "yarn build && sls deploy && yarn clear-serverless && yarn clear-next",
     "gen:comp": "node ./node_modules/@ebsolutions/generate-react-templates --type=COMP",
     "gen:cont": "node ./node_modules/@ebsolutions/generate-react-templates --type=CONT",
     "gen:page": "node ./node_modules/@ebsolutions/generate-react-templates --type=PAGE",
