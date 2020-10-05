@@ -1,5 +1,5 @@
 {
-  "*.{js,jsx}": ["yarn run lint --fix", "git add ."],
+  "*.{js,jsx}": ["npm run lint --fix", "git add ."],
   "*.{jsx,ts,tsx,css,scss,json}": ["prettier --write", "git add ."],
-  "*.{css,scss}": ["yarn run lint:style --fix", "git add ."]
+  "*.{css,scss}": ["npm run lint:style --fix", "git add ."]
 }
