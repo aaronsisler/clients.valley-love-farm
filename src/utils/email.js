@@ -1,14 +1,9 @@
 import axios from "axios";
 import { validate } from "email-validator";
-import {
-  POINT_OF_CONTACT_EMAIL,
-  SERVICES_API_KEY,
-  SERVICES_GATEWAY_URL
-} from "../config";
+import { POINT_OF_CONTACT_EMAIL, SERVICES_GATEWAY_URL } from "../config";
 
 const headers = {
-  "Content-Type": "application/json",
-  "X-Api-Key": SERVICES_API_KEY
+  "Content-Type": "application/json"
 };
 
 const emailOptions = { headers };

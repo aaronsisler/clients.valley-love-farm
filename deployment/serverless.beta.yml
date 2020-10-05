@@ -3,10 +3,10 @@ service: valley-love-farm
 provider:
   name: aws
   runtime: nodejs12.x
-  stage: prod
+  stage: beta
   region: us-east-1
   environment:
-    NODE_ENV: prod
+    NODE_ENV: beta
 
 functions:
   server:
@@ -20,12 +20,11 @@ plugins:
   - serverless-domain-manager
 
 custom:
-  secrets: ${file(secrets.json)}
   apigwBinary:
     types:
       - "*/*"
   customDomain:
-    domainName: ${self:custom.secrets.prod.DOMAIN}
+    domainName: valleylovefarm.eandbsolutions.com
     basePath: ""
-    stage: prod
+    stage: beta
     createRoute53Record: true
