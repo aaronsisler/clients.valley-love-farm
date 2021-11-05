@@ -1,17 +1,16 @@
+/* stylelint-disable at-rule-empty-line-before, declaration-colon-newline-after */
 @font-face {
   font-weight: normal;
   font-family: "Ubuntu Light";
   font-style: normal;
-  src:
-    url($FONTS_CDN+"/Ubuntu_Light.woff") format("woff"),
-    url($FONTS_CDN+"/Ubuntu_Light.woff") format("woff2");
+  src: url($FONTS_CDN+"/ubuntu/ubuntu-light.woff") format("woff"),
+    url($FONTS_CDN+"/ubuntu/ubuntu-light.woff2") format("woff2");
 }
 
 @font-face {
   font-weight: normal;
   font-family: "Ubuntu Regular";
   font-style: normal;
-  src:
-    url($FONTS_CDN+"/Ubuntu_Regular.woff") format("woff"),
-    url($FONTS_CDN+"/Ubuntu_Regular.woff") format("woff2");
+  src: url($FONTS_CDN+"/ubuntu/ubuntu-regular.woff") format("woff"),
+    url($FONTS_CDN+"/ubuntu/ubuntu-regular.woff2") format("woff2");
 }

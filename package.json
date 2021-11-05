@@ -6,6 +6,7 @@
     "build": "npm run clear:next && next build ./src",
     "clear:next": "rm -rf ./.next",
     "clear:serverless": "rm -rf ./.serverless",
+    "dev": "npm run clear:next && next ./src",
     "domain:beta": "sls create_domain --config=./deployment/serverless.beta.yml",
     "domain:prod": "sls create_domain --config=./deployment/serverless.prod.yml",
     "deploy:beta": "npm run build && sls deploy --config=./deployment/serverless.beta.yml && npm run clear:serverless && npm run clear:next",
@@ -14,8 +15,7 @@
     "gen:cont": "node ./node_modules/@ebsolutions/generate-react-templates --type=CONT",
     "gen:page": "node ./node_modules/@ebsolutions/generate-react-templates --type=PAGE",
     "lint": "eslint \"./**/*.js\"",
-    "lint:style": "node ./node_modules/stylelint/bin/stylelint.js \"**/*.{css,scss}\"",
-    "start": "npm run clear:next && next ./src"
+    "lint:style": "node ./node_modules/stylelint/bin/stylelint.js \"**/*.{css,scss}\""
   },
   "engines": {
     "node": ">=12.0.0"
@@ -26,7 +26,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@zeit/next-sass": "^1.0.1",
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
     "classnames": "^2.2.6",
     "email-validator": "^2.0.3",
     "express": "^4.16.4",
