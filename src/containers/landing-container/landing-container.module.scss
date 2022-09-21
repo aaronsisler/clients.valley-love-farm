@@ -1,13 +1,8 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
-  .image {
-    display: block;
-    width: 100%;
-    object-fit: scale-down;
-  }
 }
 
 //Medium screens - TABLET

@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .backgroundShape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    &__drawing {
+      position: absolute;
+      top: 30%;
+      z-index: -1;
+      width: 115vw;
+      height: 500px;
+      background: linear-gradient(to top right, #86f7cc, #67d7f5);
+      $INSIDE: 0 0, 0 400px, 115vw 200px;
+      transform: skew(50deg);
+      clip-path: polygon($INSIDE);
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

@@ -1,20 +1,10 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
-  .privacy-policy-container {
-    padding: $MEDIUM;
-    &__title {
-      @include font-type($MAIN_FONT, $MIDLARGE, bold);
-
-      margin-bottom: $MEDIUM;
-    }
-    &__policy-heading {
-      @include font-type($SEC_FONT, $MEDIUM);
-
-      margin: $MEDIUM 0 $XSMALL;
-    }
+  .input {
+    width: 100%;
   }
 }
 

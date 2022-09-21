@@ -1,5 +1,6 @@
 import React from "react";
-import PoultryContainer from "../containers/poultry-container";
+
+import { PoultryContainer } from "../containers/poultry-container";
 
 const PoultryPage = () => (
   <main>

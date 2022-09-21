@@ -1,8 +1,8 @@
 @import-normalize;
 
-@import "./variables.scss";
-@import "./fonts.scss";
-@import "./mixins.scss";
+@import "./variables";
+@import "./fonts";
+@import "./mixins";
 
 //Small screens - MOBILE
 //max-width 640px, small screens
@@ -30,6 +30,9 @@
         flex-flow: column;
         min-height: 200px;
       }
+    }
+    &.body__noScroll {
+      overflow: hidden;
     }
   }
 }

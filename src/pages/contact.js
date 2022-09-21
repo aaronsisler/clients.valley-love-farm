@@ -1,5 +1,5 @@
 import React from "react";
-import ContactContainer from "../containers/contact-container";
+import { ContactContainer } from "../containers/contact-container";
 
 const ContactPage = () => (
   <main>

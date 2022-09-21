@@ -1,25 +1,24 @@
-@import "../../styles/variables.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
-  .hamburger {
+  .closeX {
     &__line {
       width: 25px;
       height: 3px;
       margin: 5px;
-      background-color: white;
+      background-color: $MAIN_COLOR;
       transition: all 0.3s ease;
     }
-    &.hamburger--toggled {
-      .hamburger__line:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-      }
-      .hamburger__line:nth-child(2) {
-        opacity: 0;
-      }
-      .hamburger__line:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-      }
+    .closeX__line:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .closeX__line:nth-child(2) {
+      opacity: 0;
+    }
+    .closeX__line:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
     }
   }
 }

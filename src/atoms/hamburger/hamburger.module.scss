@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+//Small screens - MOBILE
+@media only screen {
+  .hamburger {
+    &__line {
+      width: 25px;
+      height: 3px;
+      margin: 5px;
+      background-color: $MAIN_COLOR;
+      transition: all 0.3s ease;
+    }
+    &.hamburgerToggled {
+      .hamburger__line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      .hamburger__line:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger__line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

@@ -1,5 +1,6 @@
 import React from "react";
-import LawnContainer from "../containers/lawn-container";
+
+import { LawnContainer } from "../containers/lawn-container";
 
 const LawnPage = () => (
   <main>

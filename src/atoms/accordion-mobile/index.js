@@ -1,1 +1,1 @@
-export { default } from "./accordion-mobile";
+export { AccordionMobile } from "./accordion-mobile";
