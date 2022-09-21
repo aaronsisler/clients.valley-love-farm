@@ -2,7 +2,7 @@ import { getCdnUrl } from "../utils/cdn-url";
 
 const CDN_URL = getCdnUrl("/landing-gallery");
 
-const landingGalleryContent = [
+const landingGalleryImageContent = [
   {
     key: "landingGallery1",
     src: `${CDN_URL}/landing-gallery-1.jpg`,
@@ -60,4 +60,4 @@ const landingGalleryContent = [
   },
 ];
 
-export { landingGalleryContent };
+export { landingGalleryImageContent };

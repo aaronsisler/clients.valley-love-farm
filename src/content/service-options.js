@@ -1,15 +1,13 @@
 import React from "react";
 
-import { getCdnUrl } from "../utils/cdn-url";
-
-const CDN_URL = getCdnUrl("/landing");
+import {
+  serviceOptionFarmImage,
+  serviceOptionLawnImage,
+} from "../content/images";
 
 const farmOption = {
   key: "farm-service",
-  image: {
-    src: `${CDN_URL}/landing-container__service-farm.jpg`,
-    altText: "Farm service",
-  },
+  image: serviceOptionFarmImage,
   linkPath: "farm",
   title: "Farm to Table",
   text: (
@@ -24,10 +22,7 @@ const farmOption = {
 
 const lawnOption = {
   key: "lawn-service",
-  image: {
-    src: `${CDN_URL}/landing-container__service-lawn.jpg`,
-    altText: "Lawn service",
-  },
+  image: serviceOptionLawnImage,
   linkPath: "lawn",
   title: "Lawn Services",
   text: (

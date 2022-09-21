@@ -1,13 +1,10 @@
 import React from "react";
 
-import { CDN_URL } from "../config";
+import { farmOptionPorkImage, farmOptionPoultryImage } from "../content/images";
 
 const poultryOption = {
   key: "poultry-option",
-  image: {
-    source: `${CDN_URL}/farm/farm-container__poultry.jpg`,
-    altText: "Poultry",
-  },
+  image: farmOptionPoultryImage,
   linkHref: "poultry",
   title: "Chicken & Eggs",
   text: (
@@ -22,10 +19,7 @@ const poultryOption = {
 
 const porkOption = {
   key: "pork-option",
-  image: {
-    source: `${CDN_URL}/farm/farm-container__pork.jpg`,
-    altText: "Pork",
-  },
+  image: farmOptionPorkImage,
   linkHref: "pork",
   title: " Pork & Sausage",
   text: (

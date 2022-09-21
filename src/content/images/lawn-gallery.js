@@ -2,7 +2,7 @@ import { getCdnUrl } from "../utils/cdn-url";
 
 const CDN_URL = getCdnUrl("/lawn");
 
-const lawnGallery = [
+const lawnGalleryImageContent = [
   {
     key: "lawn-1",
     src: `${CDN_URL}/lawn-gallery-1.jpg`,
@@ -45,4 +45,4 @@ const lawnGallery = [
   },
 ];
 
-export default lawnGallery;
+export { lawnGalleryImageContent };

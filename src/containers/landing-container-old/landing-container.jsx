@@ -1,21 +1,21 @@
 import React from "react";
-import Image from "../../atoms/image";
-import { CDN_URL } from "../../config";
-import AboutUs from "../../components/about-us";
-import Benefits from "../../components/benefits";
-import LandingGallery from "../../components/landing-gallery";
-import Services from "../../components/services";
 
-import "./landing-container.scss";
+import { Image } from "../../atoms/image";
+import { AboutUs } from "../../components/about-us";
+import { Benefits } from "../../components/benefits";
+import { LandingGallery } from "../../components/landing-gallery";
+import { Services } from "../../components/services";
+import { landingContainerSplashImage } from "../../content/images/images";
 
-const splashImage = {
-  altText: "Farmer on the field with tools",
-  src: `${CDN_URL}/landing/landing-container__splash-2.jpg`
-};
+import styles from "./landing-container.scss";
 
 const LandingContainer = () => (
-  <div className="landing-container">
-    <Image className="landing-container__splash-image" {...splashImage} />
+  <div className={styles.landingContainer}>
+    <Image
+      className={styles.landingContainer__splashImage}
+      alt={landingContainerSplashImage.altText}
+      src={landingContainerSplashImage.src}
+    />
     <AboutUs />
     <Services />
     <Benefits />
