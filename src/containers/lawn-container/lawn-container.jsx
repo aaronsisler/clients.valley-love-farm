@@ -1,30 +1,36 @@
 import React from "react";
-import ExternalLink from "../../atoms/external-link";
-import Image from "../../atoms/image";
-import lawnGallery from "../../content/lawn-gallery";
+
+import { ExternalLink } from "../../atoms/external-link";
+import { Image } from "../../atoms/image";
+import { lawnGalleryImageContent } from "../../content/images";
 
 import styles from "./lawn-container.scss";
 
 const externalUrl = "https://commonsenselawncare.com/";
 
 const LawnContainer = () => (
-  <div className={styles.lawn-container}>
-    <h1 className={styles.lawn-container__title}>We've moved!</h1>
-    <p className={styles.lawn-container__text}>
+  <div className={styles.lawnContainer}>
+    <h1 className={styles.lawnContainer__title}>We&apos;ve moved!</h1>
+    <p className={styles.lawnContainer__text}>
       We grew thanks to all of our loyal clients. Please click the link below to
       find out about all of the lawn services we offer.
     </p>
     <ExternalLink
       href={externalUrl}
-      className={styles.lawn-container__nav-link"
+      className={styles.lawnContainer__navLink}
       title="Common Sense Lawn Care"
     />
-    <div className={styles.lawn-container__gallery}>
-      {lawnGallery.map(image => (
-        <Image key={image.key} className={styles.lawn-container__image" {...image} />
+    <div className={styles.lawn - container__gallery}>
+      {lawnGalleryImageContent.map((image) => (
+        <Image
+          key={image.key}
+          className={styles.lawnContainer__image}
+          src={image.src}
+          alt={image.altText}
+        />
       ))}
     </div>
   </div>
 );
 
-export default LawnContainer;
+export { LawnContainer };

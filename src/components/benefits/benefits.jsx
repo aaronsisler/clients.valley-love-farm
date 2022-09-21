@@ -12,4 +12,4 @@ const Benefits = () => (
   </div>
 );
 
-export default Benefits;
+export { Benefits };

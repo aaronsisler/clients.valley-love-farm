@@ -11,7 +11,7 @@ const config = {
     },
   },
 };
-export default config;
+export { config;
 
 const Template = (args) => <ContactEmailSentWidget {...args} />;
 

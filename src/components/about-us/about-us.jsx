@@ -29,4 +29,4 @@ const AboutUs = () => (
   </div>
 );
 
-export default AboutUs;
+export { AboutUs;

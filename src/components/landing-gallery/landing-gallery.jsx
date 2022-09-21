@@ -13,4 +13,4 @@ const LandingGallery = () => (
   </div>
 );
 
-export default LandingGallery;
+export { LandingGallery;

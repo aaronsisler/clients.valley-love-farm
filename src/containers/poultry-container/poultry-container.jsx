@@ -39,4 +39,4 @@ const PoultryContainer = () => (
   </div>
 );
 
-export default PoultryContainer;
+export { PoultryContainer;

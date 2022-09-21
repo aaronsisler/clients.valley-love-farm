@@ -3,7 +3,7 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .contact-phone {
+  .contactPhone {
     h2 {
       @include font-type($MAIN_FONT, $MIDLARGE, bold);
 

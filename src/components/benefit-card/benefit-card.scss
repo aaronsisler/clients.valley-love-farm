@@ -3,7 +3,7 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .benefit-card {
+  .benefitCard {
     position: relative;
     width: 100%;
     max-width: 350px;
@@ -23,13 +23,13 @@
       border-radius: 50%;
     }
     &__content {
-      &-title {
+      &Title {
         @include font-type($MAIN_FONT, $LARGE);
 
         margin-top: $SMALL;
         text-align: center;
       }
-      &-text {
+      &Text {
         padding-top: $LARGE;
         padding-right: $SMALL;
         padding-left: $MEDIUM;
@@ -44,7 +44,7 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
-  .benefit-card {
+  .benefitCard {
     width: 350px;
     height: 200px;
     margin: $LARGE;

@@ -26,4 +26,4 @@ FarmTabPanel.propTypes = {
   ).isRequired
 };
 
-export default FarmTabPanel;
+export { FarmTabPanel;

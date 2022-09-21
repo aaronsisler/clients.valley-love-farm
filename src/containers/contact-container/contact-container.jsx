@@ -17,4 +17,4 @@ const ContactContainer = () => (
   </div>
 );
 
-export default ContactContainer;
+export { ContactContainer;
