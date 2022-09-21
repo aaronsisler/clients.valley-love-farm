@@ -1,11 +1,12 @@
 import React from "react";
+
 import { CDN_URL } from "../config";
 
 const poultryOption = {
   key: "poultry-option",
   image: {
     source: `${CDN_URL}/farm/farm-container__poultry.jpg`,
-    altText: "Poultry"
+    altText: "Poultry",
   },
   linkHref: "poultry",
   title: "Chicken & Eggs",
@@ -16,14 +17,14 @@ const poultryOption = {
       Happy animals means meat and eggs with higher Omega-3s and Vitamins A, B
       <sub>6</sub>, B<sub>12</sub>, D, and E.
     </React.Fragment>
-  )
+  ),
 };
 
 const porkOption = {
   key: "pork-option",
   image: {
     source: `${CDN_URL}/farm/farm-container__pork.jpg`,
-    altText: "Pork"
+    altText: "Pork",
   },
   linkHref: "pork",
   title: " Pork & Sausage",
@@ -34,7 +35,7 @@ const porkOption = {
       absolutely no added antibiotics or hormones and higher​ levels of Omega-3s
       and Vitamin E.
     </React.Fragment>
-  )
+  ),
 };
 
 const farmOptions = [poultryOption, porkOption];

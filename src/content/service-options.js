@@ -1,11 +1,14 @@
 import React from "react";
-import { CDN_URL } from "../config";
+
+import { getCdnUrl } from "../utils/cdn-url";
+
+const CDN_URL = getCdnUrl("/landing");
 
 const farmOption = {
   key: "farm-service",
   image: {
-    src: `${CDN_URL}/landing/landing-container__service-farm.jpg`,
-    altText: "Farm service"
+    src: `${CDN_URL}/landing-container__service-farm.jpg`,
+    altText: "Farm service",
   },
   linkPath: "farm",
   title: "Farm to Table",
@@ -16,14 +19,14 @@ const farmOption = {
       Happy animals means meat and eggs with higher Omega-3s and Vitamins A, B
       <sub>6</sub>, B<sub>12</sub>, D, and E.
     </React.Fragment>
-  )
+  ),
 };
 
 const lawnOption = {
   key: "lawn-service",
   image: {
-    src: `${CDN_URL}/landing/landing-container__service-lawn.jpg`,
-    altText: "Lawn service"
+    src: `${CDN_URL}/landing-container__service-lawn.jpg`,
+    altText: "Lawn service",
   },
   linkPath: "lawn",
   title: "Lawn Services",
@@ -34,9 +37,9 @@ const lawnOption = {
       getting the most &quot;Bang for your buck&quot; compared to other
       competitors.
     </React.Fragment>
-  )
+  ),
 };
 
-const serviceOptions = [farmOption, lawnOption];
+const serviceOptionsContent = [farmOption, lawnOption];
 
-export default serviceOptions;
+export { serviceOptionsContent };

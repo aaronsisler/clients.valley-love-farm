@@ -1,17 +1,15 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
-  .logo {
-    height: $NAV_MENU_HEIGHT;
-    cursor: pointer;
-    &__image {
-      max-height: 100%;
-      padding: $XSMALL;
-      object-fit: scale-down;
-      border-radius: 25px;
-    }
+  .contactEmailSentWidget {
+    @include font-type($size: $MIDLARGE);
+
+    padding: $MEDIUM;
+    text-align: center;
+    background-color: white;
+    border-radius: $BORDER_RADIUS;
   }
 }
 

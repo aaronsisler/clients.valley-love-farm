@@ -27,11 +27,11 @@ const ServiceOption = ({ image, linkPath, text, title }) => (
 ServiceOption.propTypes = {
   image: PropTypes.shape({
     altText: PropTypes.string.isRequired,
-    src: PropTypes.string.isRequired
+    src: PropTypes.string.isRequired,
   }),
   linkPath: PropTypes.string.isRequired,
   text: PropTypes.object.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
 
-export default ServiceOption;
+export { ServiceOption };
