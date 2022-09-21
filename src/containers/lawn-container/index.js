@@ -1,1 +1,1 @@
-export { default } from "./lawn-container";
+export { LawnContainer } from "./lawn-container";

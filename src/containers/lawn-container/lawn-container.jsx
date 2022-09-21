@@ -20,7 +20,7 @@ const LawnContainer = () => (
       className={styles.lawnContainer__navLink}
       title="Common Sense Lawn Care"
     />
-    <div className={styles.lawn - container__gallery}>
+    <div className={styles.lawnContainer__gallery}>
       {lawnGalleryImageContent.map((image) => (
         <Image
           key={image.key}

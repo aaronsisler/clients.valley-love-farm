@@ -1,1 +1,1 @@
-export { default } from "./poultry-container";
+export { PoultryContainer } from "./poultry-container";

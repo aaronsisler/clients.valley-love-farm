@@ -25,4 +25,4 @@ const FarmContainer = () => (
   </div>
 );
 
-export { FarmContainer;
+export { FarmContainer };

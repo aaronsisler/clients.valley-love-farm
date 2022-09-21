@@ -1,1 +1,1 @@
-export { default } from "./contact-container";
+export { ContactContainer } from "./contact-container";

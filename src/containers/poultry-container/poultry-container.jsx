@@ -39,4 +39,4 @@ const PoultryContainer = () => (
   </div>
 );
 
-export { PoultryContainer;
+export { PoultryContainer };

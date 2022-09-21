@@ -23,4 +23,4 @@ const LandingContainer = () => (
   </div>
 );
 
-export { LandingContainer;
+export { LandingContainer };

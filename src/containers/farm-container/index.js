@@ -1,1 +1,1 @@
-export { default } from "./farm-container";
+export { FarmContainer } from "./farm-container";

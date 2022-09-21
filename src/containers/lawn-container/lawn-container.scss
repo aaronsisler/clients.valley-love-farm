@@ -3,7 +3,7 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .lawn-container {
+  .lawnContainer {
     margin: $LARGE $MIDLARGE $MEDIUM;
     text-align: center;
     &__title {
@@ -19,7 +19,7 @@
       padding: 0 5%;
       line-height: $LARGE;
     }
-    &__nav-link {
+    &__navLink {
       @include CTA-link();
     }
     &__gallery {
@@ -44,7 +44,7 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
-  .lawn-container {
+  .lawnContainer {
     &__image {
       max-width: 25vw;
       max-height: 35vh;
