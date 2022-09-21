@@ -1,4 +1,5 @@
 import {
+  aboutImage,
   benefitsWidgetImage1,
   benefitsWidgetImage2,
   benefitsWidgetImage3,
@@ -10,10 +11,12 @@ import {
   serviceOptionFarmImage,
   serviceOptionLawnImage,
 } from "./images";
+
 import { landingGalleryImageContent } from "./landing-gallery";
 import { lawnGalleryImageContent } from "./lawn-gallery";
 
 export {
+  aboutImage,
   benefitsWidgetImage1,
   benefitsWidgetImage2,
   benefitsWidgetImage3,

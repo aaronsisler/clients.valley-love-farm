@@ -3,15 +3,15 @@ import ContactPhone from "../../components/contact-phone";
 import ContactAddress from "../../components/contact-address";
 import ContactForm from "../../components/contact-form";
 
-import "./contact-container.scss";
+import styles from "./contact-container.scss";
 
 const ContactContainer = () => (
-  <div className="contact-container">
-    <div className="contact-container__info">
+  <div className={styles.contact - container}>
+    <div className={styles.contact - container__info}>
       <ContactPhone />
       <ContactAddress />
     </div>
-    <div className="contact-container__form">
+    <div className={styles.contact - container__form}>
       <ContactForm />
     </div>
   </div>

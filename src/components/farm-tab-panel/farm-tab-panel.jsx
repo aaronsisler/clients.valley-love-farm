@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import { TabPanel } from "react-tabs";
 import FarmCard from "../farm-card";
 
-import "./farm-tab-panel.scss";
+import styles from "./farm-tab-panel.scss";
 
 const FarmTabPanel = ({ content, ...otherProps }) => (
-  <TabPanel className="farm-tab-panel" {...otherProps}>
-    <div className="farm-tab-panel__content">
+  <TabPanel className={styles.farm-tab-panel" {...otherProps}>
+    <div className={styles.farm-tab-panel__content}>
       {content.map((item, index) => (
         <FarmCard key={index} {...item} />
       ))}

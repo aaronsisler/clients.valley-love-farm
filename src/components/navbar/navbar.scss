@@ -1,5 +1,5 @@
-@import "../../styles/variables.scss";
-@import "../../styles/typography.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 //max-width 640px, small screens
@@ -30,7 +30,7 @@
       padding-top: $XXLARGE;
       background-color: $MAIN_COLOR_DARKEN;
       transition: transform 0.3s ease;
-      &.navbar__links--open {
+      &.navbar__linksOpen {
         transform: translateX(-100%);
       }
       &-close {

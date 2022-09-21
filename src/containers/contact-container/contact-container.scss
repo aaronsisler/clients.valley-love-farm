@@ -1,18 +1,17 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
   .contact-container {
     min-height: $MAIN_HEIGHT;
     padding: $MEDIUM;
-    background-image:
-      linear-gradient(
-        150deg,
-        white 25%,
-        white 35%,
-        $SEC_COLOR 130%
-      );
+    background-image: linear-gradient(
+      150deg,
+      white 25%,
+      white 35%,
+      $SEC_COLOR 130%
+    );
     &__info {
       display: grid;
       gap: $MEDIUM;

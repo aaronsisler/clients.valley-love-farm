@@ -3,21 +3,21 @@ import Hyperlink from "../../atoms/hyperlink";
 import Image from "../../atoms/image";
 import PropTypes from "prop-types";
 
-import "./service-option.scss";
+import styles from "./service-option.scss";
 
 const ServiceOption = ({ image, linkPath, text, title }) => (
-  <div className="service-option">
+  <div className={styles.service-option}>
     <Image
-      className="service-option__image"
+      className={styles.service-option__image"
       src={image.src}
       altText={image.altText}
     />
-    <div className="service-option__content">
-      <div className="service-option__content-title">{title}</div>
-      <div className="service-option__content-text">{text}</div>
+    <div className={styles.service-option__content}>
+      <div className={styles.service-option__content-title}>{title}</div>
+      <div className={styles.service-option__content-text}>{text}</div>
       <Hyperlink
         href={`/${linkPath}`}
-        className="service-option__nav-link"
+        className={styles.service-option__nav-link"
         title="Find Out More"
       />
     </div>

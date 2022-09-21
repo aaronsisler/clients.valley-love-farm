@@ -3,21 +3,21 @@ import PropTypes from "prop-types";
 import Image from "../../atoms/image";
 import Hyperlink from "../../atoms/hyperlink";
 
-import "./farm-option.scss";
+import styles from "./farm-option.scss";
 
 const FarmOption = ({ image, linkHref, text, title }) => (
-  <div className="farm-option">
+  <div className={styles.farm-option}>
     <Image
-      className="farm-option__image"
+      className={styles.farm-option__image"
       src={image.source}
       altText={image.altText}
     />
-    <div className="farm-option__content">
-      <div className="farm-option__title">{title}</div>
-      <div className="farm-option__text">{text}</div>
+    <div className={styles.farm-option__content}>
+      <div className={styles.farm-option__title}>{title}</div>
+      <div className={styles.farm-option__text}>{text}</div>
       <Hyperlink
         href={`/${linkHref}`}
-        className="farm-option__nav-link"
+        className={styles.farm-option__nav-link"
         title="Find Out More"
       />
     </div>

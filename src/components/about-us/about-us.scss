@@ -1,9 +1,9 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
-  .about-us {
+  .aboutUs {
     display: flex;
     flex-direction: column;
     padding: $MEDIUM 5% $LARGE;
@@ -35,7 +35,7 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
-  .about-us {
+  .aboutUs {
     text-align: inherit;
     &__content {
       display: grid;

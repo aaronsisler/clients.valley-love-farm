@@ -10,7 +10,12 @@ const logo = {
   src: `${CDN_URL}/logo.png`,
 };
 
-// Landing Container Background image
+// Landing Container Images
+const aboutImage = {
+  altText: "Farmer feeding chicken",
+  src: `${CDN_URL__LANDING}/landing-container__about.jpg`,
+};
+
 const landingContainerSplashImage = {
   altText: "Farmer on the field with tools",
   src: `${CDN_URL__LANDING}/landing-container__splash-2.jpg`,
@@ -60,6 +65,7 @@ const benefitsWidgetImage4 = {
 };
 
 export {
+  aboutImage,
   benefitsWidgetImage1,
   benefitsWidgetImage2,
   benefitsWidgetImage3,
