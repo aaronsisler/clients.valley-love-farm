@@ -12,10 +12,10 @@ const Footer = () => (
       <Hyperlink
         href="/privacy-policy"
         title="Privacy Policy"
-        className={styles.footer__link"
+        className={styles.footer__link}
       />
     </div>
   </footer>
 );
 
-export { Footer;
+export { Footer };

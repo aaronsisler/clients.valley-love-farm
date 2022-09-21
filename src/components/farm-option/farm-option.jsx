@@ -7,9 +7,9 @@ import Hyperlink from "../../atoms/hyperlink";
 import styles from "./farm-option.scss";
 
 const FarmOption = ({ image, linkHref, text, title }) => (
-  <div className={styles.farm - option}>
+  <div className={styles.farmOption}>
     <Image
-      className={styles.farmPption__image}
+      className={styles.farmOption__image}
       src={image.source}
       alt={image.altText}
     />

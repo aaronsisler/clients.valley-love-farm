@@ -1,4 +1,5 @@
 import React from "react";
+
 import BenefitCard from "../../components/benefit-card";
 import benefits from "../../content/benefits";
 
