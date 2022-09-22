@@ -4,7 +4,7 @@ import { ContactPhone } from "../../components/contact-phone";
 import { ContactAddress } from "../../components/contact-address";
 import { ContactForm } from "../../components/contact-form";
 
-import styles from "./contact-container.scss";
+import styles from "./contact-container.module.scss";
 
 const ContactContainer = () => (
   <div className={styles.contactContainer}>

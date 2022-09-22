@@ -2,7 +2,7 @@ import React from "react";
 
 import { Hyperlink } from "../../atoms/hyperlink";
 
-import styles from "./footer.scss";
+import styles from "./footer.module.scss";
 
 const Footer = () => (
   <footer className={styles.footer}>

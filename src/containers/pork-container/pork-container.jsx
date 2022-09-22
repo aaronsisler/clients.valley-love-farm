@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList } from "react-tabs";
 import { FarmTabPanel } from "../../components/farm-tab-panel";
 import { pork, porkSausage } from "../../content/pork-items";
 
-import styles from "./pork-container.scss";
+import styles from "./pork-container.module.scss";
 
 const PoultryContainer = () => (
   <div className={styles.pork - container}>

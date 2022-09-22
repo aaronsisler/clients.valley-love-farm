@@ -4,7 +4,7 @@ import { ExternalLink } from "../../atoms/external-link";
 import { Image } from "../../atoms/image";
 import { lawnGalleryImageContent } from "../../content/images";
 
-import styles from "./lawn-container.scss";
+import styles from "./lawn-container.module.scss";
 
 const externalUrl = "https://commonsenselawncare.com/";
 

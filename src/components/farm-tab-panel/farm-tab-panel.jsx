@@ -4,7 +4,7 @@ import { TabPanel } from "react-tabs";
 
 import { FarmCard } from "../farm-card";
 
-import styles from "./farm-tab-panel.scss";
+import styles from "./farm-tab-panel.module.scss";
 
 const FarmTabPanel = ({ content, ...otherProps }) => (
   <TabPanel className={styles.farmTabPanel} {...otherProps}>

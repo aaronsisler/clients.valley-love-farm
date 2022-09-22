@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import { Image } from "../../atoms/image";
 
-import styles from "./benefit-card.scss";
+import styles from "./benefit-card.module.scss";
 
 const BenefitCard = ({ image, text, title }) => (
   <div className={styles.benefitCard}>

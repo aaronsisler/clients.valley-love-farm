@@ -3,7 +3,7 @@ import React from "react";
 import { Image } from "../../atoms/image";
 import { landingGalleryImageContent } from "../../content/images";
 
-import styles from "./landing-gallery.scss";
+import styles from "./landing-gallery.module.scss";
 
 const LandingGallery = () => (
   <div className={styles.landing - gallery}>

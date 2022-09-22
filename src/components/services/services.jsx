@@ -3,7 +3,7 @@ import React from "react";
 import { ServiceOption } from "../../components/service-option";
 import { serviceOptionsContent } from "../../content/service-options";
 
-import styles from "./services.scss";
+import styles from "./services.module.scss";
 
 const Services = () => (
   <div className={styles.services}>

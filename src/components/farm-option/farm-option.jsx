@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { Hyperlink } from "../../atoms/hyperlink";
 import { Image } from "../../atoms/image";
 
-import styles from "./farm-option.scss";
+import styles from "./farm-option.module.scss";
 
 const FarmOption = ({ image, linkHref, text, title }) => (
   <div className={styles.farmOption}>

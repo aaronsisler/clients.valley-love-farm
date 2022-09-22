@@ -5,7 +5,7 @@ import { Hamburger } from "../../atoms/hamburger";
 import { Hyperlink } from "../../atoms/hyperlink";
 import { Logo } from "../../atoms/logo";
 
-import styles from "./navbar.scss";
+import styles from "./navbar.module.scss";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);

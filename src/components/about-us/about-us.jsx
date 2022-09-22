@@ -2,7 +2,7 @@ import React from "react";
 import { Image } from "../../atoms/image";
 import { aboutImage } from "../../content/images";
 
-import styles from "./about-us.scss";
+import styles from "./about-us.module.scss";
 
 const AboutUs = () => (
   <div className={styles.aboutUs}>

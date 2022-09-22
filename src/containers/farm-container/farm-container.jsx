@@ -3,7 +3,7 @@ import React from "react";
 import { FarmOption } from "../../components/farm-option";
 import { farmOptions } from "../../content/farm-options";
 
-import styles from "./farm-container.scss";
+import styles from "./farm-container.module.scss";
 
 const FarmContainer = () => (
   <div className={styles.farmContainer}>

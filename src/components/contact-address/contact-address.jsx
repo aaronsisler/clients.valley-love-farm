@@ -3,7 +3,7 @@ import React from "react";
 import { ExternalLink } from "../../atoms/external-link";
 import { CONTACT_ADDRESS, GOOGLE_MAPS_LOCATION } from "../../config";
 
-import styles from "./contact-address.scss";
+import styles from "./contact-address.module.scss";
 
 const [streetAddress, cityStateZip] = CONTACT_ADDRESS;
 

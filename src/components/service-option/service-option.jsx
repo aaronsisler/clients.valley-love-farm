@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { Hyperlink } from "../../atoms/hyperlink";
 import { Image } from "../../atoms/image";
 
-import styles from "./service-option.scss";
+import styles from "./service-option.module.scss";
 
 const ServiceOption = ({ image, linkPath, text, title }) => (
   <div className={styles.service - option}>

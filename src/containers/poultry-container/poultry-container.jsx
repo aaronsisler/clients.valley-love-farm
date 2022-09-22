@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList } from "react-tabs";
 import { FarmTabPanel } from "../../components/farm-tab-panel";
 import { chicken, eggs, chickenSausage } from "../../content/poultry-items";
 
-import styles from "./poultry-container.scss";
+import styles from "./poultry-container.module.scss";
 
 const PoultryContainer = () => (
   <div className={styles.poultryContainer}>
