@@ -1,6 +1,6 @@
 import React from "react";
 
-import ServiceOption from "../../components/service-option";
+import { ServiceOption } from "../../components/service-option";
 import { serviceOptionsContent } from "../../content/service-options";
 
 import styles from "./services.scss";

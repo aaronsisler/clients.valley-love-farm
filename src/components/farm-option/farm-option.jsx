@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import { Hyperlink } from "../../atoms/hyperlink";
 import { Image } from "../../atoms/image";
-import Hyperlink from "../../atoms/hyperlink";
 
 import styles from "./farm-option.scss";
 

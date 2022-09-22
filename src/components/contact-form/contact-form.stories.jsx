@@ -11,7 +11,7 @@ const config = {
     },
   },
 };
-export { config;
+export default config;
 
 const Template = (args) => <ContactForm {...args} />;
 

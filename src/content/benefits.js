@@ -5,7 +5,7 @@ import {
   benefitsWidgetImage4,
 } from "../content/images";
 
-const benefits = [
+const benefitsContent = [
   {
     image: benefitsWidgetImage1,
     text: "Free range animals not only benefits the environment, it benefits you too!",
@@ -28,4 +28,4 @@ const benefits = [
   },
 ];
 
-export { benefits;
+export { benefitsContent };

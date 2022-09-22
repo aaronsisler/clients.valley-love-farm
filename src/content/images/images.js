@@ -1,5 +1,5 @@
-import { CDN_URL } from "../config";
-import getCdnUrl from "../utils/cdn-url";
+import { CDN_URL } from "../../config";
+import { getCdnUrl } from "../../utils";
 
 const CDN_URL__FARM = getCdnUrl("/farm");
 const CDN_URL__LANDING = getCdnUrl("/landing");

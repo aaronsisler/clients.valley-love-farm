@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Hyperlink from "../../atoms/hyperlink";
+import { Hyperlink } from "../../atoms/hyperlink";
 import { Image } from "../../atoms/image";
 
 import styles from "./service-option.scss";

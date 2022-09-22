@@ -3,10 +3,22 @@
 
 //Small screens - MOBILE
 @media only screen {
+  .landingContainer {
+    &__splashImage {
+      height: 50vh;
+      object-fit: cover;
+    }
+  }
 }
 
 //Medium screens - TABLET
 @media only screen and (min-width: $MEDIUM_SCREEN) {
+  .landingContainer {
+    &__splashImage {
+      height: 100%;
+      max-height: 75vh;
+    }
+  }
 }
 
 //Large screens - DESKTOP

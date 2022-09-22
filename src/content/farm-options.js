@@ -34,4 +34,4 @@ const porkOption = {
 
 const farmOptions = [poultryOption, porkOption];
 
-export { farmOptions;
+export { farmOptions };

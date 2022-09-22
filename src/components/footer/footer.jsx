@@ -1,5 +1,6 @@
 import React from "react";
-import Hyperlink from "../../atoms/hyperlink";
+
+import { Hyperlink } from "../../atoms/hyperlink";
 
 import styles from "./footer.scss";
 

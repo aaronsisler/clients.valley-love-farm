@@ -1,9 +1,9 @@
 import React from "react";
 import { Tab, Tabs, TabList } from "react-tabs";
-import FarmTabPanel from "../../components/farm-tab-panel";
+
+import { FarmTabPanel } from "../../components/farm-tab-panel";
 import { pork, porkSausage } from "../../content/pork-items";
 
-import "../../styles/react_tabs.scss";
 import styles from "./pork-container.scss";
 
 const PoultryContainer = () => (

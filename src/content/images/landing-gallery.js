@@ -1,4 +1,4 @@
-import { getCdnUrl } from "../utils/cdn-url";
+import { getCdnUrl } from "../../utils";
 
 const CDN_URL = getCdnUrl("/landing-gallery");
 

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { TabPanel } from "react-tabs";
 
-import FarmCard from "../farm-card";
+import { FarmCard } from "../farm-card";
 
 import styles from "./farm-tab-panel.scss";
 
