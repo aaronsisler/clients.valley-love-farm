@@ -21,7 +21,7 @@
 
       display: grid;
       grid-gap: $MIDLARGE;
-      max-width: 724px;
+      max-width: $MAX_WIDTH__CONTENT;
       margin: 0 auto $MEDIUM;
       padding: 0 $SMALL;
       line-height: $LARGE;

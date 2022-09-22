@@ -14,7 +14,7 @@
     &__text {
       @include font-type($MAIN_FONT, $MEDIUM);
 
-      max-width: 724px;
+      max-width: $MAX_WIDTH__CONTENT;
       margin: 0 auto $MEDIUM;
       padding: 0 5%;
       line-height: $LARGE;

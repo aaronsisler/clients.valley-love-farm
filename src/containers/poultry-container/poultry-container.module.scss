@@ -3,19 +3,19 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .poultry-container {
+  .poultryContainer {
     &__header {
       margin: $LARGE $MIDLARGE $MEDIUM;
       text-align: center;
-      &-title {
-        @include font-type($MAIN_FONT, $LARGE);
+      &Title {
+        @include font-type($size: $LARGE);
 
         margin-bottom: $MEDIUM;
       }
-      &-text {
-        @include font-type($MAIN_FONT, $MEDIUM);
+      &Text {
+        @include font-type($size: $MEDIUM);
 
-        max-width: 724px;
+        max-width: $MAX_WIDTH__CONTENT;
         margin: 0 auto $MEDIUM;
         padding: 0 5%;
         line-height: $LARGE;
@@ -35,7 +35,7 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
-  .poultry-container {
+  .poultryContainer {
     &__content {
       margin: 0 10% $LARGE;
     }

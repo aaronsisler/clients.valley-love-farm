@@ -9,14 +9,14 @@
       padding: 0 5%;
     }
     &__title {
-      @include font-type($MAIN_FONT, $MIDLARGE, bold);
+      @include font-type($size: $MIDLARGE);
 
       margin: $MEDIUM 0;
     }
     &__text {
-      @include font-type($MAIN_FONT, $MEDIUM);
+      @include font-type($size: $MEDIUM);
 
-      max-width: 724px;
+      max-width: $MAX_WIDTH__CONTENT;
       margin: 0 auto $MEDIUM;
       padding: 0 5%;
       line-height: $LARGE;
@@ -34,10 +34,8 @@
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
   .farmOption {
-    &__content {
-      &Text {
-        padding: 0 $MEDIUM;
-      }
+    &__text {
+      padding: 0 $MEDIUM;
     }
   }
 }

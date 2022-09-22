@@ -3,7 +3,7 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .landing-gallery {
+  .landingGallery {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -24,7 +24,7 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
-  .landing-gallery {
+  .landingGallery {
     &__image {
       max-width: 25vw;
       max-height: 30vh;

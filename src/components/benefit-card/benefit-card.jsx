@@ -13,8 +13,8 @@ const BenefitCard = ({ image, text, title }) => (
       alt={image.altText}
     />
     <div className={styles.benefitCard__content}>
-      <div className={styles.benefitCard__content__title}>{title}</div>
-      <div className={styles.benefitCard__content__text}>{text}</div>
+      <div className={styles.benefitCard__contentTitle}>{title}</div>
+      <div className={styles.benefitCard__contentText}>{text}</div>
     </div>
   </div>
 );

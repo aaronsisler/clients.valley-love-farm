@@ -3,19 +3,19 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .farm-container {
+  .farmContainer {
     padding: $LARGE 5%;
     text-align: center;
     &__header {
-      &-title {
-        @include font-type($MAIN_FONT, $LARGE, bold);
+      &Title {
+        @include font-type($size: $LARGE);
 
         margin-bottom: $MEDIUM;
       }
-      &-text {
-        @include font-type($MAIN_FONT, $MEDIUM);
+      &Text {
+        @include font-type($size: $MEDIUM);
 
-        max-width: 724px;
+        max-width: $MAX_WIDTH__CONTENT;
         margin: 0 auto $MEDIUM;
         padding: 0 5%;
         line-height: $LARGE;
@@ -34,7 +34,7 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
-  .farm-container {
+  .farmContainer {
     padding: $LARGE 15%;
     &__content {
       display: grid;

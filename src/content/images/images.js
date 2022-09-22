@@ -34,12 +34,12 @@ const farmOptionPoultryImage = {
 
 // Service Options
 const serviceOptionFarmImage = {
-  src: `${CDN_URL}/landing-container__service-farm.jpg`,
+  src: `${CDN_URL__LANDING}/landing-container__service-farm.jpg`,
   altText: "Farm service",
 };
 
 const serviceOptionLawnImage = {
-  src: `${CDN_URL}/landing-container__service-lawn.jpg`,
+  src: `${CDN_URL__LANDING}/landing-container__service-lawn.jpg`,
   altText: "Lawn service",
 };
 

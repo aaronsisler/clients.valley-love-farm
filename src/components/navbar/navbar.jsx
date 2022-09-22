@@ -25,7 +25,7 @@ const Navbar = () => {
           onClick={() => setMenuOpen(!isMenuOpen)}
         />
       </div>
-      <div className={cn("navbar__links", menuToggledClass)}>
+      <div className={cn(styles.navbar__links, menuToggledClass)}>
         <Hyperlink
           href="/"
           className={styles.navbar__link}

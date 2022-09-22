@@ -11,7 +11,11 @@ const Logo = ({ className, image }) => (
   <div className={cn(styles.logo, className)}>
     <Link href="/">
       <a>
-        <Image className={styles.logo__image} src={image.src} alt={image.alt} />
+        <Image
+          className={styles.logo__image}
+          src={image.src}
+          alt={image.altText}
+        />
       </a>
     </Link>
   </div>
@@ -19,7 +23,7 @@ const Logo = ({ className, image }) => (
 
 Logo.propTypes = {
   className: PropTypes.string,
-  image: PropTypes.shape({ src: PropTypes.string, alt: PropTypes.string }),
+  image: PropTypes.shape({ src: PropTypes.string, altText: PropTypes.string }),
 };
 
 export { Logo };
