@@ -7,7 +7,7 @@ import { Image } from "../../atoms/image";
 import styles from "./service-option.module.scss";
 
 const ServiceOption = ({ image, linkPath, text, title }) => (
-  <div className={styles.service - option}>
+  <div className={styles.serviceOption}>
     <Image
       className={styles.serviceOption__image}
       src={image.src}

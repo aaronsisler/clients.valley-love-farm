@@ -3,16 +3,16 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .pork-container {
+  .porkContainer {
     &__header {
       margin: $LARGE $MIDLARGE $MEDIUM;
       text-align: center;
-      &-title {
+      &Title {
         @include font-type($MAIN_FONT, $LARGE);
 
         margin-bottom: $MEDIUM;
       }
-      &-text {
+      &Text {
         @include font-type($MAIN_FONT, $MEDIUM);
 
         max-width: 724px;
@@ -35,7 +35,7 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
-  .pork-container {
+  .porkContainer {
     &__content {
       margin: 0 10% $LARGE;
     }

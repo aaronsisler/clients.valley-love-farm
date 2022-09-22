@@ -6,22 +6,20 @@ import { pork, porkSausage } from "../../content/pork-items";
 
 import styles from "./pork-container.module.scss";
 
-const PoultryContainer = () => (
-  <div className={styles.pork - container}>
-    <div className={styles.pork - container__header}>
-      <div className={styles.pork - container__header - title}>
-        All Natural Pork
-      </div>
-      <div className={styles.pork - container__header - text}>
+const PorkContainer = () => (
+  <div className={styles.porkContainer}>
+    <div className={styles.porkContainer__header}>
+      <div className={styles.porkContainer__headerTitle}>All Natural Pork</div>
+      <div className={styles.porkContainer__headerText}>
         Our pigs are pasture-raised, which means they are allowed to roam the
         fields, eating the insects and plants they would naturally eat.
       </div>
-      <div className={styles.pork - container__header - text}>
+      <div className={styles.porkContainer__headerText}>
         Our pork cuts (compared to factory farm) contain more Vitamin E and
         significantly more Omega-3 levels.
       </div>
     </div>
-    <div className={styles.pork - container__content}>
+    <div className={styles.porkContainer__content}>
       <Tabs>
         <TabList>
           <Tab>Pork</Tab>
@@ -34,4 +32,4 @@ const PoultryContainer = () => (
   </div>
 );
 
-export { PoultryContainer };
+export { PorkContainer };

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import styles from "./farm-card.scss";
+import styles from "./farm-card.module.scss";
 
 const FarmCard = ({ price, title }) => (
   <div className={styles.farmCard}>

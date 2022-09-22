@@ -6,7 +6,7 @@ import { landingGalleryImageContent } from "../../content/images";
 import styles from "./landing-gallery.module.scss";
 
 const LandingGallery = () => (
-  <div className={styles.landing - gallery}>
+  <div className={styles.landingGallery}>
     {landingGalleryImageContent.map((image) => (
       <Image
         key={image.key}

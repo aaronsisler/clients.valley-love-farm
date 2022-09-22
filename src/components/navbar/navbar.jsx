@@ -5,19 +5,19 @@ import { Hamburger } from "../../atoms/hamburger";
 import { Hyperlink } from "../../atoms/hyperlink";
 import { Logo } from "../../atoms/logo";
 
+import { logo } from "../../content/images";
+
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
-  const menuToggledClass = isMobileMenuOpen
-    ? styles.navbar__linksOpen
-    : undefined;
+  const menuToggledClass = isMenuOpen ? styles.navbar__linksOpen : undefined;
 
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbar__logo}>
-        <Logo />
+        <Logo image={logo} />
       </div>
       <div className={styles.navbar__toggle}>
         <Hamburger
