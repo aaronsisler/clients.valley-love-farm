@@ -7,7 +7,7 @@
     "build": "next build ./src && next export -o dist ./src",
     "dev": "next ./src",
     "deploy:beta": "aws s3 sync ./dist s3://beta.valleylovefarm.com --delete && aws cloudfront create-invalidation --distribution-id E3KUH9AL6T82I3 --paths \"/*\"",
-    "deploy:prod": "aws s3 sync ./dist s3://valleylovefarm.com --delete && aws cloudfront create-invalidation --distribution-id CHANGE_ME --paths \"/*\"",
+    "deploy:prod": "aws s3 sync ./dist s3://valleylovefarm.com --delete && aws cloudfront create-invalidation --distribution-id E129UF0Q525JZA --paths \"/*\"",
     "lint": "eslint \"./**/*.{js,jsx}\"",
     "gen:comp": "node ./node_modules/@ebsolutions/generate-react-templates --type=COMP",
     "gen:cont": "node ./node_modules/@ebsolutions/generate-react-templates --type=CONT",
