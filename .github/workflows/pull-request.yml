@@ -29,8 +29,6 @@ jobs:
 
       - name: Build and Export Static files
         run: npm run build
-        env:
-          GOOGLE_MAPS__API_KEY: ${{ secrets.GOOGLE_MAPS__API_KEY }}
 
       - name: Deploy to Beta
         run: npm run deploy:beta
