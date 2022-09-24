@@ -1,0 +1,46 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .contactMethodModal {
+    display: grid;
+    &__wrapper {
+      display: grid;
+      justify-items: center;
+      height: fit-content;
+      &Content {
+        position: relative;
+        width: 100%;
+        max-width: $MAX_WIDTH__WIDGET;
+        height: fit-content;
+        margin-top: $XXLARGE;
+      }
+    }
+    &__close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: $MAIN_COLOR;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

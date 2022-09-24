@@ -1,36 +1,38 @@
+@use "sass:color";
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
 //Small screens - MOBILE
 @media only screen {
   .contactContainer {
-    min-height: $MAIN_HEIGHT;
-    padding: $MEDIUM;
-    background-image: linear-gradient(
-      150deg,
-      white 25%,
-      white 35%,
-      $SEC_COLOR 130%
-    );
-    &__info {
-      display: grid;
-      gap: $MEDIUM;
-      width: 100%;
-      max-width: 624px;
-      margin: 0 auto;
-      padding: $MIDLARGE;
+    &__title {
+      @include font-type($size: $LARGE);
+
+      margin: $MEDIUM $SMALL 10vh;
       text-align: center;
-      background-color: $MAIN_COLOR_DARKEN;
-      border-radius: 5px;
-      box-shadow: $BOX_SHADOW_WIDGET_DARKEN;
     }
-    &__form {
-      max-width: 624px;
-      margin: 0 auto;
-      margin-top: $MEDIUM;
-      background-color: white;
-      border-radius: 5px;
-      box-shadow: $BOX_SHADOW_WIDGET;
+    &__contactMethods {
+      display: grid;
+      gap: $XLARGE;
+      justify-items: center;
+      padding: $MEDIUM;
+      .contactMethodButton {
+        @include font-type($size: $MEDIUM);
+        $COLOR: $MAIN_COLOR;
+        width: 100%;
+        max-width: 400px;
+        padding: $MEDIUM;
+        color: white;
+        background-color: $COLOR;
+        border: $COLOR 1px solid;
+        border-radius: $BORDER_RADIUS;
+        cursor: pointer;
+        opacity: 0.75;
+        transition: opacity 0.3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
     }
   }
 }
@@ -42,23 +44,8 @@
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
   .contactContainer {
-    display: grid;
-    grid-template-columns: 350px auto;
-    align-content: center;
-    justify-content: center;
-    padding: $LARGE 5%;
-    overflow: auto;
-    &__info {
-      z-index: 2;
-      align-content: center;
-      align-self: center;
-      height: 350px;
-    }
-    &__form {
-      z-index: 1;
-      margin: 0;
-      margin-left: -$XLARGE;
-      padding: 0 $LARGE 0 $XXLARGE;
+    &__title {
+      margin: $XLARGE $SMALL 10vh;
     }
   }
 }

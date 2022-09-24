@@ -16,7 +16,8 @@
       z-index: -1;
       width: 115vw;
       height: 500px;
-      background: linear-gradient(to top right, #86f7cc, #67d7f5);
+      // background: linear-gradient(to top right, #86f7cc, #67d7f5);
+      background: linear-gradient(to top right, $MAIN_COLOR_INVERTED, #cfdfe3);
       $INSIDE: 0 0, 0 400px, 115vw 200px;
       transform: skew(50deg);
       clip-path: polygon($INSIDE);

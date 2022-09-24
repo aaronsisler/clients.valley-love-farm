@@ -16,7 +16,7 @@
         @include font-type($size: $MEDIUM);
 
         max-width: $MAX_WIDTH__CONTENT;
-        margin: 0 auto $MEDIUM;
+        margin: 0 auto $XLARGE;
         padding: 0 5%;
         line-height: $LARGE;
       }
