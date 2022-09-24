@@ -3,19 +3,19 @@
 
 //Small screens - MOBILE
 @media only screen {
-  .service-option {
+  .serviceOption {
     &__image {
       max-height: 50vh;
       padding: 0 $MEDIUM;
     }
     &__content {
-      &-title {
-        @include font-type($MAIN_FONT, $MIDLARGE, bold);
+      &Title {
+        @include font-type($size: $MIDLARGE);
 
         margin: $SMALL 0;
       }
-      &-text {
-        @include font-type($MAIN_FONT, $MEDIUM);
+      &Text {
+        @include font-type($size: $MEDIUM);
 
         max-width: $MAX_WIDTH__CONTENT;
         margin: 0 auto $MEDIUM;
@@ -23,7 +23,7 @@
         line-height: $LARGE;
       }
     }
-    &__nav-link {
+    &__navLink {
       @include CTA-link();
     }
   }
@@ -35,9 +35,9 @@
 
 //Large screens - DESKTOP
 @media only screen and (min-width: $LARGE_SCREEN) {
-  .service-option {
+  .serviceOption {
     &__content {
-      &-text {
+      &Text {
         padding: 0 $LARGE;
       }
     }
