@@ -1,35 +1,39 @@
-@import "./variables.scss";
-@import "./typography.scss";
-.react-tabs {
-  &__tab-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  &__tab {
-    @include font-type($MAIN_FONT, $MEDIUM);
+@import "./variables";
+@import "./mixins";
 
-    display: flex;
-    justify-content: center;
-    padding: $SMALL $MEDIUM $XSMALL;
-    color: $FONT_GRAY;
-    cursor: pointer;
-    &--selected {
-      @include font-type($MAIN_FONT, $MEDIUM, bold);
-
-      color: $FONT_GRAY;
-      font-weight: bold;
-      border-bottom: 3px solid $MAIN_COLOR;
-    }
-  }
-  &__tab-panel {
-    display: none;
-    &--selected {
+//Small screens - MOBILE
+@media only screen {
+  .react-tabs {
+    &__tab-list {
       display: flex;
-      padding-top: $SMALL;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    &__tab {
+      @include font-type($MAIN_FONT, $MEDIUM);
+
+      display: flex;
+      justify-content: center;
+      padding: $SMALL $MEDIUM $XSMALL;
+      color: $FONT_GRAY;
+      cursor: pointer;
+      &--selected {
+        @include font-type($MAIN_FONT, $MEDIUM, bold);
+
+        color: $FONT_GRAY;
+        font-weight: bold;
+        border-bottom: 3px solid $MAIN_COLOR;
+      }
+    }
+    &__tab-panel {
+      display: none;
+      &--selected {
+        display: flex;
+        padding-top: $SMALL;
+      }
     }
   }
 }

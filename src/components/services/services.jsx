@@ -1,18 +1,19 @@
 import React from "react";
-import services from "../../content/service-options";
-import ServiceOption from "../../components/service-option";
 
-import "./services.scss";
+import { ServiceOption } from "../../components/service-option";
+import { serviceOptionsContent } from "../../content/service-options";
+
+import styles from "./services.module.scss";
 
 const Services = () => (
-  <div className="services">
-    <h2 className="services__title">What We Provide</h2>
-    <div className="services__content">
-      {services.map(service => (
+  <div className={styles.services}>
+    <h2 className={styles.services__title}>What We Provide</h2>
+    <div className={styles.services__content}>
+      {serviceOptionsContent.map((service) => (
         <ServiceOption key={service.key} {...service} />
       ))}
     </div>
   </div>
 );
 
-export default Services;
+export { Services };

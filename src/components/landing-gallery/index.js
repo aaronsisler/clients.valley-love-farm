@@ -1,1 +1,1 @@
-export { default } from "./landing-gallery";
+export { LandingGallery } from "./landing-gallery";

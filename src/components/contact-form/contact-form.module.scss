@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .contactForm {
+    @include font-type();
+
+    display: grid;
+    grid-gap: $SMALL;
+    &__title {
+      @include font-type($size: $MIDLARGE);
+
+      text-align: center;
+      background-color: white;
+    }
+    &__input {
+      background-color: white;
+      label,
+      input,
+      p {
+        @include font-type($size: $MIDSMALL);
+      }
+      p {
+        margin-inline: 0;
+      }
+    }
+    &__message {
+      @include textarea();
+    }
+    &__button {
+      @include CTA-link();
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

@@ -1,1 +1,1 @@
-export { default } from "./farm-card";
+export { FarmCard } from "./farm-card";

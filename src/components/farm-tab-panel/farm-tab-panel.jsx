@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { TabPanel } from "react-tabs";
-import FarmCard from "../farm-card";
 
-import "./farm-tab-panel.scss";
+import { FarmCard } from "../farm-card";
+
+import styles from "./farm-tab-panel.module.scss";
 
 const FarmTabPanel = ({ content, ...otherProps }) => (
-  <TabPanel className="farm-tab-panel" {...otherProps}>
-    <div className="farm-tab-panel__content">
+  <TabPanel className={styles.farmTabPanel} {...otherProps}>
+    <div className={styles.farmTabPanel__content}>
       {content.map((item, index) => (
         <FarmCard key={index} {...item} />
       ))}
@@ -21,9 +22,9 @@ FarmTabPanel.propTypes = {
   content: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired
+      price: PropTypes.string.isRequired,
     })
-  ).isRequired
+  ).isRequired,
 };
 
-export default FarmTabPanel;
+export { FarmTabPanel };

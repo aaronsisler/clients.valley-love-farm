@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .accordionMobile {
+    position: relative;
+    transform: translateZ(0);
+    transition: all 0.2s;
+    &__title {
+      @include font-type($size: $MEDIUM);
+
+      padding: $MEDIUM 0 $MEDIUM $MEDIUM;
+      color: $MAIN_COLOR;
+      border-bottom: solid 1px $MAIN_COLOR;
+    }
+    &__content {
+      max-height: 0;
+      overflow: hidden;
+      background-color: white;
+      &Link {
+        @include font-type($size: $MEDIUM);
+
+        padding: $MEDIUM;
+        border-bottom: solid 1px $GRAY_400;
+      }
+      &.accordionMobileToggled {
+        display: grid;
+        max-height: 500px;
+      }
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

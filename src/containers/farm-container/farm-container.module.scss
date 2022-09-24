@@ -1,0 +1,54 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .farmContainer {
+    padding: $LARGE 5%;
+    text-align: center;
+    &__header {
+      &Title {
+        @include font-type($size: $LARGE);
+
+        margin-bottom: $MEDIUM;
+      }
+      &Text {
+        @include font-type($size: $MEDIUM);
+
+        max-width: $MAX_WIDTH__CONTENT;
+        margin: 0 auto $XLARGE;
+        padding: 0 5%;
+        line-height: $LARGE;
+      }
+    }
+    &__content {
+      display: grid;
+      grid-gap: $MIDLARGE;
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+  .farmContainer {
+    padding: $LARGE 15%;
+    &__content {
+      display: grid;
+      grid-gap: $MIDLARGE;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+    }
+  }
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

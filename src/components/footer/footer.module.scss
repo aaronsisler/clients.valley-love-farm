@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .footer {
+    @include font-type();
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: $FOOTER_HEIGHT;
+    padding: $SMALL;
+    color: white;
+    text-align: center;
+    background-color: $GRAY_600;
+    &__copyright,
+    &__link {
+      color: white;
+      text-decoration: none;
+    }
+    &__link {
+      &:hover {
+        color: $MAIN_COLOR_INVERTED;
+        transition: color 0.2s ease-in;
+      }
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

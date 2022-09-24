@@ -1,3 +1,6 @@
+// Client Name
+export const CLIENT_NAME = "Valley Love Farm";
+
 // Email
 export const POINT_OF_CONTACT_EMAIL = "valleylovehs@gmail.com";
 // export const POINT_OF_CONTACT_EMAIL = "aaron.sisler@eandbsolutions.com";

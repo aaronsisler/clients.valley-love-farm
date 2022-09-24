@@ -1,5 +1,6 @@
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+
 import { CDN_URL } from "../config";
 
 class MyDocument extends Document {

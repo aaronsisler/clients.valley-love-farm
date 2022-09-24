@@ -1,1 +1,1 @@
-export { default } from "./privacy-policy-container";
+export { PrivacyPolicyContainer } from "./privacy-policy-container";

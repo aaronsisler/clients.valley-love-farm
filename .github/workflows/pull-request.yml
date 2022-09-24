@@ -5,22 +5,34 @@ name: Pull Request
 
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
-  SanityCheck:
+  PullRequest:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup AWS CLI
+        uses: unfor19/install-aws-cli-action@master
+        with:
+          version: 2
+
       - name: Checkout
         uses: actions/checkout@v2
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 14
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build and Export Static files
         run: npm run build
+
+      - name: Deploy to Beta
+        run: npm run deploy:beta
+        env:
+          AWS_DEFAULT_REGION: us-east-1
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

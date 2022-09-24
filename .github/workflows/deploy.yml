@@ -5,30 +5,34 @@ name: Deploy
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   Deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup AWS CLI
+        uses: unfor19/install-aws-cli-action@master
+        with:
+          version: 2
+
       - name: Checkout
         uses: actions/checkout@v2
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 14
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build and Export Static files
         run: npm run build
 
-      - name: Deploy
-        uses: serverless/github-action@master
-        with:
-          args: deploy --config=./deployment/serverless.prod.yml
+      - name: Deploy to Prod
+        run: npm run deploy:prod
         env:
+          AWS_DEFAULT_REGION: us-east-1
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

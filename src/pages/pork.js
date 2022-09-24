@@ -1,5 +1,6 @@
 import React from "react";
-import PorkContainer from "../containers/pork-container";
+
+import { PorkContainer } from "../containers/pork-container";
 
 const PorkPage = () => (
   <main>

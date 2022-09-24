@@ -1,19 +1,20 @@
 import React from "react";
-import Image from "../../atoms/image";
 import PropTypes from "prop-types";
 
-import "./benefit-card.scss";
+import { Image } from "../../atoms/image";
+
+import styles from "./benefit-card.module.scss";
 
 const BenefitCard = ({ image, text, title }) => (
-  <div className="benefit-card">
+  <div className={styles.benefitCard}>
     <Image
-      className="benefit-card__image"
+      className={styles.benefitCard__image}
       src={image.src}
-      altText={image.altText}
+      alt={image.altText}
     />
-    <div className="benefit-card__content">
-      <div className="benefit-card__content-title">{title}</div>
-      <div className="benefit-card__content-text">{text}</div>
+    <div className={styles.benefitCard__content}>
+      <div className={styles.benefitCard__contentTitle}>{title}</div>
+      <div className={styles.benefitCard__contentText}>{text}</div>
     </div>
   </div>
 );
@@ -21,10 +22,10 @@ const BenefitCard = ({ image, text, title }) => (
 BenefitCard.propTypes = {
   image: PropTypes.shape({
     altText: PropTypes.string.isRequired,
-    src: PropTypes.string.isRequired
+    src: PropTypes.string.isRequired,
   }),
   text: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
 
-export default BenefitCard;
+export { BenefitCard };

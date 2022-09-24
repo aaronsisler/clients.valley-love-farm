@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+  .accordionDesktop {
+    position: relative;
+    display: inline-block;
+    margin-right: $MEDIUM;
+    &__title {
+      @include font-type($size: $MEDIUM);
+
+      padding: $SMALL;
+      color: $MAIN_COLOR;
+      text-transform: uppercase;
+      border-bottom: none;
+      cursor: pointer;
+      &.accordionDesktopToggled {
+        background-color: $GRAY_200;
+      }
+    }
+    &__content {
+      display: none;
+      max-height: 0;
+      overflow: hidden;
+      background-color: white;
+      &Link {
+        @include font-type($size: $MEDIUM);
+
+        padding: $SMALL;
+        &:hover {
+          background-color: $GRAY_100;
+        }
+      }
+      &.accordionDesktopToggled {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: grid;
+        width: 250px;
+        max-height: 500px;
+        box-shadow: $BOX_SHADOW;
+      }
+    }
+  }
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

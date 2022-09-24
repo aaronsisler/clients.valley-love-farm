@@ -1,49 +1,52 @@
 import React, { useState } from "react";
 import cn from "classnames";
-import Logo from "../logo";
-import Hamburger from "../../atoms/hamburger";
-import Hyperlink from "../../atoms/hyperlink";
 
-import "./navbar.scss";
+import { Hamburger } from "../../atoms/hamburger";
+import { Hyperlink } from "../../atoms/hyperlink";
+import { Logo } from "../../atoms/logo";
+import { logo } from "../../content/images";
+
+import styles from "./navbar.module.scss";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  const menuToggledClass = isMenuOpen ? "navbar__links--open" : undefined;
+
+  const menuToggledClass = isMenuOpen ? styles.navbar__linksOpen : undefined;
 
   return (
-    <nav className="navbar">
-      <div className="navbar__logo">
-        <Logo />
+    <nav className={styles.navbar}>
+      <div className={styles.navbar__logo}>
+        <Logo image={logo} />
       </div>
-      <div className="navbar__toggle">
+      <div className={styles.navbar__toggle}>
         <Hamburger
           isToggled={isMenuOpen}
           onClick={() => setMenuOpen(!isMenuOpen)}
         />
       </div>
-      <div className={cn("navbar__links", menuToggledClass)}>
+      <div className={cn(styles.navbar__links, menuToggledClass)}>
         <Hyperlink
           href="/"
-          className="navbar__link"
+          className={styles.navbar__link}
           onClick={() => setMenuOpen(false)}
           title="Home"
         />
 
         <Hyperlink
           href="/farm"
-          className="navbar__link"
+          className={styles.navbar__link}
           onClick={() => setMenuOpen(false)}
           title="Farm"
         />
         <Hyperlink
           href="/lawn"
-          className="navbar__link"
+          className={styles.navbar__link}
           onClick={() => setMenuOpen(false)}
           title="Lawn"
         />
         <Hyperlink
           href="/contact"
-          className="navbar__link"
+          className={styles.navbar__link}
           onClick={() => setMenuOpen(false)}
           title="Contact"
         />
@@ -52,4 +55,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export { Navbar };

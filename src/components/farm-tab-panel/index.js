@@ -1,1 +1,1 @@
-export { default } from "./farm-tab-panel";
+export { FarmTabPanel } from "./farm-tab-panel";

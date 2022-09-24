@@ -1,0 +1,59 @@
+@use "sass:color";
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+//Small screens - MOBILE
+@media only screen {
+  .contactContainer {
+    &__title {
+      @include font-type($size: $LARGE);
+
+      margin: $MEDIUM $SMALL 10vh;
+      text-align: center;
+    }
+    &__contactMethods {
+      display: grid;
+      gap: $XLARGE;
+      justify-items: center;
+      padding: $MEDIUM;
+      .contactMethodButton {
+        @include font-type($size: $MEDIUM);
+        $COLOR: $MAIN_COLOR;
+        width: 100%;
+        max-width: 400px;
+        padding: $MEDIUM;
+        color: white;
+        background-color: $COLOR;
+        border: $COLOR 1px solid;
+        border-radius: $BORDER_RADIUS;
+        cursor: pointer;
+        opacity: 0.75;
+        transition: opacity 0.3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+//Medium screens - TABLET
+@media only screen and (min-width: $MEDIUM_SCREEN) {
+}
+
+//Large screens - DESKTOP
+@media only screen and (min-width: $LARGE_SCREEN) {
+  .contactContainer {
+    &__title {
+      margin: $XLARGE $SMALL 10vh;
+    }
+  }
+}
+
+//XLarge screens
+@media only screen and (min-width: $XLARGE_SCREEN) {
+}
+
+//XXLarge screens
+@media only screen and (min-width: $XXLARGE_SCREEN) {
+}

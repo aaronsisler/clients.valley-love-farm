@@ -1,23 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Image from "../../atoms/image";
-import Hyperlink from "../../atoms/hyperlink";
 
-import "./farm-option.scss";
+import { Hyperlink } from "../../atoms/hyperlink";
+import { Image } from "../../atoms/image";
+
+import styles from "./farm-option.module.scss";
 
 const FarmOption = ({ image, linkHref, text, title }) => (
-  <div className="farm-option">
+  <div className={styles.farmOption}>
     <Image
-      className="farm-option__image"
+      className={styles.farmOption__image}
       src={image.source}
-      altText={image.altText}
+      alt={image.altText}
     />
-    <div className="farm-option__content">
-      <div className="farm-option__title">{title}</div>
-      <div className="farm-option__text">{text}</div>
+    <div className={styles.farmOption__content}>
+      <div className={styles.farmOption__title}>{title}</div>
+      <div className={styles.farmOption__text}>{text}</div>
       <Hyperlink
         href={`/${linkHref}`}
-        className="farm-option__nav-link"
+        className={styles.farmOption__navLink}
         title="Find Out More"
       />
     </div>
@@ -27,11 +28,11 @@ const FarmOption = ({ image, linkHref, text, title }) => (
 FarmOption.propTypes = {
   image: PropTypes.shape({
     altText: PropTypes.string.isRequired,
-    source: PropTypes.string.isRequired
+    source: PropTypes.string.isRequired,
   }),
   linkHref: PropTypes.string.isRequired,
   text: PropTypes.object.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
 
-export default FarmOption;
+export { FarmOption };

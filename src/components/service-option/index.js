@@ -1,1 +1,1 @@
-export { default } from "./service-option";
+export { ServiceOption } from "./service-option";

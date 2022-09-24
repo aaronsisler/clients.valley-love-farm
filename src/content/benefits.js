@@ -1,42 +1,31 @@
-import getCdnUrl from "../utils/cdn-url";
+import {
+  benefitsWidgetImage1,
+  benefitsWidgetImage2,
+  benefitsWidgetImage3,
+  benefitsWidgetImage4,
+} from "../content/images";
 
-const CDN_URL = getCdnUrl("/landing");
-
-const benefits = [
+const benefitsContent = [
   {
-    image: {
-      altText: "Widget 1",
-      src: `${CDN_URL}/landing-container__benefit-1.png`
-    },
-    text:
-      "Free range animals not only benefits the environment, it benefits you too!",
-    title: "Sustainable"
+    image: benefitsWidgetImage1,
+    text: "Free range animals not only benefits the environment, it benefits you too!",
+    title: "Sustainable",
   },
   {
-    image: {
-      altText: "Widget 2",
-      src: `${CDN_URL}/landing-container__benefit-2.png`
-    },
+    image: benefitsWidgetImage2,
     text: "No added antibiotics, chemicals, or hormones means a healthier you.",
-    title: "Healthy"
+    title: "Healthy",
   },
   {
-    image: {
-      altText: "Widget 3",
-      src: `${CDN_URL}/landing-container__benefit-3.png`
-    },
+    image: benefitsWidgetImage3,
     text: "Ally with a local farmer and get the best foods they have to offer.",
-    title: "Community"
+    title: "Community",
   },
   {
-    image: {
-      altText: "Widget 4",
-      src: `${CDN_URL}/landing-container__benefit-4.png`
-    },
-    text:
-      "Pasture farming reduces the damages done compared to industrial farming.",
-    title: "Responsible"
-  }
+    image: benefitsWidgetImage4,
+    text: "Pasture farming reduces the damages done compared to industrial farming.",
+    title: "Responsible",
+  },
 ];
 
-export default benefits;
+export { benefitsContent };

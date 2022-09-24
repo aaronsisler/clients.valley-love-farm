@@ -1,1 +1,1 @@
-export { default } from "./about-us";
+export { AboutUs } from "./about-us";

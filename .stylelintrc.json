@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "stylelint-config-rational-order-fix",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": ["stylelint-order", "stylelint-config-rational-order-fix/plugin"],
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "function",
+          "if",
+          "else",
+          "each",
+          "include",
+          "mixin",
+          "return",
+          "error",
+          "use"
+        ]
+      }
+    ],
+    "rule-empty-line-before": "never",
+    "block-no-empty": null,
+    "declaration-colon-newline-after": null,
+    "order/order": [
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "^((?!breakpoint).)*$"
+      },
+      "custom-properties",
+      "declarations"
+    ]
+  }
+}

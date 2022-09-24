@@ -1,18 +1,25 @@
-@import "./variables.scss";
+@import "./variables";
 
 @mixin font-type(
-  $fontFamily: $MAIN_FONT,
-  $fontSize: $MEDIUM,
-  $fontWeight: 400
+  $family: $MAIN_FONT,
+  $size: $MEDIUM,
+  $weight: 300,
+  $color: $FONT_GRAY
 ) {
-  color: $FONT_GRAY;
-  font-weight: $fontWeight;
-  font-size: $fontSize;
-  font-family: $fontFamily;
+  color: $color;
+  font-weight: $weight;
+  font-size: $size;
+  font-family: $family;
+}
+
+@function rgba-with-var($color, $alpha: 1) {
+  @return unquote(
+    "rgba(#{red($color)}, #{green($color)}, #{blue($color)}, #{$alpha})"
+  );
 }
 
 @mixin button() {
-  @include font-type($MAIN_FONT, $MEDIUM);
+  @include font-type($size: $MEDIUM);
 
   display: grid;
   align-items: center;
@@ -23,7 +30,7 @@
   text-transform: uppercase;
   text-decoration: none;
   background-color: $MAIN_COLOR;
-  border-radius: $XSMALL;
+  border-radius: $BORDER_RADIUS;
   cursor: pointer;
   &:hover {
     background-color: $MAIN_COLOR_LIGHTEN;
@@ -65,8 +72,9 @@
 }
 
 @mixin textarea() {
+  @include font-type($size: $MIDSMALL);
+
   padding: $SMALL $XSMALL;
-  font-size: $MEDIUM;
   border: 1px solid $BORDER_GRAY;
-  border-radius: 5px;
+  border-radius: $BORDER_RADIUS;
 }

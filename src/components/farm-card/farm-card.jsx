@@ -1,18 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./farm-card.scss";
+import styles from "./farm-card.module.scss";
 
 const FarmCard = ({ price, title }) => (
-  <div className="farm-card">
-    <div className="farm-card__title">{title}</div>
-    <div className="farm-card__price">{price}</div>
+  <div className={styles.farmCard}>
+    <div className={styles.farmCard__title}>{title}</div>
+    <div className={styles.farmCard__price}>{price}</div>
   </div>
 );
 
 FarmCard.propTypes = {
+  price: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired
 };
 
-export default FarmCard;
+export { FarmCard };

@@ -1,8 +1,10 @@
 import React from "react";
 import App from "next/app";
 import Head from "next/head";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+
+import { Navbar } from "../components/navbar";
+import { Footer } from "../components/footer";
+
 import "../styles/app.scss";
 
 class MyApp extends App {

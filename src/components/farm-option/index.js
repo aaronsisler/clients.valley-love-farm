@@ -1,1 +1,1 @@
-export { default } from "./farm-option";
+export { FarmOption } from "./farm-option";

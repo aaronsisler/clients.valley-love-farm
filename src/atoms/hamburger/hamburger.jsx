@@ -2,23 +2,23 @@ import React from "react";
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-import "./hamburger.scss";
+import styles from "./hamburger.module.scss";
 
 const Hamburger = ({ isToggled, onClick }) => {
-  const toggleClassname = isToggled ? "hamburger--toggled" : undefined;
+  const toggleClassname = isToggled ? styles.hamburgerToggled : undefined;
 
   return (
-    <div className={cn("hamburger", toggleClassname)} onClick={onClick}>
-      <div className="hamburger__line"></div>
-      <div className="hamburger__line"></div>
-      <div className="hamburger__line"></div>
+    <div className={cn(styles.hamburger, toggleClassname)} onClick={onClick}>
+      <div className={styles.hamburger__line}></div>
+      <div className={styles.hamburger__line}></div>
+      <div className={styles.hamburger__line}></div>
     </div>
   );
 };
 
 Hamburger.propTypes = {
   isToggled: PropTypes.bool.isRequired,
-  onClick: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired,
 };
 
-export default Hamburger;
+export { Hamburger };
