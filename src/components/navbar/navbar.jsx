@@ -4,7 +4,6 @@ import cn from "classnames";
 import { Hamburger } from "../../atoms/hamburger";
 import { Hyperlink } from "../../atoms/hyperlink";
 import { Logo } from "../../atoms/logo";
-
 import { logo } from "../../content/images";
 
 import styles from "./navbar.module.scss";
