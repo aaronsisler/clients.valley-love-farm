@@ -17,21 +17,21 @@ const poultryOption = {
   ),
 };
 
-const porkOption = {
-  key: "pork-option",
+const livestockOption = {
+  key: "livestock-option",
   image: farmOptionPorkImage,
-  linkHref: "pork",
-  title: " Pork & Sausage",
+  linkHref: "livestock",
+  title: " Pork, Sausage, & Beef",
   text: (
     <React.Fragment>
-      Our pigs are raised roaming free in the pastures of native grasses and
-      plant life. Pork from our farm (compared to factory-farm) contain
-      absolutely no added antibiotics or hormones and higher​ levels of Omega-3s
-      and Vitamin E.
+      Our pigs and cattle are raised roaming free in the pastures of native
+      grasses and plant life. Pork and beef from our farm (compared to
+      factory-farm) contain absolutely no added antibiotics or hormones and
+      higher​ levels of Omega-3s and Vitamin E.
     </React.Fragment>
   ),
 };
 
-const farmOptions = [poultryOption, porkOption];
+const farmOptions = [poultryOption, livestockOption];
 
 export { farmOptions };
