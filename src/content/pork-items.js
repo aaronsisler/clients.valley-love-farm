@@ -1,11 +1,14 @@
 const pork = [
-  { title: "Pork Chops", price: "$14/lb" },
-  { title: "Smoked Pork Chops", price: "$15/lb" },
+  { title: "Tenderloin", price: "$18/lb" },
+  { title: "Smoked Pork Chops", price: "$16/lb" },
+  { title: "Pork Chops", price: "$15/lb" },
   { title: "St. Louis Ribs", price: "$15/lb" },
-  { title: "Boston Butt", price: "$12/lb" },
-  { title: "Tenderloin", price: "$17/lb" },
-  { title: "Bacon", price: "$14/lb" },
+  { title: "Bacon", price: "$18/lb" },
+  { title: "Pork Steaks", price: "$16/lb" },
+  { title: "Ground Pork", price: "$10/lb" },
+  { title: "Boston Butt", price: "$13/lb" },
 ];
+
 const porkSausage = [
   { title: "Smoked Polish", price: "$13/lb" },
   { title: "Smoked Bell Peppers and Onion", price: "$13/lb" },
