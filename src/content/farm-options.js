@@ -6,13 +6,13 @@ const poultryOption = {
   key: "poultry-option",
   image: farmOptionPoultryImage,
   linkHref: "poultry",
-  title: "Chicken & Eggs",
+  title: "Chicken, Turkey, & Chicken Eggs",
   text: (
     <React.Fragment>
-      Our chickens and pigs are pasture-raised, which means they are allowed to
-      roam the fields, eating the insects and plants they would naturally eat.
-      Happy animals means meat and eggs with higher Omega-3s and Vitamins A, B
-      <sub>6</sub>, B<sub>12</sub>, D, and E.
+      Our chickens and turkeys are pasture-raised, which means they are allowed
+      to roam the fields, eating the insects and plants they would naturally
+      eat. Happy animals means meat and eggs with higher Omega-3s and Vitamins
+      A, B<sub>6</sub>, B<sub>12</sub>, D, and E.
     </React.Fragment>
   ),
 };
