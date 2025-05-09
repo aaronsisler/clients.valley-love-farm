@@ -13,10 +13,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en-US">
         <Head>
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
           <link
             rel="icon"
             type="image/x-icon"
