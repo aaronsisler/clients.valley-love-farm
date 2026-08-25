@@ -9,8 +9,8 @@ const Services = () => (
   <div className={styles.services}>
     <h2 className={styles.services__title}>What We Provide</h2>
     <div className={styles.services__content}>
-      {serviceOptionsContent.map((service) => (
-        <ServiceOption key={service.key} {...service} />
+      {serviceOptionsContent.map(({ key, ...service }) => (
+        <ServiceOption key={key} {...service} />
       ))}
     </div>
   </div>

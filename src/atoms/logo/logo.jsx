@@ -10,13 +10,11 @@ import styles from "./logo.module.scss";
 const Logo = ({ className, image }) => (
   <div className={cn(styles.logo, className)}>
     <Link href="/">
-      <a>
-        <Image
-          className={styles.logo__image}
-          src={image.src}
-          alt={image.altText}
-        />
-      </a>
+      <Image
+        className={styles.logo__image}
+        src={image.src}
+        alt={image.altText}
+      />
     </Link>
   </div>
 );
