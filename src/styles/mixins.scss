@@ -1,3 +1,4 @@
+@use "sass:string";
 @import "./variables";
 
 @mixin font-type(
@@ -13,7 +14,7 @@
 }
 
 @function rgba-with-var($color, $alpha: 1) {
-  @return unquote(
+  @return string.unquote(
     "rgba(#{red($color)}, #{green($color)}, #{blue($color)}, #{$alpha})"
   );
 }
@@ -61,7 +62,9 @@
   &:hover {
     color: white;
     background: $MAIN_COLOR;
-    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    transition:
+      background-color 0.25s ease-in-out,
+      color 0.25s ease-in-out;
   }
   &:disabled {
     color: white;

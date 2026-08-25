@@ -14,7 +14,7 @@
     }
     &__content {
       display: grid;
-      grid-gap: $MIDLARGE;
+      gap: $MIDLARGE;
     }
   }
 }
@@ -30,8 +30,8 @@
     text-align: inherit;
     &__content {
       display: grid;
-      grid-gap: $MIDLARGE;
       grid-template-columns: 1fr 1fr;
+      gap: $MIDLARGE;
       text-align: center;
     }
   }

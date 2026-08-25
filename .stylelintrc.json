@@ -1,9 +1,9 @@
 {
   "extends": [
-    "stylelint-config-rational-order-fix",
+    "stylelint-config-rational-order",
     "stylelint-config-recommended-scss"
   ],
-  "plugins": ["stylelint-order", "stylelint-config-rational-order-fix/plugin"],
+  "plugins": ["stylelint-order", "stylelint-config-rational-order/plugin"],
   "rules": {
     "at-rule-no-unknown": [
       true,
@@ -23,7 +23,6 @@
     ],
     "rule-empty-line-before": "never",
     "block-no-empty": null,
-    "declaration-colon-newline-after": null,
     "order/order": [
       {
         "type": "at-rule",

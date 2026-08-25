@@ -7,7 +7,7 @@
     @include font-type();
 
     display: grid;
-    grid-gap: $SMALL;
+    gap: $SMALL;
     &__title {
       @include font-type($size: $MIDLARGE);
 
