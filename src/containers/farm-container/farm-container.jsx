@@ -19,8 +19,8 @@ const FarmContainer = () => (
       </div>
     </div>
     <div className={styles.farmContainer__content}>
-      {farmOptions.map((farmOption) => (
-        <FarmOption key={farmOption.key} {...farmOption} />
+      {farmOptions.map(({ key, ...farmOption }) => (
+        <FarmOption key={key} {...farmOption} />
       ))}
     </div>
   </div>

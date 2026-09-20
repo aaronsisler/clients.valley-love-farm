@@ -1,5 +1,5 @@
-@import "../../styles/variables";
-@import "../../styles/mixins";
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 //Small screens - MOBILE
 @media only screen {
@@ -7,7 +7,7 @@
     @include font-type();
 
     display: grid;
-    grid-gap: $SMALL;
+    gap: $SMALL;
     &__title {
       @include font-type($size: $MIDLARGE);
 

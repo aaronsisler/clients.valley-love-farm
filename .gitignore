@@ -16,5 +16,3 @@ dist/
 npm-debug.log*
 sh.exe.stackdump
 **/.DS_Store
-
-stories/

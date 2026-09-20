@@ -1,5 +1,5 @@
-@import "../../styles/variables";
-@import "../../styles/mixins";
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 //Small screens - MOBILE
 @media only screen {
@@ -23,7 +23,7 @@
     }
     &__content {
       display: grid;
-      grid-gap: $MIDLARGE;
+      gap: $MIDLARGE;
     }
   }
 }
@@ -38,8 +38,8 @@
     padding: $LARGE 15%;
     &__content {
       display: grid;
-      grid-gap: $MIDLARGE;
       grid-template-columns: 1fr 1fr;
+      gap: $MIDLARGE;
       text-align: center;
     }
   }

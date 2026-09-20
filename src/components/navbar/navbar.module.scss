@@ -1,5 +1,5 @@
-@import "../../styles/variables";
-@import "../../styles/mixins";
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 //Small screens - MOBILE
 //max-width 640px, small screens
@@ -43,11 +43,13 @@
     &__link {
       display: block;
       padding: $MEDIUM;
-      color: white;
       font-size: $LARGE;
       text-align: center;
       text-transform: uppercase;
       text-decoration: none;
+    }
+    &__links &__link {
+      color: white;
     }
   }
 

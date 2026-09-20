@@ -1,5 +1,5 @@
-@import "../../styles/variables";
-@import "../../styles/mixins";
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 //Small screens - MOBILE
 @media only screen {
@@ -20,7 +20,7 @@
       @include font-type($MAIN_FONT, $MEDIUM);
 
       display: grid;
-      grid-gap: $MIDLARGE;
+      gap: $MIDLARGE;
       max-width: $MAX_WIDTH__CONTENT;
       margin: 0 auto $MEDIUM;
       padding: 0 $SMALL;
@@ -39,12 +39,12 @@
     text-align: inherit;
     &__content {
       display: grid;
-      grid-gap: $MEDIUM;
       grid-template-columns: 1fr 1fr;
+      gap: $MEDIUM;
     }
     &__text {
       display: grid;
-      grid-gap: $MEDIUM;
+      gap: $MEDIUM;
       align-content: center;
       justify-content: center;
       text-align: center;
