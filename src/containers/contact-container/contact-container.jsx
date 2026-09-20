@@ -12,8 +12,6 @@ const ContactContainer = () => {
 
   const determineContactModalChild = () => {
     switch (modalContent) {
-      // case "Visit Us":
-      //   return <div>Vist Us</div>;
       case "Call Us":
         return <ContactPhoneWidget />;
       case "Write Us":
@@ -39,12 +37,6 @@ const ContactContainer = () => {
       </h1>
       <BackgroundShape />
       <section className={styles.contactContainer__contactMethods}>
-        {/* <button
-          className={styles.contactMethodButton}
-          onClick={() => handleOpen("Visit Us")}
-        >
-          Visit Us
-        </button> */}
         <button
           className={styles.contactMethodButton}
           onClick={() => handleOpen("Call Us")}
