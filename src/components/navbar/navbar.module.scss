@@ -43,11 +43,13 @@
     &__link {
       display: block;
       padding: $MEDIUM;
-      color: white;
       font-size: $LARGE;
       text-align: center;
       text-transform: uppercase;
       text-decoration: none;
+    }
+    &__links &__link {
+      color: white;
     }
   }
 

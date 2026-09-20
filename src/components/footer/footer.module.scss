@@ -16,8 +16,13 @@
     background-color: $GRAY_600;
     &__copyright,
     &__link {
-      color: white;
       text-decoration: none;
+    }
+    &__copyright {
+      color: white;
+    }
+    & &__link {
+      color: white;
     }
     &__link {
       &:hover {

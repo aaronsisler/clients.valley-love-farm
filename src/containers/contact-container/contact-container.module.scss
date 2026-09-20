@@ -5,6 +5,7 @@
 //Small screens - MOBILE
 @media only screen {
   .contactContainer {
+    position: relative;
     &__title {
       @include font-type($size: $LARGE);
 
@@ -29,6 +30,7 @@
         cursor: pointer;
         opacity: 0.75;
         transition: opacity 0.3s;
+        will-change: opacity;
         &:hover {
           opacity: 1;
         }
