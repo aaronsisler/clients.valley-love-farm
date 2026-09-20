@@ -1,3 +1,5 @@
+@use "../styles/variables" as *;
+
 $PAYPAL_SANS_CDN: $FONTS_CDN + "/roboto";
 
 @font-face {

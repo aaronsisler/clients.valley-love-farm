@@ -1,9 +1,7 @@
-@import-normalize;
-
-@import "./variables";
-@import "./fonts";
-@import "./mixins";
-@import "./react_tabs";
+@use "./variables" as *;
+@use "./fonts";
+@use "./mixins" as *;
+@use "./react_tabs";
 
 //Small screens - MOBILE
 //max-width 640px, small screens
