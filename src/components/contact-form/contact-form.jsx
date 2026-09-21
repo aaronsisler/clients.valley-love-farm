@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -25,7 +25,7 @@ const contactSchema = yup.object().shape({
       "is-phone-number",
       errorMessages.phoneNumber,
       (value) =>
-        value.trim() === "" || (value.match(/^[0-9]*$/) && value.length === 10)
+        value.trim() === "" || (value.match(/^[0-9]*$/) && value.length === 10),
     ),
 });
 
@@ -44,6 +44,7 @@ const ContactForm = () => {
     watch,
     formState: { errors },
   } = useForm(useFormOptions);
+  const formLoadedAt = useRef(Date.now());
 
   if (emailSent) {
     return <ContactEmailSentWidget />;
@@ -53,20 +54,21 @@ const ContactForm = () => {
     setIsSendButtonDisabled(true);
     setSendButtonText("Sending");
 
-    const formData = {
-      emailAddress,
-      message,
-      name,
-      phoneNumber,
-      subject: `${CLIENT_NAME}: Contact Submission`,
-    };
-
     const done = () => {
       setEmailSent(true);
     };
     const fail = () => {
       setSendButtonText("Please try again");
       setIsSendButtonDisabled(false);
+    };
+
+    const formData = {
+      elapsedFormTimeMs: Date.now() - formLoadedAt.current,
+      emailAddress,
+      message,
+      name,
+      phoneNumber,
+      subject: `${CLIENT_NAME}: Contact Submission`,
     };
 
     sendEmail(formData, done, fail);
