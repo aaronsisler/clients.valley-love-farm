@@ -1,10 +1,22 @@
+// Fails the build when a required NEXT_PUBLIC_* variable is missing.
+// Next.js only inlines `process.env.NEXT_PUBLIC_X` when written literally,
+// so callers pass the value in rather than this looking it up by name.
+const requireEnv = (name, value) => {
+  if (!value) {
+    throw new Error(`${name} must be set at build time`);
+  }
+  return value;
+};
+
 // Client Name
 export const CLIENT_NAME = "Valley Love Farm";
 
 // Email
-export const POINT_OF_CONTACT_EMAIL = "valleyloveorganic@gmail.com";
-// export const POINT_OF_CONTACT_EMAIL = "valleylovehs@gmail.com";
-// export const POINT_OF_CONTACT_EMAIL = "aaron.sisler@eandbsolutions.com";
+// Injected at build time (see the GitHub workflows): the "to" address
+export const POINT_OF_CONTACT_EMAIL = requireEnv(
+  "NEXT_PUBLIC_POINT_OF_CONTACT_EMAIL",
+  process.env.NEXT_PUBLIC_POINT_OF_CONTACT_EMAIL,
+);
 
 // CDN URL
 export const CDN_URL =
@@ -19,5 +31,12 @@ export const GOOGLE_MAPS_LOCATION =
 export const CONTACT_PHONE_NUMBER = "(919) 886-9101";
 
 // Services Gateway
-// export const SERVICES_GATEWAY_URL = "https://services.eandbsolutions.com/beta";
-export const SERVICES_GATEWAY_URL = "https://services.eandbsolutions.com/prod";
+// Injected at build time (see the GitHub workflows): "beta" or "prod"
+const DEPLOYED_ENVIRONMENT = requireEnv(
+  "NEXT_PUBLIC_DEPLOYED_ENVIRONMENT",
+  process.env.NEXT_PUBLIC_DEPLOYED_ENVIRONMENT,
+);
+export const SERVICES_GATEWAY_URL = `https://services.eandbsolutions.com/${DEPLOYED_ENVIRONMENT}`;
+
+// Email Path
+export const EMAIL_PATH = "email/v2";

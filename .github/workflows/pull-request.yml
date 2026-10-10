@@ -17,14 +17,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: 24
           cache: npm
+          node-version: 24
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build and Export Static files
         run: npm run build
+        env:
+          NEXT_PUBLIC_DEPLOYED_ENVIRONMENT: beta
+          NEXT_PUBLIC_POINT_OF_CONTACT_EMAIL: aaron.sisler@eandbsolutions.com
 
       - name: Deploy to Beta
         run: npm run deploy

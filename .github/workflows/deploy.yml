@@ -25,6 +25,9 @@ jobs:
 
       - name: Build and Export Static files
         run: npm run build
+        env:
+          NEXT_PUBLIC_DEPLOYED_ENVIRONMENT: prod
+          NEXT_PUBLIC_POINT_OF_CONTACT_EMAIL: valleyloveorganic@gmail.com
 
       - name: Deploy to Prod
         run: npm run deploy
